@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 40em 40em auto;
+  /* grid-template-columns: 15% 35% 35% 15%; */
+}
+
+header {
+  background-color: white;
+  grid-column: 1/5;
+  grid-row: 1;
+}
+
+.navul {
+  text-align: center;
+}
+
+li.menuElement {
+  display: inline;
+  font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  list-style: none;
+  text-decoration-line: none;
+  margin: 0.5em;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #032ba5;
+}
+
+a:hover {
+  color: #f2b604;
+  text-decoration-line: line-through;
+}
+
+main {
+  background-color: white;
+  grid-column: 2/4;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+img.immaginemain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  /* font-size: em; */
+  font-weight: lighter;
+  color: #f2b604;
+  text-align: left;
+}
+
+.pmain {
+  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #434143;
+}
+
+footer {
+  background-color: #f2ca04;
+  grid-column: 1/5;
+  height: 7.5em;
+}
+
+.pfooter {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #032ba5;
+  text-align: center;
+}
+
+div.logofooter {
+  background-color: white;
+  grid-column: 4/5;
+  height: 3.5em;
+}
