@@ -16,6 +16,7 @@ header {
 
 #logoheader {
   width: 25em;
+  /* What is this? Il logo lo hai posizionato "stiracchiando" l'immagine, non lo stai spostando.. l'effetto è buono, ma fa casini */
   min-height: 6.5em;
   max-height: 6.5vh;
   grid-row: 1/2;
@@ -52,12 +53,20 @@ a:hover {
 }
 
 #instagram {
-  width: 2.5em;
-  min-height: 2.5em;
-  max-height: 2.5vh;
+  width: 25em;
+  min-height: 6.5em;
+  max-height: 6.5vh;
   grid-row: 1/2;
-  grid-column: 4/5;
-  align-self: center; 
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: end;
+  text-align: center;
+  /* Questo l'ho fatto per "copiare" quello di prima. Ma vedi che risulta strano? Non è una buona soluzione definitiva. */
+}
+
+#instagram img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 main {
