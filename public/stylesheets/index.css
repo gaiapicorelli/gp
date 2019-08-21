@@ -28,6 +28,7 @@ header {
 .navul {
   text-align: center;
   margin-top: 3em;
+  padding: 0;
 }
 
 li.menuElement {
