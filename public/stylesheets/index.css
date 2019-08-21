@@ -108,6 +108,7 @@ footer {
   background-color: #dee1f2;
   grid-column: 1/15;
   grid-row: 3/4;
+  height: 7em;
 }
 
 footer p {
@@ -120,7 +121,7 @@ footer p {
 }
 
 #logofooter {
-  height: 6em;
+  height: 90%;
   grid-row: 3/4;
   grid-column: 13/14;
   justify-self: end;
