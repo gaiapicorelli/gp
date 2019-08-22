@@ -41,13 +41,13 @@ nav ul li {
   margin: 0.5em;
 }
 
-a:link,
-a:visited {
+.anav:link,
+.anav:visited {
   text-decoration: none;
   color: #032ba5;
 }
 
-a:hover {
+.anav:hover {
   color: #f2b604;
   text-decoration-line: line-through;
 }
