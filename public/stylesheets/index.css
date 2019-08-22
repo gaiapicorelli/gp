@@ -5,6 +5,8 @@ body {
   grid-template-columns: auto 78em auto;
 }
 
+/*QUI INIZIA HEADER*/
+
 header {
   grid-column: 1/4;
   grid-row: 1/2;
@@ -68,10 +70,12 @@ a:hover {
   max-height: 100%;
 }
 
+/*QUI INIZIA MAIN CON UNA SUA GRID INTERNA RISPETTO AL RESTO DELLA PAGINA*/
+
 main {
   grid-column: 2/3;
   display: grid;
-  /* Deve essere coerente con la dimensione della colonna settata nel body */
+  /* i 6.5em non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-auto-columns: 6.5em;
 }
 
@@ -89,22 +93,82 @@ main {
 }
 
 h1 {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
   font-weight: bolder;
   color: #f2b604;
 }
 
-main p {
+#p1 {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
   font-size: 1em;
   font-weight: lighter;
   color: #434143;
+  grid-column: 1/12;
+  grid-row: 3/4;
+}
+
+#p2 {
+  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #434143;
+  grid-row: 4/5;
+  grid-column: 6/9;
+  padding-top:5em;
 }
 
 #fotome {
   height: 15em;
+  grid-row: 4/5;
+  grid-column: 3/4;
+  margin-top:5em;
 }
+
+.button {
+  height: 3em;
+  width: 6em;;
+  border-radius: 3em;
+  border: grey;
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  color: #434143;
+  text-align: center;
+  font-size: 1em;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 1em;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#button1 {
+  grid-row: 5/6;
+  grid-column: 5/6;
+}
+
+/*QUI INIZIA FOOTER*/
 
 footer {
   background-color: #dee1f2;
