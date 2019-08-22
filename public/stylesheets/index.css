@@ -70,6 +70,59 @@ nav ul li {
   max-height: 100%;
 }
 
+/*IL PULSANTE CONTATTI È AL DI FUORI DEL MAIN E HEADER*/
+
+#pulsanteContatti {
+  width: 8em;
+  height: 8em;
+  grid-column: 3/4;
+  margin-top:5em;
+  justify-self: center;
+  position: fixed;
+}
+
+#arrowback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#arrowback i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#arrowback {
+    background: rgba(0, 0, 0, 0.9);
+}
+#arrowback:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
 /*QUI INIZIA MAIN CON UNA SUA GRID INTERNA RISPETTO AL RESTO DELLA PAGINA*/
 
 main {
@@ -77,6 +130,7 @@ main {
   display: grid;
   /* i 6.5em non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-auto-columns: 6.5em;
+  grid-row: 3/4;
 }
 
 #gallerymain {
@@ -175,7 +229,7 @@ h1 {
 footer {
   background-color: #dee1f2;
   grid-column: 1/4;
-  grid-row: 3/4;
+  grid-row: 4/5;
   height: 7em;
 }
 
