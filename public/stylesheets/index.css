@@ -75,10 +75,11 @@ nav ul li {
 #pulsanteContatti {
   width: 8em;
   height: 8em;
-  grid-column: 3/4;
-  margin-top:5em;
+  /* margin-top:5em; */
   justify-self: center;
   position: fixed;
+  top: 10em;
+  right: 10em;
 }
 
 #arrowback {
@@ -130,7 +131,7 @@ main {
   display: grid;
   /* i 6.5em non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-auto-columns: 6.5em;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 #gallerymain {
