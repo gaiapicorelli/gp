@@ -1,6 +1,7 @@
 body {
   margin: 0;
   display: grid;
+  /* i 78em devono essere coerenti con la dimensione delle colonne del main. Precisamente x12 */
   grid-template-columns: auto 78em auto;
 }
 
@@ -70,6 +71,7 @@ a:hover {
 main {
   grid-column: 2/3;
   display: grid;
+  /* Deve essere coerente con la dimensione della colonna settata nel body */
   grid-auto-columns: 6.5em;
 }
 
