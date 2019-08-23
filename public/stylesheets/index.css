@@ -71,6 +71,7 @@ nav ul li {
 
 /*IL PULSANTE CONTATTI E LA FRECCIA "TORNA SU" SONO AL DI FUORI DEL MAIN E HEADER*/
 
+/* TODO: Cosa succede se non attiviamo javascript? è il comportamento che vogliamo? */
 #sidebutton {
   position: absolute;
   top: 7rem;
@@ -92,16 +93,16 @@ nav ul li {
   border: 1px solid lightgrey;
   font-size: 2rem;
   text-align: center;
-  height: 1.5rem;
+  height: 3rem;
   /* Width legata al margin-left più in basso */
-  width: 1.5rem;
+  width: 3rem;
   border-radius: 50%;
   position: absolute;
   bottom: 5vh;
   /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
   diventa centrato */
   left: 50%;
-  margin-left: -0.75rem;
+  margin-left: -1.5rem;
 }
 
 /*QUI INIZIA MAIN CON UNA SUA GRID INTERNA RISPETTO AL RESTO DELLA PAGINA*/
