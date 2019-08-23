@@ -10,7 +10,7 @@ body {
 header {
   grid-column: 1/4;
   grid-row: 1/2;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
   /* La height espressa in vh serve per calcolare la dimensione dell' "above the fold" del sito (100vh)
   La min in em serve a non far ridurre l'header in caso di resize della finestra */
   height: 12vh;
@@ -72,25 +72,37 @@ nav ul li {
 
 /*IL PULSANTE CONTATTI E LA FRECCIA "TORNA SU" SONO AL DI FUORI DEL MAIN E HEADER*/
 
+#sidebutton {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 5vw;
+  text-align: center;
+}
+
 #pulsanteContatti {
+  margin-top: 10em;
   width: 8em;
   height: 8em;
-  position: fixed;
-  top: 10em;
-  right: 7em;
 }
 
 #btornasu {
-  position: fixed;
-  bottom: 5em;
-  right: 7em;
-  z-index: 99;
-  font-size: 2em;
+  display: none;
+  margin: auto;
   background-color: white;
+  border: 1px solid lightgrey;
+  font-size: 2em;
   text-align: center;
   height: 1.5em;
+  /* Width legata al margin-left più in basso */
   width: 1.5em;
   border-radius: 50%;
+  position: absolute;
+  bottom: 5vh;
+  /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
+  diventa centrato */
+  left: 50%;
+  margin-left: -0.75em;
 }
 
 /*QUI INIZIA MAIN CON UNA SUA GRID INTERNA RISPETTO AL RESTO DELLA PAGINA*/
@@ -150,7 +162,7 @@ h1 {
   height: 3em;
   width: 6em;;
   border-radius: 3em;
-  border: grey;
+  border: lightgrey;
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
   font-weight: bolder;
   font-size: 1em;

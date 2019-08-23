@@ -38,9 +38,6 @@
     <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg" /></a>
   </div>
 
-  <div id="pulsanteContatti">
-    <a href="nav_contatti.html"><img src="public/images/bottone_contatti.svg" /></a>
-  </div>
 
   <main>
     <div id="gallerymain">
@@ -78,26 +75,16 @@
   </footer>
   <img id="logofooter" src="public/images/logo_senza_scritta.svg" />
 
+  <div id="buttonwrapper">
+    <div id="sidebutton">
+      <div id="pulsanteContatti">
+        <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg" /></a>
+      </div>
+      <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
+    </div>
+  </div>
 
-  <button onclick="topFunction()" id="btornasu" title="btornasu">&#11161</button>
-  <script>
-    // quando vai sotto di 20px torna ad inizio documento cliccando
-
-    window.onscroll = function () { scrollFunction() };
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btornasu").style.display = "block";
-      } else {
-        document.getElementById("btornasu").style.display = "none";
-      }
-    }
-
-    // quando clicchi va ad inizio documento
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+  <script src="public/js/scrollup.js"></script>
 
 </body>
 
