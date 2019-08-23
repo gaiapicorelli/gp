@@ -23,65 +23,74 @@
     <nav>
       <ul>
         <li><a href="index.html" class="anav">HOME</a></li>
-        <li><a href="nav_su_di_me.html"class="anav">SU DI ME</a></li>
-        <li><a href="nav_grafica.html"class="anav">GRAFICA</a></li>
-        <li><a href="nav_illustrazione.html"class="anav">ILLUSTRAZIONE</a></li>
-        <li><a href="nav_fumetto.html"class="anav">FUMETTO</a></li>
-        <li><a href="nav_fotografia.html"class="anav">FOTOGRAFIA</a></li>
-        <li><a href="nav_contatti.html"class="anav">CONTATTI</a></li>
+        <li><a href="nav_su_di_me.html" class="anav">SU DI ME</a></li>
+        <li><a href="nav_grafica.html" class="anav">GRAFICA</a></li>
+        <li><a href="nav_illustrazione.html" class="anav">ILLUSTRAZIONE</a></li>
+        <li><a href="nav_fumetto.html" class="anav">FUMETTO</a></li>
+        <li><a href="nav_fotografia.html" class="anav">FOTOGRAFIA</a></li>
+        <li><a href="nav_contatti.html" class="anav">CONTATTI</a></li>
       </ul>
     </nav>
   </header>
-  <img id="logoheader" src="public/images/logo_senza_scritta1.svg" alt="logoGP" />
+  <img id="logoheader" src="public/images/logo_senza_scritta1.svg" />
   <div id="social">
-    <a href="https://www.instagram.com/gaiapicorelli/?hl=it"><img src="public/images/instagram_logo.svg" alt="instagram" /></a>
-    <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg" alt="linkedin" /></a>
+    <a href="https://www.instagram.com/gaiapicorelli/?hl=it"><img src="public/images/instagram_logo.svg"/></a>
+    <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg"/></a>
   </div>
 
   <div id="pulsanteContatti">
-  <a href="nav_contatti.html"><img src="public/images/bottone_contatti.svg" alt="contatti" /></a>
+    <a href="nav_contatti.html"><img src="public/images/bottone_contatti.svg"/></a>
   </div>
 
   <main>
     <div id="gallerymain">
-      <img src="public/images/2.jpg" alt="immagine_galleria_1" />
+      <img src="public/images/2.jpg"/>
     </div>
     <h1>
       HOME
     </h1>
     <p id="p1">Qui ci va il main lorem ipsum dolor sit amet</p>
-    <img id="fotome" src="public/images/foto_me_home.png" alt="foto_me_home" />
+    <img id="fotome" src="public/images/foto_me_home.png"/>
     <p id="p2">breve descrizione su di me</p>
-    <a href= "nav_su_di_me.html" ><button class= "button"id="button1"><span> Vai al cv </span></a>
-  </main>
+    <a href="nav_su_di_me.html"><button class="button" id="button1"><span> Vai al cv </span></a>
+    <h2>
+      PORTFOLIO
+    </h2>
+    <img class="imgportfolio" id="portfolio1" src="public/images/2.jpg"/>
+    <img class="imgportfolio" id="portfolio2" src="public/images/2.jpg"/>
+    <img class="imgportfolio" id="portfolio3" src="public/images/2.jpg"/>
+    <img class="imgportfolio" id="portfolio4" src="public/images/2.jpg"/>
+    <img class="imgportfolio" id="portfolio5" src="public/images/2.jpg"/>
+    <img class="imgportfolio" id="portfolio6" src="public/images/2.jpg"/>
 
   <footer>
     <p>Gaia Picorelli</p>
     <p>Web Graphic Designer</p>
     <p>gaiapicorelli@gmail.com</p>
   </footer>
-  <img id="logofooter" src="public/images/logo_senza_scritta.svg" alt="logoGP" />
-  
-  
+  <img id="logofooter" src="public/images/logo_senza_scritta.svg"/>
+
+
   <button onclick="topFunction()" id="btornasu" title="btornasu">&#11161</button>
   <script>
-// quando vai sotto di 20px torna ad inizio documento cliccando
+    // quando vai sotto di 20px torna ad inizio documento cliccando
 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btornasu").style.display = "block";
-  } else {
-    document.getElementById("btornasu").style.display = "none";
-  }
-}
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btornasu").style.display = "block";
+      } else {
+        document.getElementById("btornasu").style.display = "none";
+      }
+    }
 
-// quando clicchi va ad inizio documento
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+    // quando clicchi va ad inizio documento
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
- </body>
- </html>
+</body>
+
+</html>
