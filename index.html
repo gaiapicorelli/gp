@@ -16,9 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-      $(document).ready(function(){
-  </script>
 </head>
 
 <body>
@@ -64,25 +61,27 @@
     <p>gaiapicorelli@gmail.com</p>
   </footer>
   <img id="logofooter" src="public/images/logo_senza_scritta.svg" alt="logoGP" />
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  
+  <button onclick="topFunction()" id="btornasu" title="btornasu">&#11161</button>
   <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// quando vai sotto di 20px torna ad inizio documento cliccando
 
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("btornasu").style.display = "block";
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("btornasu").style.display = "none";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// quando clicchi va ad inizio documento
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 </script>
+
  </body>
  </html>

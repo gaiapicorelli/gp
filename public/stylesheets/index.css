@@ -70,37 +70,27 @@ nav ul li {
   max-height: 100%;
 }
 
-/*IL PULSANTE CONTATTI È AL DI FUORI DEL MAIN E HEADER*/
+/*IL PULSANTE CONTATTI E LA FRECCIA "TORNA SU" SONO AL DI FUORI DEL MAIN E HEADER*/
 
 #pulsanteContatti {
   width: 8em;
   height: 8em;
-  /* margin-top:5em; */
-  justify-self: center;
   position: fixed;
   top: 10em;
-  right: 10em;
+  right: 7em;
 }
 
-
-#myBtn {
-  display: none;
+#btornasu {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 5em;
+  right: 7em;
   z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
+  font-size: 2em;
+  background-color: white;
+  text-align: center;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
 }
 
 
