@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Gaia Picorelli Web Graphic Designer</title>
+
   <link rel="stylesheet" href="public/stylesheets/index.css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
@@ -13,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+  </script>
 </head>
 
 <body>
@@ -38,8 +44,6 @@
   <div id="pulsanteContatti">
   <a href="nav_contatti.html"><img src="public/images/bottone_contatti.svg" alt="contatti" /></a>
   </div>
-  <a href="javascript:" id="arrowback"></a>
-
 
   <main>
     <div id="gallerymain">
@@ -60,22 +64,25 @@
     <p>gaiapicorelli@gmail.com</p>
   </footer>
   <img id="logofooter" src="public/images/logo_senza_scritta.svg" alt="logoGP" />
- 
 
-<script>
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#arrowback').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#arrowback').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#arrowback').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
-</body>
-
-</html>
+ </body>
+ </html>
