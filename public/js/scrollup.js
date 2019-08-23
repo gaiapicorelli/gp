@@ -1,15 +1,15 @@
-// quando vai sotto a 12vh (dimensione header) torna ad inizio documento cliccando
-
+// Calcola "n" vh
 function vh(n) {
     height = $(window).height();
     return height * n / 100
 }
 
-// Calcola 1 rem basandosi sulla dimensione del font di default
+// Calcola "n" rem basandosi sulla dimensione del font di default
 function rem(n) {
     return n * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
+// quando vai sotto a 7em (dimensione header) torna ad inizio documento cliccando
 function scrollFunction() {
     if (document.body.scrollTop > rem(7) || document.documentElement.scrollTop > rem(7)) {
         document.getElementById("btornasu").style.display = "block";
