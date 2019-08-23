@@ -1,16 +1,31 @@
-// quando vai sotto di 20px torna ad inizio documento cliccando
+// quando vai sotto a 12vh (dimensione header) torna ad inizio documento cliccando
 
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btornasu").style.display = "block";
-  } else {
-    document.getElementById("btornasu").style.display = "none";
-  }
+function vh(n) {
+    height = $(window).height();
+    return height * n / 100
 }
+
+// Calcola 1 rem basandosi sulla dimensione del font di default
+function rem(n) {
+    return n * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > rem(7) || document.documentElement.scrollTop > rem(7)) {
+        document.getElementById("btornasu").style.display = "block";
+        document.getElementById("sidebutton").style.position = "fixed";
+        document.getElementById("sidebutton").style.top = 0;
+    } else {
+        document.getElementById("sidebutton").style.position = "absolute";
+        document.getElementById("sidebutton").style.top = rem(7)+"px";
+        document.getElementById("btornasu").style.display = "none";
+    }
+}
+
+window.onscroll = scrollFunction;
 
 // quando clicchi va ad inizio documento
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

@@ -1,8 +1,8 @@
 body {
   margin: 0;
   display: grid;
-  /* i 78em devono essere coerenti con la dimensione delle colonne del main. Precisamente x12 */
-  grid-template-columns: auto 78em auto;
+  /* i 78rem devono essere coerenti con la dimensione delle colonne del main. Precisamente x12 */
+  grid-template-columns: auto 78rem auto;
 }
 
 /*QUI INIZIA HEADER*/
@@ -12,9 +12,9 @@ header {
   grid-row: 1/2;
   border-bottom: 1px solid lightgrey;
   /* La height espressa in vh serve per calcolare la dimensione dell' "above the fold" del sito (100vh)
-  La min in em serve a non far ridurre l'header in caso di resize della finestra */
+  La min in rem serve a non far ridurre l'header in caso di resize della finestra */
   height: 12vh;
-  min-height: 7em;
+  min-height: 7rem;
 }
 
 #logoheader {
@@ -28,17 +28,16 @@ header {
 nav ul {
   text-align: center;
   padding: 0;
-  margin: 3em;
+  margin: 3rem;
 }
 
 nav ul li {
   display: inline;
   font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
-  font-size: 1em;
   font-weight: lighter;
   list-style: none;
   text-decoration-line: none;
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 
 .anav:link,
@@ -61,8 +60,8 @@ nav ul li {
 
 #social a {
   display: inline-block;
-  width: 2em;
-  margin-left: 0.5em;
+  width: 2rem;
+  margin-left: 0.5rem;
 }
 
 #social a img {
@@ -73,17 +72,17 @@ nav ul li {
 /*IL PULSANTE CONTATTI E LA FRECCIA "TORNA SU" SONO AL DI FUORI DEL MAIN E HEADER*/
 
 #sidebutton {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 7rem;
   bottom: 0;
   right: 5vw;
   text-align: center;
 }
 
 #pulsanteContatti {
-  margin-top: 10em;
-  width: 8em;
-  height: 8em;
+  margin-top: 3rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 #btornasu {
@@ -91,18 +90,18 @@ nav ul li {
   margin: auto;
   background-color: white;
   border: 1px solid lightgrey;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
-  height: 1.5em;
+  height: 1.5rem;
   /* Width legata al margin-left più in basso */
-  width: 1.5em;
+  width: 1.5rem;
   border-radius: 50%;
   position: absolute;
   bottom: 5vh;
   /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
   diventa centrato */
   left: 50%;
-  margin-left: -0.75em;
+  margin-left: -0.75rem;
 }
 
 /*QUI INIZIA MAIN CON UNA SUA GRID INTERNA RISPETTO AL RESTO DELLA PAGINA*/
@@ -110,8 +109,8 @@ nav ul li {
 main {
   grid-column: 2/3;
   display: grid;
-  /* i 6.5em non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
-  grid-auto-columns: 6.5em;
+  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
+  grid-auto-columns: 6.5rem;
 }
 
 #gallerymain {
@@ -135,7 +134,6 @@ h1 {
 
 #descrizione {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-size: 1em;
   font-weight: lighter;
   color: #434143;
   grid-column: 1/13;
@@ -148,14 +146,13 @@ h1 {
 
 #aboutme {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-size: 1em;
   font-weight: lighter;
   color: #434143;
   grid-column: 6/10;
   align-self: center;
-  margin-left: 3em;
+  margin-left: 3rem;
   /* Il margine negativo lo modifichi dopo aver scritto i contenuti */
-  margin-top: -1em;
+  margin-top: -1rem;
 }
 
 .button-main {
@@ -165,10 +162,8 @@ h1 {
   border: lightgrey;
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
   font-weight: bolder;
-  font-size: 1em;
   color: #434143;
   text-align: center;
-  font-size: 1em;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -233,13 +228,12 @@ footer {
   background-color: #dee1f2;
   grid-column: 1/4;
   grid-row: 3/4;
-  height: 7em;
+  height: 7rem;
 }
 
 footer p {
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
-  font-size: 1em;
   font-weight: lighter;
   color: #032ba5;
   text-align: center;
