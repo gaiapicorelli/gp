@@ -1,6 +1,6 @@
 // Calcola "n" vh
 function vh(n) {
-    height = $(window).height();
+    var height = $(window).height();
     return height * n / 100
 }
 
@@ -14,7 +14,7 @@ function scrollFunction() {
     if (document.body.scrollTop > rem(7) || document.documentElement.scrollTop > rem(7)) {
         document.getElementById("btornasu").style.display = "block";
         document.getElementById("sidebutton").style.position = "fixed";
-        document.getElementById("sidebutton").style.top = 0;
+        document.getElementById("sidebutton").style.top = "0";
     } else {
         document.getElementById("sidebutton").style.position = "absolute";
         document.getElementById("sidebutton").style.top = rem(7)+"px";
