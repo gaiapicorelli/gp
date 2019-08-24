@@ -232,62 +232,59 @@ h2 {
     margin: 3% 0 3% 4%;
 }
 
-.button-sezioni{
-    height: 3em;
-    width: 6em;;
-    border-radius: 3em;
-    border: lightgrey;
-    font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
-    font-weight: bolder;
-    color: #434143;
-    text-align: center;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-top: 2rem;
+.sezioni{
+    margin-top: 3rem;
 }
 
-.button-sezioni span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+.sezioni img {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
 }
 
-.button-sezioni span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    transition: 0.5s;
+#sezioneGrafica{
+    grid-column: 3/4;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.button-sezioni:hover span {
-    padding-right: 1em;
-}
-
-.button-sezioni:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-#b-s-1 {
-    grid-column: 4/5;
-    justify-self: start;
-}
-
-#b-s-2 {
+#sezioneIllustrazione {
     grid-column: 5/6;
-    justify-self: end;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-#b-s-3 {
+#sezioneFumetto {
     grid-column: 8/9;
-    justify-self: start;
 }
 
-#b-s-4 {
-    grid-column: 9/10;
-    justify-self: end;
+#sezioneFotografia {
+    grid-column: 10/11;
+}
+
+.sezionitesto{
+    font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+    font-weight: lighter;
+    color: #434143;
+    grid-column: 1/13;
+    justify-self: center;
+    margin: 0;
+}
+
+#grafica{
+    grid-column: 3/4;
+}
+
+#illustrazione{
+    grid-column: 5/6;
+}
+
+#fumetto{
+    grid-column: 8/9;
+}
+
+#fotografia{
+    grid-column: 10/11;
 }
 /*QUI INIZIA FOOTER*/
 
