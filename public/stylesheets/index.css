@@ -3,6 +3,7 @@ body {
     display: grid;
     /* i 78rem devono essere coerenti con la dimensione delle colonne del main. Precisamente x12 */
     grid-template-columns: auto 78rem auto;
+    overflow-x: hidden;
 }
 
 /*QUI INIZIA HEADER*/
@@ -153,7 +154,7 @@ h1 {
     grid-column: 6/10;
     align-self: center;
     margin-left: 3rem;
-    /* Il margine negativo lo modifichi dopo aver scritto i contenuti */
+    /* Il margine negativo si modifica dopo aver scritto i contenuti */
     margin-top: -1rem;
 }
 
@@ -194,6 +195,27 @@ h1 {
     right: 0;
 }
 
+#divportfolio {
+    grid-column: 1/13;
+    background-color: aliceblue;
+    display: grid;
+    /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
+    grid-auto-columns: 6.5rem;
+    /* position relative da solo non ha effetto. Serve solo per dare un riferimento al position: absolute di .margincolor */
+    position: relative;
+}
+
+.margincolor {
+    position: absolute;
+    /* -50vh è semplicemente un"numero grande" */
+    left: -50vw;
+    right: -50vh;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: aliceblue;
+}
+
 h2 {
     font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway", sans-serif;
     font-weight: bolder;
@@ -213,7 +235,7 @@ h2 {
 
 .imgportfolio {
     max-width: 96%;
-    /* Sono diventato stupido con i margini attenta quando li modifichi */
+    /* attenzione a modificare i margini */
 }
 
 .imgleft {
