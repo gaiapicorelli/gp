@@ -50,7 +50,7 @@ main {
     sans-serif;
   font-weight: bolder;
   color: #f2b604;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .h2 {
@@ -58,7 +58,6 @@ main {
     sans-serif;
   font-weight: bolder;
   color: #f2b604;
-  margin-top: 4rem;
 }
 
 .p {
@@ -141,13 +140,14 @@ main {
   max-width: 100%;
   grid-column: 5/7;
   align-self: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 #divsudime {
   grid-column: 7/11;
   align-self: center;
   margin-left: 3rem;
+  margin-bottom: 8rem;
 }
 
 /*DIV3*/
@@ -162,6 +162,7 @@ main {
 #h2div3home {
   grid-column: 2/14;
   justify-self: center;
+  margin-top: 4rem;
 }
 
 #pdescrizionePortfolio {
@@ -258,21 +259,22 @@ main {
 
 #h2div4home {
   grid-column: 4/6;
-  margin-top:16rem;
+  margin-top:11rem;
+  margin-bottom: 0rem;
 }
 
 #simbolodiv4home {
   grid-column: 3/4;
   width: 3rem;
-  margin-top:14rem;
+  margin-top:10rem;
 }
 
-#PdescrizioneAggiornamenti {
+#divaggiornamenti {
   grid-column: 3/6;
-}
-
-#buttondiv4home {
-grid-column: 3/4
+  align-self: center;
+  margin-left: 3rem;
+  justify-self: start;
+  margin-bottom: 10rem;
 }
 
 #imgaggiornamenti1{
@@ -280,6 +282,6 @@ grid-column: 9/13;
 grid-row: span 2;
 max-width: 100%;
 align-self: center;
-margin-top:16rem;
+margin-top:4rem;
 }
 
