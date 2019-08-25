@@ -1,7 +1,7 @@
 // Calcola "n" vh
 function vh(n) {
     var height = $(window).height();
-    return height * n / 100
+    return height * n / 100;
 }
 
 // Calcola "n" rem basandosi sulla dimensione del font di default
