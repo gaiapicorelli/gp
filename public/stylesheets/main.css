@@ -369,11 +369,19 @@ grid-column: 2/12;
 margin:0rem;
 }
 
-#fotome2{
+#illustrazionesudime{
   grid-column: 2/5;
   grid-row: span 4;
 }
 
-#pdescrizionesudime{
+#pformazione1{
+  grid-column: 6/12;
+}
+
+#pformazione2{
+  grid-column: 6/12;
+}
+
+#pformazione3{
   grid-column: 6/12;
 }
