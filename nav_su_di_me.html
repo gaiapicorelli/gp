@@ -102,12 +102,10 @@
 
     <!--DIV 3SUDIME-->
     <div id="div3home" class="gridded">
-    <div class="tab">
-      <button class="tablinks" onclick="openCompetenzeProfessionali(event, 'CompetenzeProfessionali')">Competenze
-        Professionali</button>
-      <button class="tablinks" onclick="openCompetenzePersonali(event, 'CompetenzePersonali')">Competenze
-        Personali</button>
-    </div>
+    <button class="tablinks" id="tabhead-prof" onclick="toggleBody('CompetenzeProfessionali')">Competenze
+      Professionali</button>
+    <button class="tablinks" id="tabhead-pers" onclick="toggleBody('CompetenzePersonali')">Competenze
+      Personali</button>
     <div id="CompetenzeProfessionali" class="tabcontent">
       <h3>Competenze Professionali</h3>
       <p>
@@ -159,6 +157,7 @@
     <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
   </div>
   <script src="public/js/scrollup.js"></script>
+  <script src="public/js/tabellaCompetenze.js"></script>
 </body>
 
 </html>
