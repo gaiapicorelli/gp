@@ -58,8 +58,7 @@ main {
     sans-serif;
   font-weight: bolder;
   color: #f2b604;
-  margin-top: 2rem;
-  justify-self: center;
+  margin-top: 4rem;
 }
 
 .p {
@@ -68,7 +67,7 @@ main {
   color: #434143;
 }
 
-.button-main {
+.button {
   height: 3em;
   width: 6em;
   border-radius: 3em;
@@ -82,14 +81,14 @@ main {
   cursor: pointer;
 }
 
-.button-main span {
+.button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button-main span:after {
+.button span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -97,11 +96,11 @@ main {
   transition: 0.5s;
 }
 
-.button-main:hover span {
+.button:hover span {
   padding-right: 1em;
 }
 
-.button-main:hover span:after {
+.button:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -128,7 +127,6 @@ main {
   display: grid;
   /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
-  height: 103vh;
 }
 
 #h1div2home {
@@ -143,6 +141,7 @@ main {
   max-width: 100%;
   grid-column: 5/7;
   align-self: center;
+  margin-bottom: 4rem;
 }
 
 #divsudime {
@@ -226,7 +225,10 @@ main {
   font-weight: lighter;
   color: #434143;
   justify-self: center;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4rem;
 }
 
 #grafica {
@@ -248,17 +250,36 @@ main {
 /*DIV4*/
 #div4home {
   grid-column: 1/15;
-  background-color: aliceblue;
+  background-color: white;
   display: grid;
   /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
 #h2div4home {
-  grid-column: 2/14;
+  grid-column: 4/6;
+  margin-top:16rem;
 }
 
-#descrizioneAggiornamenti {
-  grid-column: 2/14;
-  justify-self: center;
+#simbolodiv4home {
+  grid-column: 3/4;
+  width: 3rem;
+  margin-top:14rem;
 }
+
+#PdescrizioneAggiornamenti {
+  grid-column: 3/6;
+}
+
+#buttondiv4home {
+grid-column: 3/4
+}
+
+#imgaggiornamenti1{
+grid-column: 9/13;
+grid-row: span 2;
+max-width: 100%;
+align-self: center;
+margin-top:16rem;
+}
+
