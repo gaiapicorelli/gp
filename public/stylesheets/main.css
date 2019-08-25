@@ -40,6 +40,11 @@ body {
 /*QUI INIZIA MAIN CON UNA SUA GRID DIVISO A SUA VOLTA IN DIV, STRUTTURA VALIDA PER TUTTE LE PAGINE */
 main {
   width: 100%;
+}
+
+.gridded {
+  width: 100%;
+  grid-column: 1/15;
   display: grid;
   /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
   grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
@@ -58,6 +63,13 @@ main {
     sans-serif;
   font-weight: bolder;
   color: #f2b604;
+}
+
+.h3{
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+  sans-serif;
+font-weight: bolder;
+color: #f2b604;
 }
 
 .p {
@@ -121,11 +133,7 @@ main {
 
 /*DIV2*/
 #div2home {
-  grid-column: 1/15;
   background-color: white;
-  display: grid;
-  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
-  grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
 #h1div2home {
@@ -152,11 +160,7 @@ main {
 
 /*DIV3*/
 #div3home {
-  grid-column: 1/15;
   background-color: aliceblue;
-  display: grid;
-  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
-  grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
 #h2div3home {
@@ -250,11 +254,7 @@ main {
 
 /*DIV4*/
 #div4home {
-  grid-column: 1/15;
   background-color: white;
-  display: grid;
-  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
-  grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
 #h2div4home {
@@ -283,5 +283,19 @@ grid-row: span 2;
 max-width: 100%;
 align-self: center;
 margin-top:4rem;
+}
+
+/*PAGINA SU DIME*/
+/*DIV1*/
+#div1sudime {
+  background-color: white;
+}
+
+#h1div1sudime{
+  grid-column: 2/12;
+}
+
+#h3div1sudime{
+
 }
 
