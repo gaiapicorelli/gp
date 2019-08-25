@@ -17,7 +17,7 @@ function scrollFunction() {
         document.getElementById("sidebutton").style.top = "0";
     } else {
         document.getElementById("sidebutton").style.position = "absolute";
-        document.getElementById("sidebutton").style.top = rem(7)+"px";
+        document.getElementById("sidebutton").style.top = rem(7) + "px";
         document.getElementById("btornasu").style.display = "none";
     }
 }

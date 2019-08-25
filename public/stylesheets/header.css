@@ -1,67 +1,67 @@
 header {
-    border-bottom: 1px solid lightgrey;
-    /* La height espressa in vh serve per calcolare la dimensione dell' "above the fold" del sito (100vh)
+  border-bottom: 1px solid lightgrey;
+  /* La height espressa in vh serve per calcolare la dimensione dell' "above the fold" del sito (100vh)
     La min in rem serve a non far ridurre l'header in caso di resize della finestra */
-    height: 12vh;
-    min-height: 7rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 78rem auto;
+  height: 12vh;
+  min-height: 7rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 78rem auto;
 }
 
 #logoheader {
-    height: 90%;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    align-self: center;
-    justify-self: start;
+  height: 90%;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: start;
 }
 
 nav {
-    grid-row: 1/2;
-    grid-column: 2/3;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
 nav ul {
-    text-align: center;
-    padding: 0;
-    margin: 3rem;
+  text-align: center;
+  padding: 0;
+  margin: 3rem;
 }
 
 nav ul li {
-    display: inline;
-    font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
-    font-weight: lighter;
-    list-style: none;
-    text-decoration-line: none;
-    margin: 0.5rem;
+  display: inline;
+  font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
+  font-weight: lighter;
+  list-style: none;
+  text-decoration-line: none;
+  margin: 0.5rem;
 }
 
 .anav:link,
 .anav:visited {
-    text-decoration: none;
-    color: #032ba5;
+  text-decoration: none;
+  color: #032ba5;
 }
 
 .anav:hover {
-    color: #f2b604;
-    text-decoration-line: line-through;
+  color: #f2b604;
+  text-decoration-line: line-through;
 }
 
 #social {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    align-self: center;
-    text-align: end;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: center;
+  text-align: end;
 }
 
 #social a {
-    display: inline-block;
-    width: 2rem;
-    margin-left: 0.5rem;
+  display: inline-block;
+  width: 2rem;
+  margin-left: 0.5rem;
 }
 
 #social a img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
