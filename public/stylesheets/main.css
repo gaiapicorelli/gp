@@ -365,23 +365,39 @@ margin-top:4rem;
 }
 
 #h2div2sudime{
-grid-column: 2/12;
-margin:0rem;
+  height: 100%;
+  grid-column: 2/12;
+  margin-top:8rem;
+}
+
+#didascalie {
+  grid-row: 2/3;
+  grid-column: 3/13;
+  height: 100%;
+  /* Questo non fa nulla, serve per il successivo absolute */
+  position: relative;
 }
 
 #illustrazionesudime{
-  grid-column: 2/5;
-  grid-row: span 4;
+  grid-row: 2/3;
+  grid-column: 7/13;
+  width: 100%;
 }
 
 #pformazione1{
-  grid-column: 6/12;
+  position: absolute;
+  right:40%;
+  top: 20%;
 }
 
 #pformazione2{
-  grid-column: 6/12;
+  position: absolute;
+  right:50%;
+  top: 44%;
 }
 
 #pformazione3{
-  grid-column: 6/12;
-}
+  position: absolute;
+  right:60%;
+  top: 63%;
+} 
