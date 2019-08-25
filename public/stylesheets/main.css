@@ -376,6 +376,10 @@ margin-top:4rem;
   height: 100%;
   /* Questo non fa nulla, serve per il successivo absolute */
   position: relative;
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+  sans-serif;
+  font-weight: bolder;
+  color: #f2b604;
 }
 
 #illustrazionesudime{
@@ -400,4 +404,32 @@ margin-top:4rem;
   position: absolute;
   right:60%;
   top: 63%;
+} 
+
+#didascalie2 {
+  grid-row: 2/3;
+  grid-column: 3/13;
+  height: 100%;
+  position: relative;
+  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #434143;
+}
+
+#pformazione1a{
+  position: absolute;
+  right:40%;
+  top: 25%;
+}
+
+#pformazione2a{
+  position: absolute;
+  right:50%;
+  top: 49%;
+}
+
+#pformazione3a{
+  position: absolute;
+  right:60%;
+  top: 68%;
 } 
