@@ -45,32 +45,7 @@ main {
   grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
-#gallerymain {
-  grid-column: 1/15;
-  background-color: aliceblue;
-  height: 86vh;
-  padding: 1vh;
-  text-align: center;
-}
-
-#gallerymain img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/*PAGINA HOME*/
-/*DIV1*/
-#divhome {
-  grid-column: 1/15;
-  background-color: white;
-  display: grid;
-  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
-  grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
-  height: 103vh;
-}
-
-h1 {
-  grid-column: 2/13;
+.h1 {
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
   font-weight: bolder;
@@ -78,27 +53,19 @@ h1 {
   margin-top: 2rem;
 }
 
-#descrizione {
+.h2 {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: bolder;
+  color: #f2b604;
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+.p {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
   font-weight: lighter;
   color: #434143;
-  grid-column: 2/13;
-}
-
-#fotome {
-  max-width: 100%;
-  grid-column: 5/7;
-}
-
-#aboutme {
-  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-weight: lighter;
-  color: #434143;
-  grid-column: 7/11;
-  align-self: center;
-  margin-left: 3rem;
-  /* Il margine negativo si modifica dopo aver scritto i contenuti */
-  margin-top: -1rem;
 }
 
 .button-main {
@@ -139,7 +106,53 @@ h1 {
   right: 0;
 }
 
+/*PAGINA HOME*/
+/*DIV1*/
+#gallerymain {
+  grid-column: 1/15;
+  background-color: aliceblue;
+  height: 86vh;
+  padding: 1vh;
+  text-align: center;
+}
+
+#gallerymain img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /*DIV2*/
+#divhome {
+  grid-column: 1/15;
+  background-color: white;
+  display: grid;
+  /* i 6.5rem non sono casuali, sono coerenti con la dimensione della colonna settata nel body */
+  grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
+  height: 103vh;
+}
+
+#h1div1home {
+  grid-column: 2/13;
+}
+
+#descrizione {
+  grid-column: 2/13;
+}
+
+#fotome {
+  max-width: 100%;
+  grid-column: 5/7;
+}
+
+#aboutme {
+  grid-column: 7/11;
+  align-self: center;
+  margin-left: 3rem;
+  /* Il margine negativo si modifica dopo aver scritto i contenuti */
+  margin-top: -1rem;
+}
+
+/*DIV3*/
 #divportfolio {
   grid-column: 1/15;
   background-color: aliceblue;
@@ -148,21 +161,11 @@ h1 {
   grid-template-columns: auto 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem auto;
 }
 
-h2 {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
-  font-weight: bolder;
-  color: #f2b604;
+#h2div2home {
   grid-column: 2/14;
-  margin-top: 2rem;
-  justify-self: center;
 }
 
-/*DIV3*/
 #descrizionePortfolio {
-  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-weight: lighter;
-  color: #434143;
   grid-column: 2/14;
   justify-self: center;
 }
@@ -234,10 +237,17 @@ h2 {
   grid-column: 6/7;
 }
 
-#fumetto {
+#fumetto {{
   grid-column: 9/10;
 }
 
 #fotografia {
   grid-column: 11/12;
+}
+
+/*DIV4*/
+#descrizioneAggiornamenti {
+  grid-column: 2/14;
+  justify-self: center;
+}
 }
