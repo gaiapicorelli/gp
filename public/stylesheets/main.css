@@ -529,22 +529,15 @@ button:hover span:after {
   top: 50%;
   margin-top: -0.6em;
   margin-left: -0.6em;
-  /* left: 65%; */
   background-color: blue;
 }
 
 #linea-competenza1 .slider-cursor {
-  left: 6%;
-}
-
-#linea-competenza2 .slider-cursor {
   left: 60%;
 }
 
-#slider-point {
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
+#linea-competenza2 .slider-cursor {
+  left: 40%;
 }
 
 .animate {
@@ -553,9 +546,9 @@ button:hover span:after {
 
 @keyframes animate {
   from {
-    left: 0%;
+  left:0%;
   }
   to {
-   left:60%;
+    left:60;
   }
 }

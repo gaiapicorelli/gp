@@ -1,20 +1,20 @@
-// Prende l'elemento e lo anima
-var element = document.getElementById('slider-point');
+// get the element to animate
+var element = document.getElementById('point');
 var elementHeight = element.clientHeight;
 
-// Ascolta l'evento scroll e chiama la funzione
+// listen for scroll event and call animate function
 document.addEventListener('scroll', animate);
 
-// Guarda se l'elemento è visto
+// check if element is in view
 function inView() {
-  // prende la finestra altezza
+  // get window height
   var windowHeight = window.innerHeight;
-  // Prende il numero di pixel del documento scrollato
+  // get number of pixels that the document is scrolled
   var scrollY = window.scrollY || window.pageYOffset;
   
-  // Prende la posizione corrente dello scroll (la distanza dal top della pagina  al bottom del viwport corrente)
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
-  //Prende la posizione dell'elemento (distanza dal top della pagina al bottom dell'elemento)
+  // get element position (distance from the top of the page to the bottom of the element)
   var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
   
   // is scroll position greater than element position? (is element in view?)
