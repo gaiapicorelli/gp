@@ -65,11 +65,11 @@ h2 {
   color: #f2b604;
 }
 
-h3{
+h3 {
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-  sans-serif;
-font-weight: bolder;
-color: #f2b604;
+    sans-serif;
+  font-weight: bolder;
+  color: #f2b604;
 }
 
 p {
@@ -290,14 +290,14 @@ button:hover span:after {
 
 #h2div4home {
   grid-column: 4/6;
-  margin-top:11rem;
+  margin-top: 11rem;
   margin-bottom: 0rem;
 }
 
 #simbolodiv4home {
   grid-column: 3/4;
   width: 3rem;
-  margin-top:10rem;
+  margin-top: 10rem;
 }
 
 #divaggiornamenti {
@@ -308,12 +308,12 @@ button:hover span:after {
   margin-bottom: 10rem;
 }
 
-#imgaggiornamenti1{
-grid-column: 9/13;
-grid-row: span 2;
-max-width: 100%;
-align-self: center;
-margin-top:4rem;
+#imgaggiornamenti1 {
+  grid-column: 9/13;
+  grid-row: span 2;
+  max-width: 100%;
+  align-self: center;
+  margin-top: 4rem;
 }
 
 /*PAGINA SU DIME*/
@@ -322,17 +322,17 @@ margin-top:4rem;
   background-color: white;
 }
 
-#h1div1sudime{
+#h1div1sudime {
   grid-column: 2/12;
-  margin-bottom:10rem;
+  margin-bottom: 10rem;
 }
 
-#h2div1sudime{
+#h2div1sudime {
   grid-column: 6/11;
-  margin:0rem;
+  margin: 0rem;
 }
 
-#fotome2{
+#fotome2 {
   grid-column: 2/5;
   grid-row: span 3;
 }
@@ -342,50 +342,50 @@ margin-top:4rem;
   display: grid;
 }
 
-#pdescrizionesudime{
+#pdescrizionesudime {
   grid-column: 6/12;
 }
 
-.imgloghisudime{
+.imgloghisudime {
   width: 4rem;
 }
 
-#imglogo1{
+#imglogo1 {
   grid-column: 1/2;
   justify-self: center;
 }
 
-#imglogo2{
+#imglogo2 {
   grid-column: 2/3;
   justify-self: center;
 }
 
-#imglogo3{
+#imglogo3 {
   grid-column: 3/4;
   justify-self: center;
 }
 
-#imglogo4{
+#imglogo4 {
   grid-column: 4/5;
   justify-self: center;
 }
 
-#pdescrizione1{
+#pdescrizione1 {
   grid-column: 1/2;
   justify-self: center;
 }
 
-#pdescrizione2{
+#pdescrizione2 {
   grid-column: 2/3;
   justify-self: center;
 }
 
-#pdescrizione3{
+#pdescrizione3 {
   grid-column: 3/4;
   justify-self: center;
 }
 
-#pdescrizione4{
+#pdescrizione4 {
   grid-column: 4/5;
   justify-self: center;
 }
@@ -395,10 +395,10 @@ margin-top:4rem;
   background-color: white;
 }
 
-#h2div2sudime{
+#h2div2sudime {
   height: 100%;
   grid-column: 2/12;
-  margin-top:8rem;
+  margin-top: 8rem;
 }
 
 #didascalie {
@@ -408,34 +408,34 @@ margin-top:4rem;
   /* Questo non fa nulla, serve per il successivo absolute */
   position: relative;
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-  sans-serif;
+    sans-serif;
   font-weight: bolder;
   color: #f2b604;
 }
 
-#illustrazionesudime{
+#illustrazionesudime {
   grid-row: 2/3;
   grid-column: 7/13;
   width: 100%;
 }
 
-#pformazione1{
+#pformazione1 {
   position: absolute;
-  right:40%;
+  right: 40%;
   top: 20%;
 }
 
-#pformazione2{
+#pformazione2 {
   position: absolute;
-  right:50%;
+  right: 50%;
   top: 44%;
 }
 
-#pformazione3{
+#pformazione3 {
   position: absolute;
-  right:60%;
+  right: 60%;
   top: 63%;
-} 
+}
 
 #didascalie2 {
   grid-row: 2/3;
@@ -447,41 +447,115 @@ margin-top:4rem;
   color: #434143;
 }
 
-#pformazione1a{
+#pformazione1a {
   position: absolute;
-  right:40%;
+  right: 40%;
   top: 25%;
 }
 
-#pformazione2a{
+#pformazione2a {
   position: absolute;
-  right:50%;
+  right: 50%;
   top: 49%;
 }
 
-#pformazione3a{
+#pformazione3a {
   position: absolute;
-  right:60%;
+  right: 60%;
   top: 68%;
-} 
+}
 
 /*DIV3*/
 #divsudime {
   background-color: white;
 }
 
-#tabhead-prof{
+#tabhead-prof {
   grid-column: 2/8;
 }
 
-#tabhead-pers{
+#tabhead-pers {
   grid-column: 8/14;
 }
 
-#CompetenzeProfessionali{
+#CompetenzeProfessionali {
   grid-column: 2/8;
 }
 
-#CompetenzePersonali{
+#CompetenzePersonali {
   grid-column: 8/14;
+}
+
+/*DIV4*/
+#divsudime {
+  background-color: white;
+}
+
+#div4sudime h2 {
+  grid-column: 2/14;
+}
+
+#linea-competenza1,
+#competenze1 {
+  grid-column: 2/8;
+}
+
+#linea-competenza2,
+#competenze2 {
+  grid-column: 8/14;
+}
+
+.slider-container {
+  position: relative;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  border-bottom: 1px solid black;
+}
+
+.slider-cursor {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6em;
+  margin-left: -0.6em;
+  /* left: 65%; */
+  background-color: blue;
+}
+
+#linea-competenza1 .slider-cursor {
+  left: 6%;
+}
+
+#linea-competenza2 .slider-cursor {
+  left: 60%;
+}
+
+#slider-point {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+
+.animate {
+  animation: animate .3s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    left: 0%;
+  }
+  to {
+   left:60%;
+  }
 }

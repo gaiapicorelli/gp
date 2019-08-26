@@ -102,43 +102,67 @@
 
     <!--DIV 3SUDIME-->
     <div id="div3home" class="gridded">
-    <button class="tablinks" id="tabhead-prof" onclick="toggleBody('CompetenzeProfessionali')">Competenze
-      Professionali</button>
-    <button class="tablinks" id="tabhead-pers" onclick="toggleBody('CompetenzePersonali')">Competenze
-      Personali</button>
-    <div id="CompetenzeProfessionali" class="tabcontent">
-      <h3>Competenze Professionali</h3>
-      <p>
-        • Tecniche del disegno e della pittura.
-        • Disegno tecnico e progettuale.
-        • Cromatologia.
-        • Incisione.
-        • Fotografia.
-        • Grafica editoriale e web design.
-        • Tecniche di scrittura e narrazione per immagini.
-        • Tecniche di comunicazione e degli archetipi dell’immaginario.
-        • Pedagogia.
-        • Storia dell’arte: visiva, applicata, del cinema, del video, della pubblicità.
-        • Antropologia culturale</p>
-    </div>
+      <button class="tablinks" id="tabhead-prof" onclick="toggleBody('CompetenzeProfessionali')">Competenze
+        Professionali</button>
+      <button class="tablinks" id="tabhead-pers" onclick="toggleBody('CompetenzePersonali')">Competenze
+        Personali</button>
+      <div id="CompetenzeProfessionali" class="tabcontent">
+        <h3>Competenze Professionali</h3>
+        <p>
+          • Tecniche del disegno e della pittura.
+          • Disegno tecnico e progettuale.
+          • Cromatologia.
+          • Incisione.
+          • Fotografia.
+          • Grafica editoriale e web design.
+          • Tecniche di scrittura e narrazione per immagini.
+          • Tecniche di comunicazione e degli archetipi dell’immaginario.
+          • Pedagogia.
+          • Storia dell’arte: visiva, applicata, del cinema, del video, della pubblicità.
+          • Antropologia culturale</p>
+      </div>
 
-    <div id="CompetenzePersonali" class="tabcontent">
-      <h3>Competenze Personali</h3>
-      <p>
-        • Affidabile e costante.
-        • Resistente allo stress.
-        • Fortemente motivata.
-        • Metodica ed organizzata.
-        • Collaborativa.
-        • Empatica.
-      </p>
+      <div id="CompetenzePersonali" class="tabcontent">
+        <h3>Competenze Personali</h3>
+        <p>
+          • Affidabile e costante.
+          • Resistente allo stress.
+          • Fortemente motivata.
+          • Metodica ed organizzata.
+          • Collaborativa.
+          • Empatica.
+        </p>
+      </div>
     </div>
-  </div>
 
     <!--DIV 4SUDIME-->
-    <div id="div4sudime">
+    <div id="div4sudime" class="gridded">
+      <h2>COMPETENZE INFORMATICHE</h2>
+      <div class="slider-container" id="linea-competenza1">
+        <div class="slider-line"></div>
+        <div class="slider-cursor"></div>
+      </div>
+      <div class="slider-container" id="linea-competenza2">
+        <div class="slider-line"></div>
+        <div class="slider-cursor"></div>
+      </div>
+      <div id="slider-point"></div>
+      <p id="competenze1">Adobe Photoshop
+        Adobe Illustrator
+        Adobe In Design
+        Adobe XD
+      </p>
+      <p id="competenze2">
+        Html
+        Css
+        Javascript
+        Jquery
+        Wordpress
+      </p>
 
+      <!--DIV 5SUDIME-->
     </div>
+
   </main>
 
   <footer>
@@ -158,6 +182,7 @@
   </div>
   <script src="public/js/scrollup.js"></script>
   <script src="public/js/tabellaCompetenze.js"></script>
+  <script src="public/js/animazioneCompetenze.js"></script>
 </body>
 
 </html>
