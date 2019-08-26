@@ -346,46 +346,46 @@ button:hover span:after {
   grid-column: 6/12;
 }
 
-.imgloghisudime {
+.quattrologhi {
   width: 4rem;
 }
 
-#imglogo1 {
+.quattrologhi1 {
   grid-column: 1/2;
   justify-self: center;
 }
 
-#imglogo2 {
+.quattrologhi2 {
   grid-column: 2/3;
   justify-self: center;
 }
 
-#imglogo3 {
+.quattrologhi3 {
   grid-column: 3/4;
   justify-self: center;
 }
 
-#imglogo4 {
+.quattrologhi4 {
   grid-column: 4/5;
   justify-self: center;
 }
 
-#pdescrizione1 {
+.quattrologhidesc1 {
   grid-column: 1/2;
   justify-self: center;
 }
 
-#pdescrizione2 {
+.quattrologhidesc2 {
   grid-column: 2/3;
   justify-self: center;
 }
 
-#pdescrizione3 {
+.quattrologhidesc3 {
   grid-column: 3/4;
   justify-self: center;
 }
 
-#pdescrizione4 {
+.quattrologhidesc4 {
   grid-column: 4/5;
   justify-self: center;
 }
@@ -529,11 +529,13 @@ button:hover span:after {
   top: 50%;
   margin-top: -0.6em;
   margin-left: -0.6em;
-  background-color: blue;
+  background-color: blue; 
+  
 }
 
 #linea-competenza1 .slider-cursor {
   left: 60%;
+ 
 }
 
 #linea-competenza2 .slider-cursor {
@@ -547,8 +549,20 @@ button:hover span:after {
 @keyframes animate {
   from {
   left:0%;
+  
   }
   to {
     left:60;
+   
   }
+}
+
+/*DIV5*/
+#divsudime {
+  background-color: white;
+}
+
+#loghiattività {
+  grid-column: 2/14;
+  display: grid;
 }
