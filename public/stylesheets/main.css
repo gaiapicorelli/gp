@@ -148,3 +148,47 @@ button:hover span:after {
 .tabcontent.inactive {
   display: none;
 }
+
+.fourgrid {
+  width: 4rem;
+}
+
+.fourgrid1 {
+  grid-column: 1/2;
+  justify-self: center;
+}
+
+.fourgrid2 {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.fourgrid3 {
+  grid-column: 3/4;
+  justify-self: center;
+}
+
+.fourgrid4 {
+  grid-column: 4/5;
+  justify-self: center;
+}
+
+.fourgriddesc1 {
+  grid-column: 1/2;
+  justify-self: center;
+}
+
+.fourgriddesc2 {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.fourgriddesc3 {
+  grid-column: 3/4;
+  justify-self: center;
+}
+
+.fourgriddesc4 {
+  grid-column: 4/5;
+  justify-self: center;
+}

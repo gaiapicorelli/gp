@@ -76,62 +76,26 @@
     grid-column: 10/14;
     margin: 3% 0 3% 4%;
   }
-  
-  .sezioni {
-    margin-top: 3rem;
+
+  #sezioni {
+      grid-column: 3/13;
+      display: grid;
+      margin: 4rem 0;
+  }
+
+  #sezioni a {
+      text-align: center;
+      justify-self: center;
   }
   
-  .sezioni img {
-    width: 80%;
-    height: 80%;
-    justify-self: center;
+  #sezioni img {
+    width: 100%;
+    height: 100%;
   }
   
-  #sezioneGrafica {
-    grid-column: 4/5;
+  .flipped {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-  }
-  
-  #sezioneIllustrazione {
-    grid-column: 6/7;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  
-  #sezioneFumetto {
-    grid-column: 9/10;
-  }
-  
-  #sezioneFotografia {
-    grid-column: 11/12;
-  }
-  
-  .sezionitesto {
-    font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-    font-weight: lighter;
-    color: #434143;
-    justify-self: center;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 4rem;
-  }
-  
-  #grafica {
-    grid-column: 4/5;
-  }
-  
-  #illustrazione {
-    grid-column: 6/7;
-  }
-  
-  #fumetto {
-    grid-column: 9/10;
-  }
-  
-  #fotografia {
-    grid-column: 11/12;
   }
   
   /*DIV4*/
