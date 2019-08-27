@@ -104,16 +104,18 @@
 }
 
 /*DIV3*/
-#divsudime {
-  background-color: white;
+#div3sudime {
+  background-color:antiquewhite;
 }
 
 #tabhead-prof {
   grid-column: 2/8;
+  margin-top:8rem;
 }
 
 #tabhead-pers {
   grid-column: 8/14;
+  margin-top:8rem;
 }
 
 #CompetenzeProfessionali {
@@ -125,12 +127,13 @@
 }
 
 /*DIV4*/
-#divsudime {
-  background-color: white;
+#div4sudime {
+  background-color: antiquewhite;
 }
 
 #div4sudime h2 {
   grid-column: 2/14;
+  margin-top:4rem;
 }
 
 #linea-competenza1,
@@ -179,7 +182,7 @@
 }
 
 .animate {
-  animation: animate 0.5s ease forwards;
+  animation: animate 0.8s ease forwards;
 }
 
 @keyframes animate {
@@ -190,9 +193,12 @@
     left: 80;
   }
 }
+  #competenze1 {
+    margin-bottom:8rem;
+}
 
 /*DIV5*/
-#divsudime {
+#div5sudime {
   background-color: white;
 }
 
@@ -209,11 +215,13 @@
 }
 
 /*DIV6*/
-#divsudime {
-  background-color: white;
+#div6sudime {
+  background-color:antiquewhite; 
 }
 
 #navicons {
   grid-column: 3/13;
   display: grid;
+  margin-top:4rem;
+  margin-bottom: 4rem;
 }
