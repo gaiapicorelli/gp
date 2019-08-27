@@ -210,7 +210,10 @@
 
 /*DIV6*/
 #divsudime {
-    background-color: white;
-  }
+  background-color: white;
+}
 
-  
+#navicons {
+  grid-column: 3/13;
+  display: grid;
+}
