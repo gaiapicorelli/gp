@@ -19,30 +19,16 @@
 #div2grafica {
   background-color: white;
   display: grid;
-  grid-auto-columns: 25vh;
+  grid-template-columns: repeat(4, 25vw);
 }
 
-.imggrafica {
-  max-width: 25vh;
-}
-.imgleft {
-grid-columns: 1/2;
+#div2grafica img {
+  width: 100%;
 }
 
-.imgcentera {
-    grid-columns: 2/3;
-}
-
-.imgcenterb {
-    grid-columns: 3/4;
-}
-
-.imgright {
-  grid-columns: 4/5;
-}
 
 /* DIV3 */
-#div3grafica {
+/* #div3grafica {
     background-color: white;
     display: grid;
     grid-auto-columns: 25vh;
@@ -62,7 +48,7 @@ grid-columns: 1/2;
 
 .right2 {
     grid-columns: 4/5;
-}
+} */
 
 /* .hovertexth3 {
 }
