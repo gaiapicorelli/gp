@@ -26,32 +26,11 @@
   width: 100%;
 }
 
-
 /* DIV3 */
-/* #div3grafica {
-    background-color: white;
-    display: grid;
-    grid-auto-columns: 25vh;
-  }
-
-.mgleft2 {
-    grid-columns: 1/2;
+#div3grafica {
+  display: flex;
 }
 
-.centera2 {
-    grid-columns: 2/3;
+#div3grafica img {
+  width: 25vw;
 }
-
-.centerb2 {
-    grid-columns: 3/4;
-}
-
-.right2 {
-    grid-columns: 4/5;
-} */
-
-/* .hovertexth3 {
-}
-
-.hovertext {
-} */
