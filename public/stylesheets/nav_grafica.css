@@ -1,4 +1,15 @@
 /* PAGINA GRAFICA */
+/* PULSANTE CONTATTI MODIFICATO SOLO PER LE PAGINE GRAFICA FUMETTO ILLUSTRAZIONE E FOTOGRAFIA */
+#pulsanteContatti {
+  border-radius: 50%;
+  background-color: white;
+}
+
+#btornasu {
+  background-color: white;
+  border-radius: 50%;
+}
+
 /* DIV1 */
 #div1grafica {
   background-color: white;
@@ -13,6 +24,7 @@
 
 #pgrafica {
   grid-column: 2/14;
+  margin-bottom: 4rem;
 }
 
 /* DIV2 */
@@ -33,4 +45,16 @@
 
 #div3grafica img {
   width: 25vw;
+}
+
+/* DIV4 */
+#div4grafica {
+  background-color:antiquewhite; 
+}
+
+#navicons {
+  grid-column: 3/13;
+  display: grid;
+  margin-top:8rem;
+  margin-bottom: 4rem;
 }
