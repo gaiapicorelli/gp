@@ -6,11 +6,29 @@ body {
   width: 100%;
 }
 
-h2 {
+h1,
+h2,
+h3 {
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
-  font-weight: bolder;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
   color: #f2b604;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  color: red;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 1rem;
+  color: greenyellow;
 }
 
 p {
@@ -108,6 +126,9 @@ button:hover span:after {
   #pulsanteContatti {
     display: none;
   }
+  #sidebutton {
+      display: none;
+  }
 }
 
 #btornasu {
@@ -127,6 +148,37 @@ button:hover span:after {
   left: 50%;
   margin-left: -1.5rem;
 }
+
+.tablinks {
+    background-color: #f1f1f1;
+    /* float: left; */
+    width: 100%;
+    border-radius: initial;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .tablinks:hover {
+    background-color: #ddd;
+  }
+  
+  .tablinks.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    /* display: none; */
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .tabcontent.inactive {
+    display: none;
+  }
 
 /*
             HEADER

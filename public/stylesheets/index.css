@@ -1,6 +1,6 @@
 /*
-            GALLERIA
-        */
+  GALLERIA
+*/
 #galleria {
   background-color: aliceblue;
   height: 86vh;
@@ -14,8 +14,8 @@
 }
 
 /*
-          DESCRIZIONE
-      */
+  DESCRIZIONE
+*/
 #descrizione {
   padding: 4rem 0;
 }
@@ -38,8 +38,8 @@
 }
 
 /*
-          PORTFOLIO
-       */
+  PORTFOLIO
+*/
 #portfolio-container {
   background-color: aliceblue;
 }
@@ -62,8 +62,8 @@
 }
 
 /*
-          AGGIORNAMENTI
-       */
+  AGGIORNAMENTI
+*/
 #aggiornamenti {
   padding: 4rem 0;
   margin: auto;
