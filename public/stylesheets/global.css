@@ -127,7 +127,7 @@ button:hover span:after {
     display: none;
   }
   #sidebutton {
-      display: none;
+    display: none;
   }
 }
 
@@ -150,35 +150,35 @@ button:hover span:after {
 }
 
 .tablinks {
-    background-color: #f1f1f1;
-    /* float: left; */
-    width: 100%;
-    border-radius: initial;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  .tablinks:hover {
-    background-color: #ddd;
-  }
-  
-  .tablinks.active {
-    background-color: #ccc;
-  }
-  
-  .tabcontent {
-    /* display: none; */
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
-  
-  .tabcontent.inactive {
-    display: none;
-  }
+  background-color: #f1f1f1;
+  /* float: left; */
+  width: 100%;
+  border-radius: initial;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tablinks.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  /* display: none; */
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent.inactive {
+  display: none;
+}
 
 /*
             HEADER
@@ -265,3 +265,8 @@ footer img {
   width: 6.6rem;
   padding: 0.4rem 0;
 }
+
+/* .gridded {
+  display: grid;
+  grid-template-columns: repeat(12, 8.333%);
+} */
