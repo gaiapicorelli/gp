@@ -2,147 +2,159 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>GP Graphic Designer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GP Graphic Designer</title>
 
-  <link rel="stylesheet" href="public/stylesheets/main.css" />
-  <link rel="stylesheet" href="public/stylesheets/header.css" />
-  <link rel="stylesheet" href="public/stylesheets/footer.css" />
-  <link rel="stylesheet" href="public/stylesheets/index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/stylesheets/global.css">
+    <link rel="stylesheet" href="public/stylesheets/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="anav">HOME</a></li>
-        <li><a href="nav_su_di_me.html" class="anav">SU DI ME</a></li>
-        <li><a href="nav_grafica.html" class="anav">GRAFICA</a></li>
-        <li><a href="nav_illustrazione.html" class="anav">ILLUSTRAZIONE</a></li>
-        <li><a href="nav_fumetto.html" class="anav">FUMETTO</a></li>
-        <li><a href="nav_fotografia.html" class="anav">FOTOGRAFIA</a></li>
-        <li><a href="nav_contatti.html" class="anav">CONTATTI</a></li>
-      </ul>
-    </nav>
-    <img id="logoheader" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
-    <div id="social">
-      <a href="https://www.instagram.com/gaiapicorelli/?hl=it"><img src="public/images/instagram_logo.svg"
-          alt="Link Instagram" /></a>
-      <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg"
-          alt="Link LinkedIn" /></a>
-    </div>
-  </header>
+    <header>
+        <div id="content-header" class="central">
+            <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="nav_su_di_me.html">SU DI ME</a>
+                <a href="nav_grafica.html">GRAFICA</a>
+                <a href="nav_illustrazione.html">ILLUSTRAZIONE</a>
+                <a href="nav_fumetto.html">FUMETTO</a>
+                <a href="nav_fotografia.html">FOTOGRAFIA</a>
+                <a href="nav_contatti.html">CONTATTI</a>
+            </nav>
+            <div id="social-header">
+                <a href="https://www.instagram.com/gaiapicorelli/?hl=it">
+                    <img src="public/images/instagram_logo.svg" alt="Link Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+                    <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="galleria">
+            <img src="public/images/2.jpg" alt="Immagine di galleria" />
+        </div>
+        <div id="descrizione" class="central">
+            <h2>
+                HOME
+            </h2>
+            <p>Qui ci va il main lorem ipsum dolor sit amet</p>
+            <div id="sottodescrizione">
+                <img src="public/images/bottone_contatti.svg" alt="Foto personale" />
+                <div>
+                    <p>
+                        breve descrizione su di me <br />
+                        breve descrizione su di me <br />
+                        breve descrizione su di me <br />
+                    </p>
+                    <form>
+                        <button formaction="nav_su_di_me.html"><span> Vai al cv </span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio-container">
+            <div id="portfolio" class="central">
+                <h2>
+                    PORTFOLIO
+                </h2>
+                <p>
+                    Piccola anteprima descrizione
+                </p>
+                <div id="portfolio-grid-img">
+                    <img src="public/images/2.jpg" alt="portfolio1" />
+                    <img src="public/images/2.jpg" alt="portfolio2" />
+                    <img src="public/images/2.jpg" alt="portfolio3" />
+                    <img src="public/images/2.jpg" alt="portfolio4" />
+                    <img src="public/images/2.jpg" alt="portfolio5" />
+                    <img src="public/images/2.jpg" alt="portfolio6" />
+                </div>
 
+                <div id="sezioni" class="iconbutton-row">
+                    <a class="iconbutton" href="nav_grafica.html" title="Visita grafica">
+                        <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione grafica" />
+                        <p>Grafica</p>
+                    </a>
+                    <a class="iconbutton" href="nav_illustrazione.html" title="Visita illustrazione">
+                        <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione illustrazione" />
+                        <p>Illustrazione</p>
+                    </a>
+                    <a class="iconbutton" href="nav_fumetto.html " title="Visita fumetto">
+                        <img src="public/images/arrow_sezioni.svg" alt="sezione fumetto" />
+                        <p>Fumetto</p>
+                    </a>
+                    <a class="iconbutton" href="nav_fotografia.html" title="Visita fotografia">
+                        <img src="public/images/arrow_sezioni.svg" alt="sezione fotografia" />
+                        <p>Fotografia</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  <main class="gridded">
-    <!--PAGINA HOME-->
-    <!--DIV 1HOME-->
-    <div id="div1home">
-      <img src="public/images/2.jpg" alt="Immagine di galleria" />
-    </div>
-    <!--DIV 2HOME-->
-    <div id="div2home" class="gridded">
-      <h1>
-        HOME
-      </h1>
-      <p id="pdescrizione">Qui ci va il main lorem ipsum dolor sit amet</p>
-      <img id="imgfotome" src="public/images/bottone_contatti.svg" alt="Foto personale" />
-      <div id="divsudime">
-        <p>
-          breve descrizione su di me <br />
-          breve descrizione su di me <br />
-          breve descrizione su di me <br />
-        </p>
-        <form><button formaction="nav_su_di_me.html"><span> Vai al cv </span></button></form>
-      </div>
-    </div>
-    <!--DIV 3HOME-->
-    <div id="div3home" class="gridded">
-      <h2 id="h2div3home">
-        PORTFOLIO
-      </h2>
-      <p id="pdescrizionePortfolio">
-        Piccola anteprima descrizione
-      </p>
-      <img class="imgportfolio imgleft" src="public/images/2.jpg" alt="portfolio1" />
-      <img class="imgportfolio imgcenter" src="public/images/2.jpg" alt="portfolio2" />
-      <img class="imgportfolio imgright" src="public/images/2.jpg" alt="portfolio3" />
-      <img class="imgportfolio imgleft" src="public/images/2.jpg" alt="portfolio4" />
-      <img class="imgportfolio imgcenter" src="public/images/2.jpg" alt="portfolio5" />
-      <img class="imgportfolio imgright" src="public/images/2.jpg" alt="portfolio6" />
+        <div id="aggiornamenti-container">
+            <div id="aggiornamenti" class="central">
+                <img id="logo-aggiornamenti" src="public/images/palette.svg" alt="palette" />
+                <h2>
+                    AGGIORNAMENTI
+                </h2>
+                <img id="img-aggiornamenti" src="public/images/bottone_contatti.svg" alt="Aggiornamenti" />
+                <div id="contenuto-aggiornamenti">
+                    <p>
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                        descrizione descrizione descrizione descrizione descrizione
+                    </p>
+                    <form>
+                        <button formaction=""><span> Scopri di più </span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 
-      <div id="sezioni">
-        <a href="nav_grafica.html" class="icongrid flipped" title="Visita grafica"><img
-            src="public/images/arrow_sezioni.svg" alt="sezione grafica" /></a>
-        <a href="nav_illustrazione.html" class="icongrid flipped" title="Visita illustrazione"><img
-            src="public/images/arrow_sezioni.svg" alt="sezione illustrazione" /></a>
-        <a href="nav_fumetto.html " class="icongrid" title="Visita fumetto"><img src="public/images/arrow_sezioni.svg"
-            alt="sezione fumetto" /></a>
-        <a href="nav_fotografia.html" class="icongrid" title="Visita fotografia"><img
-            src="public/images/arrow_sezioni.svg" alt="sezione fotografia" /></a>
-        <p class="icongriddesc">Grafica</p>
-        <p class="icongriddesc">Illustrazione</p>
-        <p class="icongriddesc">Fumetto</p>
-        <p class="icongriddesc">Fotografia</p>
-      </div>
-    </div>
-    <!--DIV 4HOME-->
-    <div id="div4home" class="gridded">
-      <img id="simbolodiv4home" src="public/images/palette.svg" alt="palette" />
-      <h2 id="h2div4home">
-        AGGIORNAMENTI
-      </h2>
-      <img id="imgaggiornamenti1" src="public/images/bottone_contatti.svg" alt="Aggiornamenti1" />
-      <div id="divaggiornamenti">
-        <p>
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-          descrizionedescrizionedescrizionedescrizionedescrizione
-        </p>
-        <form><button formaction=""><span> Scopri di più </span></button></form>
-      </div>
+    <div id="sidebutton">
+        <div id="pulsanteContatti">
+            <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg"
+                    alt="contatti" /></a>
+        </div>
+        <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
     </div>
 
-  </main>
-
-  <footer>
-    <div id="footer-txt">
-      <p>Gaia Picorelli</p>
-      <p>Web Graphic Designer</p>
-      <p>gaiapicorelli@gmail.com</p>
-    </div>
-    <img id="logofooter" src="public/images/logo_senza_scritta.svg" alt="logo" />
-  </footer>
-
-  <div id="sidebutton">
-    <div id="pulsanteContatti">
-      <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg"
-          alt="contatti" /></a>
-    </div>
-    <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
-  </div>
-
-  <script src="public/js/scrollup.js"></script>
+    <footer>
+        <div id="content-footer" class="central">
+            <div class="empty"></div>
+            <div id="footer-txt">
+                <p>Gaia Picorelli</p>
+                <p>Web Graphic Designer</p>
+                <p>gaiapicorelli@gmail.com</p>
+            </div>
+            <img src="public/images/logo_senza_scritta.svg" alt="logo" />
+        </div>
+    </footer>
 </body>
+<script src="public/js/scrollup.js"></script>
 
 </html>

@@ -1,0 +1,215 @@
+/*
+            COMMONS
+        */
+body {
+  margin: 0;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: bolder;
+  color: #f2b604;
+}
+
+p {
+  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #434143;
+}
+
+button {
+  height: 3em;
+  border-radius: 1.5em;
+  border: lightgrey;
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: bolder;
+  color: #434143;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 1em;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.iconbutton-row {
+  display: grid;
+}
+
+.iconbutton {
+  grid-row: 1/2;
+  justify-self: center;
+  text-align: center;
+}
+
+.iconbutton img {
+  width: 4rem;
+}
+
+.flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* DA SISTEMARE */
+.iconbutton:link,
+.iconbutton:visited {
+  text-decoration: none;
+  /*color: #032ba5;*/
+}
+
+.iconbutton:hover {
+  color: #f2b604;
+  text-decoration-line: line-through;
+}
+
+#sidebutton {
+  position: absolute;
+  top: 7rem;
+  bottom: 0;
+  right: 0;
+  width: 17%;
+}
+
+#pulsanteContatti {
+  position: absolute;
+  top: 3rem;
+  right: 50%;
+  margin-right: -3rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+@media screen and (max-width: 1440px) {
+  #pulsanteContatti {
+    display: none;
+  }
+}
+
+#btornasu {
+  display: none;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  font-size: 2rem;
+  text-align: center;
+  height: 3rem;
+  /* Width legata al margin-left più in basso */
+  width: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5vh;
+  /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
+              diventa centrato */
+  left: 50%;
+  margin-left: -1.5rem;
+}
+
+/*
+            HEADER
+        */
+header {
+  border-bottom: 1px solid lightgrey;
+}
+
+#content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.central {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#logo-header {
+  height: 6.6rem;
+  padding: 0.4rem 0;
+}
+
+nav {
+  height: 100%;
+  margin: auto 0;
+}
+
+nav a {
+  margin: auto 0.5rem;
+  font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
+  font-weight: lighter;
+  text-decoration-line: none;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  color: #032ba5;
+}
+
+nav a:hover {
+  color: #f2b604;
+  text-decoration-line: line-through;
+}
+
+#social-header a {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+#social-header,
+#social-header img {
+  height: 2rem;
+  margin: auto 0;
+}
+/*
+            FOOTER
+         */
+footer {
+  background-color: #dee1f2;
+}
+
+#content-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-txt {
+  margin: auto;
+  height: 100%;
+}
+
+footer p {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: lighter;
+  color: #032ba5;
+  text-align: center;
+}
+
+footer .empty,
+footer img {
+  width: 6.6rem;
+  padding: 0.4rem 0;
+}
