@@ -24,21 +24,97 @@
         "img icons";
     }
 
-    #content-descrizione img {
-      width: 7em;
+    #content-descrizione>img {
+      width: 15rem;
       grid-area: img;
+      align-self: center;
     }
 
-    #content-descrizione h2 {
+    #content-descrizione>h2 {
       grid-area: title;
     }
 
-    #content-descrizione p {
+    #content-descrizione>p {
       grid-area: content;
     }
 
-    #content-descrizione .iconbutton-row {
+    #content-descrizione>.iconbutton-row {
       grid-area: icons;
+      margin: 2em 0;
+    }
+
+    #content-descrizione>h2,
+    #content-descrizione>p,
+    #content-descrizione>.iconbutton-row {
+      margin-left: 4vw;
+    }
+
+    #illustrazionesudime {
+      width: 50%;
+      margin: auto;
+      display: grid;
+    }
+
+    #illustrazionesudime>#correttore-immagine {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding-left: 30%;
+    }
+
+    #didascalie {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      /* Questo non fa nulla, serve per il successivo absolute */
+      position: relative;
+    }
+
+    .titoletti-didascalie {
+      font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+        sans-serif;
+      font-weight: bolder;
+      color: #f2b604;
+    }
+
+    .testo-didascalie {
+      font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+      font-weight: lighter;
+      color: #434143;
+    }
+
+    #pformazione1 {
+      position: absolute;
+      right: 49%;
+      top: 20%;
+    }
+
+    #pformazione1a {
+      position: absolute;
+      right: 49%;
+      top: 25%;
+    }
+
+    #pformazione2 {
+      position: absolute;
+      right: 60%;
+      top: 44%;
+    }
+
+    #pformazione2a {
+      position: absolute;
+      right: 60%;
+      top: 49%;
+    }
+
+    #pformazione3 {
+      position: absolute;
+      right: 71%;
+      top: 63%;
+    }
+
+    #pformazione3a {
+      position: absolute;
+      right: 71%;
+      top: 68%;
     }
   </style>
 
@@ -96,36 +172,46 @@
           Qui ci va il main lorem ipsum dolor sit amet
           Qui ci va il main lorem ipsum dolor sit amet
         </p>
-        <div class="iconbutton-row">
-          <img class="icongrid" src="public/images/placeholder.svg" alt="indirizzo" />
-          <img class="icongrid" src="public/images/birthday-cake.svg" alt="data di nascita" />
-          <img class="icongrid" src="public/images/paper-plane.svg" alt="email" />
-          <img class="icongrid" src="public/images/telephone.svg" alt="numero" />
-          <p class="icongriddesc">Indirizzo</p>
-          <p class="icongriddesc">data di nascita</p>
-          <p class="icongriddesc">email</p>
-          <p class="icongriddesc">numero</p>
+        <div id="icone-dati-pers" class="iconbutton-row">
+          <div class="iconbutton">
+            <img src="public/images/placeholder.svg" alt="indirizzo" />
+            <p>Indirizzo</p>
+          </div>
+          <div class="iconbutton">
+            <img src="public/images/birthday-cake.svg" alt="data di nascita" />
+            <p>data di nascita</p>
+          </div>
+          <div class="iconbutton">
+            <img src="public/images/paper-plane.svg" alt="email" />
+            <p>email</p>
+          </div>
+          <div class="iconbutton">
+            <img src="public/images/telephone.svg" alt="numero" />
+            <p>numero</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!--DIV 2SUDIME-->
-    <!-- <div id="div2sudime" class="gridded">
+    <div id="formazione" class="central">
       <h2>
         FORMAZIONE
       </h2>
-      <img id="illustrazionesudime" src="public/images/illustrazione_su_di_me.jpg" alt="illustrazione" />
-      <div id="didascalie">
-        <div id="pformazione1">Indirizzo</div>
-        <div id="pformazione2">data di nascita</div>
-        <div id="pformazione3">email</div>
+      <div id="illustrazionesudime">
+        <div id="correttore-immagine">
+          <img src="public/images/illustrazione_su_di_me.jpg" alt="illustrazione" />
+        </div>
+        <div id="didascalie">
+          <div id="pformazione1" class="titoletti-didascalie">Indirizzo</div>
+          <div id="pformazione2" class="titoletti-didascalie">data di nascita</div>
+          <div id="pformazione3" class="titoletti-didascalie">email</div>
+
+          <div id="pformazione1a" class="testo-didascalie">bla</div>
+          <div id="pformazione2a" class="testo-didascalie">bla</div>
+          <div id="pformazione3a" class="testo-didascalie">bla</div>
+        </div>
       </div>
-      <div id="didascalie2">
-        <div id="pformazione1a">bla</div>
-        <div id="pformazione2a">bla</div>
-        <div id="pformazione3a">bla</div>
-      </div>
-    </div> -->
+    </div>
 
     <!--DIV 3SUDIME-->
     <!-- <div id="div3sudime" class="gridded">
