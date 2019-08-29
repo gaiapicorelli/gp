@@ -1,0 +1,28 @@
+/* SERVIZI */
+#container-servizi {
+  background-color: aqua;
+}
+
+#content-servizi > h2 {
+  grid-area: title;
+}
+
+#content-servizi > p {
+  grid-area: content;
+}
+
+#content-servizi > .iconbutton-row {
+  grid-area: icons;
+  margin: 2em 0;
+}
+
+/* IMMAGINI */
+
+#immagini-grid-img {
+  display: grid;
+  /* max-width: 25vw; */
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-areas:
+    "img img img img"
+    "img img img img";
+}
