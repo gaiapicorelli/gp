@@ -1,6 +1,12 @@
 /*
             COMMONS
         */
+        /* SE LE COSE VANNO STORTE GRID DI EMERGENZA 12 COLONNE */
+/* .gridded {
+  display: grid;
+  grid-template-columns: repeat(12, 8.333%);
+} */
+
 body {
   margin: 0;
   width: 100%;
@@ -122,6 +128,7 @@ button:hover span:after {
   height: 6rem;
 }
 
+/* questo è un brekpoint */
 @media screen and (max-width: 1440px) {
   #pulsanteContatti {
     display: none;
@@ -151,7 +158,6 @@ button:hover span:after {
 
 .tablinks {
   background-color: #f1f1f1;
-  /* float: left; */
   width: 100%;
   border-radius: initial;
   border: none;
@@ -170,7 +176,6 @@ button:hover span:after {
 }
 
 .tabcontent {
-  /* display: none; */
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
@@ -181,8 +186,8 @@ button:hover span:after {
 }
 
 /*
-            HEADER
-        */
+  HEADER
+*/
 header {
   border-bottom: 1px solid lightgrey;
 }
@@ -266,7 +271,4 @@ footer img {
   padding: 0.4rem 0;
 }
 
-/* .gridded {
-  display: grid;
-  grid-template-columns: repeat(12, 8.333%);
-} */
+

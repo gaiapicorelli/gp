@@ -15,108 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="public/stylesheets/global.css">
-  <style>
-    #content-descrizione {
-      display: grid;
-      grid-template-areas:
-        "img title"
-        "img content"
-        "img icons";
-    }
-
-    #content-descrizione>img {
-      width: 15rem;
-      grid-area: img;
-      align-self: center;
-    }
-
-    #content-descrizione>h2 {
-      grid-area: title;
-    }
-
-    #content-descrizione>p {
-      grid-area: content;
-    }
-
-    #content-descrizione>.iconbutton-row {
-      grid-area: icons;
-      margin: 2em 0;
-    }
-
-    #content-descrizione>h2,
-    #content-descrizione>p,
-    #content-descrizione>.iconbutton-row {
-      margin-left: 4vw;
-    }
-
-    #illustrazionesudime {
-      width: 50%;
-      margin: auto;
-      display: grid;
-    }
-
-    #illustrazionesudime>#correttore-immagine {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      padding-left: 30%;
-    }
-
-    #didascalie {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      /* Questo non fa nulla, serve per il successivo absolute */
-      position: relative;
-    }
-
-    .titoletti-didascalie {
-      font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-        sans-serif;
-      font-weight: bolder;
-      color: #f2b604;
-    }
-
-    .testo-didascalie {
-      font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-      font-weight: lighter;
-      color: #434143;
-    }
-
-    #pformazione1 {
-      position: absolute;
-      right: 49%;
-      top: 20%;
-    }
-
-    #pformazione1a {
-      position: absolute;
-      right: 49%;
-      top: 25%;
-    }
-
-    #pformazione2 {
-      position: absolute;
-      right: 60%;
-      top: 44%;
-    }
-
-    #pformazione2a {
-      position: absolute;
-      right: 60%;
-      top: 49%;
-    }
-
-    #pformazione3 {
-      position: absolute;
-      right: 71%;
-      top: 63%;
-    }
-
-    #pformazione3a {
-      position: absolute;
-      right: 71%;
-      top: 68%;
-    }
-  </style>
+  <link rel="stylesheet" href="su-di-me.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -148,129 +47,141 @@
 
   <main>
     <!--PAGINA SU DI ME-->
-    <div id="descrizione" class="central">
-      <h1>
-        SU DI ME
-      </h1>
-      <div id="content-descrizione">
-        <img src="public/images/bottone_contatti.svg" alt="Foto personale2" />
+    <div id="container-descrizione">
+      <div class="central">
+        <h1>
+          SU DI ME
+        </h1>
+        <div id="content-descrizione">
+          <img src="public/images/bottone_contatti.svg" alt="Foto personale2" />
+          <h2>
+            DESCRIZIONE
+          </h2>
+          <p>
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+          </p>
+          <div id="icone-dati-pers" class="iconbutton-row">
+            <div class="iconbutton">
+              <img src="public/images/placeholder.svg" alt="indirizzo" />
+              <p>Indirizzo</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/birthday-cake.svg" alt="data di nascita" />
+              <p>data di nascita</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/paper-plane.svg" alt="email" />
+              <p>email</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/telephone.svg" alt="numero" />
+              <p>numero</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container-formazione">
+      <div id="formazione" class="central">
         <h2>
-          DESCRIZIONE
+          FORMAZIONE
         </h2>
-        <p>
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-          Qui ci va il main lorem ipsum dolor sit amet
-        </p>
-        <div id="icone-dati-pers" class="iconbutton-row">
-          <div class="iconbutton">
-            <img src="public/images/placeholder.svg" alt="indirizzo" />
-            <p>Indirizzo</p>
+        <div id="illustrazionesudime">
+          <div id="correttore-immagine">
+            <img src="public/images/illustrazione_su_di_me.jpg" alt="illustrazione" />
           </div>
-          <div class="iconbutton">
-            <img src="public/images/birthday-cake.svg" alt="data di nascita" />
-            <p>data di nascita</p>
-          </div>
-          <div class="iconbutton">
-            <img src="public/images/paper-plane.svg" alt="email" />
-            <p>email</p>
-          </div>
-          <div class="iconbutton">
-            <img src="public/images/telephone.svg" alt="numero" />
-            <p>numero</p>
+          <div id="didascalie">
+            <div id="pformazione1" class="titoletti-didascalie">Indirizzo</div>
+            <div id="pformazione2" class="titoletti-didascalie">data di nascita</div>
+            <div id="pformazione3" class="titoletti-didascalie">email</div>
+
+            <div id="pformazione1a" class="testo-didascalie">bla</div>
+            <div id="pformazione2a" class="testo-didascalie">bla</div>
+            <div id="pformazione3a" class="testo-didascalie">bla</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="formazione" class="central">
-      <h2>
-        FORMAZIONE
-      </h2>
-      <div id="illustrazionesudime">
-        <div id="correttore-immagine">
-          <img src="public/images/illustrazione_su_di_me.jpg" alt="illustrazione" />
-        </div>
-        <div id="didascalie">
-          <div id="pformazione1" class="titoletti-didascalie">Indirizzo</div>
-          <div id="pformazione2" class="titoletti-didascalie">data di nascita</div>
-          <div id="pformazione3" class="titoletti-didascalie">email</div>
+    <div id="container-competenze-prof-pers">
+      <div id="tabcontent" class="central">
+        <button class="tablinks" id="tabhead-prof" onclick="toggleBody('competenze-professionali')">Competenze
+          Professionali</button>
+        <button class="tablinks" id="tabhead-pers" onclick="toggleBody('competenze-personali')">Competenze
+          Personali</button>
 
-          <div id="pformazione1a" class="testo-didascalie">bla</div>
-          <div id="pformazione2a" class="testo-didascalie">bla</div>
-          <div id="pformazione3a" class="testo-didascalie">bla</div>
+        <div id="competenze-professionali" class="tabcontent">
+          <h3>Competenze Professionali</h3>
+          <p>
+            • Tecniche del disegno e della pittura.
+            • Disegno tecnico e progettuale.
+            • Cromatologia.
+            • Incisione.
+            • Fotografia.
+            • Grafica editoriale e web design.
+            • Tecniche di scrittura e narrazione per immagini.
+            • Tecniche di comunicazione e degli archetipi dell’immaginario.
+            • Pedagogia.
+            • Storia dell’arte: visiva, applicata, del cinema, del video, della pubblicità.
+            • Antropologia culturale</p>
+        </div>
+
+        <div id="competenze-personali" class="tabcontent">
+          <h3>Competenze Personali</h3>
+          <p>
+            • Affidabile e costante.
+            • Resistente allo stress.
+            • Fortemente motivata.
+            • Metodica ed organizzata.
+            • Collaborativa.
+            • Empatica.
+          </p>
         </div>
       </div>
     </div>
 
-    <!--DIV 3SUDIME-->
-    <!-- <div id="div3sudime" class="gridded">
-      <button class="tablinks" id="tabhead-prof" onclick="toggleBody('CompetenzeProfessionali')">Competenze
-        Professionali</button>
-      <button class="tablinks" id="tabhead-pers" onclick="toggleBody('CompetenzePersonali')">Competenze
-        Personali</button>
-      <div id="CompetenzeProfessionali" class="tabcontent">
-        <h3>Competenze Professionali</h3>
-        <p>
-          • Tecniche del disegno e della pittura.
-          • Disegno tecnico e progettuale.
-          • Cromatologia.
-          • Incisione.
-          • Fotografia.
-          • Grafica editoriale e web design.
-          • Tecniche di scrittura e narrazione per immagini.
-          • Tecniche di comunicazione e degli archetipi dell’immaginario.
-          • Pedagogia.
-          • Storia dell’arte: visiva, applicata, del cinema, del video, della pubblicità.
-          • Antropologia culturale</p>
+    <div id="container-competenze-informatiche">
+      <div id="competenze-informatiche" class="central">
+        <h2>
+          COMPETENZE INFORMATICHE
+        </h2>
+        <div id="content-competenze-informatiche">
+          <div class="slider-container" id="linea-competenza1">
+            <div class="slider-line"></div>
+            <div class="slider-cursor" id="point"></div>
+          </div>
+          <div class="slider-container" id="linea-competenza2">
+            <div class="slider-line"></div>
+            <div class="slider-cursor" id="point2"></div>
+          </div>
+          <p class="central" id="competenze1">
+            Adobe Photoshop
+            Adobe Illustrator
+            Adobe In Design
+            Adobe XD
+          </p>
+          <p class="central" id="competenze2">
+            Html
+            Css
+            Javascript Jquery
+            Wordpress
+          </p>
+        </div>
       </div>
-
-      <div id="CompetenzePersonali" class="tabcontent">
-        <h3>Competenze Personali</h3>
-        <p>
-          • Affidabile e costante.
-          • Resistente allo stress.
-          • Fortemente motivata.
-          • Metodica ed organizzata.
-          • Collaborativa.
-          • Empatica.
-        </p>
-      </div>
-    </div> -->
-
-    <!--DIV 4SUDIME-->
-    <!-- <div id="div4sudime" class="gridded">
-      <h2>COMPETENZE INFORMATICHE</h2>
-      <div class="slider-container" id="linea-competenza1">
-        <div class="slider-line"></div>
-        <div class="slider-cursor" id="point"></div>
-      </div>
-      <div class="slider-container" id="linea-competenza2">
-        <div class="slider-line"></div>
-        <div class="slider-cursor" id="point2"></div>
-      </div>
-      <p id="competenze1">Adobe Photoshop
-        Adobe Illustrator
-        Adobe In Design
-        Adobe XD
-      </p>
-      <p id="competenze2">
-        Html
-        Css
-        JavascriptJquery
-        Wordpress
-      </p>
-    </div> -->
+    </div>
 
     <!--DIV 5SUDIME-->
     <!-- <div class="gridded" id="div5sudime">
@@ -322,5 +233,7 @@
   </footer>
 </body>
 <script src="public/js/scrollup.js"></script>
+<script src="public/js/tabellaCompetenze.js"></script>
+<script src="public/js/animazioneCompetenze.js"></script>
 
 </html>
