@@ -1,225 +1,229 @@
 /* DESCRIZIONE */
 #container-descrizione {
-      background-color: white;
-    }
+  background-color: white;
+}
 
-    #content-descrizione {
-      display: grid;
-      grid-template-areas:
-        "img title"
-        "img content"
-        "img icons";
-    }
+#content-descrizione {
+  display: grid;
+  grid-template-areas:
+    "img title"
+    "img content"
+    "img icons";
+}
 
-    #content-descrizione>img {
-      width: 15rem;
-      grid-area: img;
-      align-self: center;
-    }
+#content-descrizione > img {
+  width: 15rem;
+  grid-area: img;
+  align-self: center;
+}
 
-    #content-descrizione>h2 {
-      grid-area: title;
-    }
+#content-descrizione > h2 {
+  grid-area: title;
+}
 
-    #content-descrizione>p {
-      grid-area: content;
-    }
+#content-descrizione > p {
+  grid-area: content;
+}
 
-    #content-descrizione>.iconbutton-row {
-      grid-area: icons;
-      margin: 2em 0;
-    }
+#content-descrizione > .iconbutton-row {
+  grid-area: icons;
+  margin: 2em 0;
+}
 
-    #content-descrizione>h2,
-    #content-descrizione>p,
-    #content-descrizione>.iconbutton-row {
-      margin-left: 4vw;
-    }
+#content-descrizione > h2,
+#content-descrizione > p,
+#content-descrizione > .iconbutton-row {
+  margin-left: 4vw;
+}
 
-    /* FORMAZIONE */
-    #container-formazione {
-      background-color: #f2b604;
-    }
+/* FORMAZIONE */
+#container-formazione {
+  background-color: #f2b604;
+}
 
-    #illustrazionesudime {
-      width: 50%;
-      margin: auto;
-      display: grid;
-    }
+#illustrazionesudime {
+  width: 50%;
+  margin: auto;
+  display: grid;
+}
 
-    #illustrazionesudime>#correttore-immagine {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      padding-left: 30%;
-    }
+#illustrazionesudime > #correttore-immagine {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-left: 30%;
+}
 
-    #didascalie {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      /* Questo non fa nulla, serve per il successivo absolute */
-      position: relative;
-    }
+#didascalie {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* Questo non fa nulla, serve per il successivo absolute */
+  position: relative;
+}
 
-    .titoletti-didascalie {
-      font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-        sans-serif;
-      font-weight: bolder;
-      color: #f2b604;
-    }
+.titoletti-didascalie {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: bolder;
+  color: #f2b604;
+}
 
-    .testo-didascalie {
-      font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-      font-weight: lighter;
-      color: #434143;
-    }
+.testo-didascalie {
+  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #434143;
+}
 
-    #pformazione1 {
-      position: absolute;
-      right: 49%;
-      top: 20%;
-    }
+#pformazione1 {
+  position: absolute;
+  right: 49%;
+  top: 20%;
+}
 
-    #pformazione1a {
-      position: absolute;
-      right: 49%;
-      top: 25%;
-    }
+#pformazione1a {
+  position: absolute;
+  right: 49%;
+  top: 25%;
+}
 
-    #pformazione2 {
-      position: absolute;
-      right: 60%;
-      top: 44%;
-    }
+#pformazione2 {
+  position: absolute;
+  right: 60%;
+  top: 44%;
+}
 
-    #pformazione2a {
-      position: absolute;
-      right: 60%;
-      top: 49%;
-    }
+#pformazione2a {
+  position: absolute;
+  right: 60%;
+  top: 49%;
+}
 
-    #pformazione3 {
-      position: absolute;
-      right: 71%;
-      top: 63%;
-    }
+#pformazione3 {
+  position: absolute;
+  right: 71%;
+  top: 63%;
+}
 
-    #pformazione3a {
-      position: absolute;
-      right: 71%;
-      top: 68%;
-    }
+#pformazione3a {
+  position: absolute;
+  right: 71%;
+  top: 68%;
+}
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
-    #container-competenze-prof-pers {
-      background-color: aquamarine;
-    }
+#container-competenze-prof-pers {
+  background-color: aquamarine;
+}
 
-    #tabcontent {
-      display: grid;
-      grid-template-areas:
-        "profh persh"
-        "profb persb";
-      grid-auto-columns: 50%;
-    }
+#tabcontent {
+  display: grid;
+  grid-template-areas:
+    "profh persh"
+    "profb persb";
+  grid-auto-columns: 50%;
+}
 
-    #tabhead-prof {
-      grid-area: profh;
-    }
+#tabhead-prof {
+  grid-area: profh;
+}
 
-    #tabhead-pers {
-      grid-area: persh;
-    }
+#tabhead-pers {
+  grid-area: persh;
+}
 
-    #competenze-professionali {
-      grid-area: profb;
-    }
+#competenze-professionali {
+  grid-area: profb;
+}
 
-    #competenze-personali {
-      grid-area: persb;
-    }
+#competenze-personali {
+  grid-area: persb;
+}
 
-    /* COMPETENZE INFORMATICHE */
-    #container-competenze-informatiche {
-      background-color: antiquewhite;
-    }
+/* COMPETENZE INFORMATICHE */
+#container-competenze-informatiche {
+  background-color: antiquewhite;
+}
 
-    #content-competenze-informatiche {
-      display: grid;
-      grid-template-areas:
-        "linea-competenza1 linea-competenza2"
-        "competenze1 competenze2";
-      grid-auto-columns: 50%;
-    }
+#h2competenzeinformatiche {
+  padding-bottom: 6rem;;
+}
 
-    #linea-competenza1 {
-      grid-area: "linea-competenza1"
-    }
+#content-competenze-informatiche {
+  display: grid;
+  grid-template-areas:
+    "linea-competenza1 linea-competenza2"
+    "competenze1 competenze2";
+  grid-auto-columns: 50%;
+}
 
-    #linea-competenza2 {
-      grid-area: "linea-competenza2"
-    }
+#linea-competenza1 {
+  grid-area: "linea-competenza1";
+}
 
-    .slider-container {
-      position: relative;
-      height: 3rem;
-      margin: 1rem;
-    }
+#linea-competenza2 {
+  grid-area: "linea-competenza2";
+}
 
-    .slider-line {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 50%;
-      border-bottom: 1px solid black;
-    }
+.slider-container {
+  position: relative;
+  height: 3rem;
+  margin: 1rem;
+}
 
-    .slider-cursor {
-      border: 1px solid black;
-      border-radius: 50%;
-      height: 1em;
-      width: 1em;
-      position: absolute;
-      top: 50%;
-      margin-top: -0.6em;
-      margin-left: -0.6em;
-      background-color: blue;
-    }
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  border-bottom: 1px solid black;
+}
 
-    #linea-competenza1>.slider-cursor {
-      left: 80%;
-    }
+.slider-cursor {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6em;
+  margin-left: -0.6em;
+  background-color: blue;
+}
 
-    #linea-competenza2>.slider-cursor {
-      left: 30%;
-    }
+#linea-competenza1 > .slider-cursor {
+  left: 80%;
+}
 
-    .animate {
-      animation: animate 0.8s ease forwards;
-    }
+#linea-competenza2 > .slider-cursor {
+  left: 30%;
+}
 
-    @keyframes animate {
-      from {
-        left: 0%;
-      }
+.animate {
+  animation: animate 0.8s ease forwards;
+}
 
-      to {
-        left: 80;
-      }
-    }
+@keyframes animate {
+  from {
+    left: 0%;
+  }
 
-    /* ALTRI INTERESSI */
+  to {
+    left: 80;
+  }
+}
 
-    #container-altriinteressi{
-      background-color:coral;
-    }
-    
-    /* PULSANTIERA SEZIONI */
+/* ALTRI INTERESSI */
 
-    #container-pulsantierasezioni{
-      background-color:darkgray;
-    }
-    
-    
-   
-  
+#container-altriinteressi {
+  background-color: coral;
+}
+
+#h2altriinteressi {
+  padding-bottom: 6rem;;
+}
+
+/* PULSANTIERA SEZIONI */
+
+#container-pulsantierasezioni {
+  background-color: darkgray;
+}
