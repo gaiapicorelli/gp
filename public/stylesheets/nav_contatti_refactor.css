@@ -1,0 +1,39 @@
+#mainblock {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 4rem 0;
+}
+
+#mainblock > img, #content {
+    grid-row: 1/2;
+}
+#mainblock > img {
+    width: 100%;
+}
+
+#content {
+    margin: auto 0 auto 6rem;
+}
+
+.iconbutton-row {
+    margin: 2rem auto;
+}
+
+#social-main {
+    display: flex;
+    justify-content: center;
+}
+
+#social-main a {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+#social-main,
+#social-main img {
+    height: 4rem;
+}
+
+#sezioni {
+    padding: 2rem;
+}
