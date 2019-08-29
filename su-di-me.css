@@ -1,7 +1,6 @@
 /* DESCRIZIONE */
 #container-descrizione {
       background-color: white;
-      padding:3rem;
     }
 
     #content-descrizione {
@@ -37,11 +36,9 @@
       margin-left: 4vw;
     }
 
-
     /* FORMAZIONE */
     #container-formazione {
       background-color: #f2b604;
-      padding:4rem;
     }
 
     #illustrazionesudime {
@@ -141,12 +138,9 @@
       grid-area: persb;
     }
 
+    /* COMPETENZE INFORMATICHE */
     #container-competenze-informatiche {
       background-color: antiquewhite;
-    }
-
-    #competenze-informatiche {
-      padding: 4rem 0;
     }
 
     #content-competenze-informatiche {

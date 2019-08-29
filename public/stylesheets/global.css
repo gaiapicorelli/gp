@@ -12,6 +12,11 @@ body {
   width: 100%;
 }
 
+.padding-conteiner {
+  padding-top:4rem;
+  padding-bottom: 6rem;
+}
+
 h1,
 h2,
 h3 {
