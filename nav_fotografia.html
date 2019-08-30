@@ -7,10 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>GP Graphic Designer</title>
 
-  <link rel="stylesheet" href="public/stylesheets/main.css" />
-  <link rel="stylesheet" href="public/stylesheets/header.css" />
-  <link rel="stylesheet" href="public/stylesheets/footer.css" />
-  <link rel="stylesheet" href="public/stylesheets/nav_grafica.css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
@@ -19,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="public/stylesheets/global.css">
   <link rel="stylesheet" href="public/stylesheets/nav_grafica_refactor.css">
 
@@ -26,124 +23,140 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="anav">HOME</a></li>
-        <li><a href="nav_su_di_me.html" class="anav">SU DI ME</a></li>
-        <li><a href="nav_grafica_refactor.html" class="anav">GRAFICA</a></li>
-        <li><a href="nav_illustrazione.html" class="anav">ILLUSTRAZIONE</a></li>
-        <li><a href="nav_fumetto.html" class="anav">FUMETTO</a></li>
-        <li><a href="nav_fotografia.html" class="anav">FOTOGRAFIA</a></li>
-        <li><a href="nav_contatti_refactor.html" class="anav">CONTATTI</a></li>
-      </ul>
-    </nav>
-    <img id="logoheader" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
-    <div id="social">
-      <a href="https://www.instagram.com/gaiapicorelli/?hl=it"><img src="public/images/instagram_logo.svg"
-          alt="Link Instagram" /></a>
-      <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg"
-          alt="Link LinkedIn" /></a>
+    <div id="content-header" class="central">
+      <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="nav_su_di_me.html">SU DI ME</a>
+        <a href="nav_grafica_refactor.html">GRAFICA</a>
+        <a href="nav_illustrazione.html">ILLUSTRAZIONE</a>
+        <a href="nav_fumetto.html">FUMETTO</a>
+        <a href="nav_fotografia.html">FOTOGRAFIA</a>
+        <a href="nav_contatti_refactor.html">CONTATTI</a>
+      </nav>
+      <div id="social-header">
+        <a href="https://www.instagram.com/gaiapicorelli/?hl=it">
+          <img src="public/images/instagram_logo.svg" alt="Link Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+          <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
+        </a>
+      </div>
     </div>
   </header>
 
-
   <main>
-    <!--PAGINA FOTOGRAFIA CSS FA RIFERIMENTO A GRAFICA REFACTOR-->
-    <!--DIV 1FOTOGRAFIA-->
-    <div id="div1fotografia" class="gridded">
-      <h1>
-        FOTOGRAFIA
-      </h1>
-      <h2>
-        SERVIZI
-      </h2>
-      <div id="loghigrafica">
-        <img class="icongrid" src="public/images/placeholder.svg" alt="indirizzo" />
-        <img class="icongrid" src="public/images/birthday-cake.svg" alt="data di nascita" />
-        <img class="icongrid" src="public/images/paper-plane.svg" alt="email" />
-        <img class="icongrid" src="public/images/telephone.svg" alt="numero" />
-        <p class="icongriddesc">Indirizzo</p>
-        <p class="icongriddesc">data di nascita</p>
-        <p class="icongriddesc">email</p>
-        <p class="icongriddesc">numero</p>
+    <!-- SERVIZI -->
+    <div id="container-servizi" class="padding-conteiner">
+      <div class="central">
+        <h1>
+          GRAFICA
+        </h1>
+        <div id="content-servizi">
+          <h2>
+            SERVIZI
+          </h2>
+          <p>
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+            Qui ci va il main lorem ipsum dolor sit amet
+          </p>
+          <div id="icone-dati-pers" class="iconbutton-row">
+            <div class="iconbutton">
+              <img src="public/images/placeholder.svg" alt="indirizzo" />
+              <p>Indirizzo</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/birthday-cake.svg" alt="data di nascita" />
+              <p>data di nascita</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/paper-plane.svg" alt="email" />
+              <p>email</p>
+            </div>
+            <div class="iconbutton">
+              <img src="public/images/telephone.svg" alt="numero" />
+              <p>numero</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p id="pgrafica">
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-        Qui ci va il main lorem ipsum dolor sit amet
-      </p>
     </div>
 
-    <!--DIV 2FOTOGRAFIA-->
-    <div id="div2grafica" class="div2graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica1" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div2grafica2" class="div2graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica2" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div2grafica3" class="div2graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica3" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div2grafica4" class="div2graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica4" />
-      <div class="overlay">My Name is John</div>
+    <!-- IMMAGINI -->
+    <div id="container-immagini">
+      <div id="immagini-grid-img">
+        <div class="container-immaginiclasse">
+          <img id="1img" class="imggrafica" src="public/images/2.jpg" alt="portfolio1" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="2img" class="imggrafica" src="public/images/2.jpg" alt="portfolio2" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="3img" class="imggrafica" src="public/images/2.jpg" alt="portfolio3" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="4img" class="imggrafica" src="public/images/2.jpg" alt="portfolio4" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="5img" class="imggrafica" src="public/images/2.jpg" alt="portfolio5" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="6img" class="imggrafica" src="public/images/2.jpg" alt="portfolio6" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="7img" class="imggrafica" src="public/images/2.jpg" alt="portfolio7" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+        <div class="container-immaginiclasse">
+          <img id="8img" class="imggrafica" src="public/images/2.jpg" alt="portfolio8" />
+          <a href="pagina_prodotto.html" class="overlay">My Name is John</a>
+        </div>
+      </div>
     </div>
 
-    <!--DIV 3FOTOGRAFIA-->
-    <div id="div3grafica" class="div3graficacontainer">
-      <img src="public/images/2.jpg" alt="pgrafica5" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div3grafica2" class="div3graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica6" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div3grafica3" class="div3graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica7" />
-      <div class="overlay">My Name is John</div>
-    </div>
-    <div id="div3grafica4" class="div3graficacontainer">
-      <img src="public/images/2.jpg" alt="grafica8" />
-      <div class="overlay">My Name is John</div>
-    </div>
-
-    <!--DIV 4FOTOGRAFIA-->
-    <div id="div4grafica" class="gridded">
-      <div id="navicons">
-        <a href="index.html" class="icongrid flipped" title="Torna alla home"><img src="public/images/arrow_sezioni.svg"
-            alt="sezionehome" /></a>
-        <a href="nav_illustrazione.html" class="icongrid flipped" title="Visita illustrazione"><img
-            src="public/images/arrow_sezioni.svg" alt="sezioneillustrazione" /></a>
-        <a href="nav_fumetto.html " class="icongrid" title="Visita fumetto"><img src="public/images/arrow_sezioni.svg"
-            alt="sezionefumetto" /></a>
-        <a href="nav_grafica.html" class="icongrid" title="Visita Grafica"><img
-            src="public/images/arrow_sezioni.svg" alt="sezioneGrafica" /></a>
-        <p class="icongriddesc">Home</p>
-        <p class="icongriddesc">Illustrazione</p>
-        <p class="icongriddesc">Fumetto</p>
-        <p class="icongriddesc">Fotografia</p>
+    <!-- PULSANTIERA SEZIONI -->
+    <div id="container-pulsantierasezioni" class="padding-conteiner">
+      <div id="content-pulsantierasezioni" class="central">
+        <div id="sezioni" class="iconbutton-row">
+          <a class="iconbutton" href="nav_grafica_refactor.html" title="Visita grafica">
+            <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione grafica" />
+            <p>Grafica</p>
+          </a>
+          <a class="iconbutton" href="nav_illustrazione.html" title="Visita illustrazione">
+            <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione illustrazione" />
+            <p>Illustrazione</p>
+          </a>
+          <a class="iconbutton" href="nav_fumetto.html " title="Visita fumetto">
+            <img src="public/images/arrow_sezioni.svg" alt="sezione fumetto" />
+            <p>Fumetto</p>
+          </a>
+          <a class="iconbutton" href="nav_su_di_me.html" title="Visita fotografia">
+            <img src="public/images/arrow_sezioni.svg" alt="sezione fotografia" />
+            <p>Su di me</p>
+          </a>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer>
-    <div id="footer-txt">
-      <p>Gaia Picorelli</p>
-      <p>Web Graphic Designer</p>
-      <p>gaiapicorelli@gmail.com</p>
-    </div>
-    <img id="logofooter" src="public/images/logo_senza_scritta.svg" alt="logo" />
-  </footer>
+<!-- SIDE BUTTON E PULSANTE CONTATTI -->
   <div id="sidebutton">
     <div id="pulsanteContatti">
       <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg"
@@ -151,9 +164,20 @@
     </div>
     <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
   </div>
-  <script src="public/js/scrollup.js"></script>
-  <script src="public/js/tabellaCompetenze.js"></script>
-  <script src="public/js/animazioneCompetenze.js"></script>
+
+
+  <footer>
+    <div id="content-footer" class="central">
+      <div class="empty"></div>
+      <div id="footer-txt">
+        <p>Gaia Picorelli</p>
+        <p>Web Graphic Designer</p>
+        <p>gaiapicorelli@gmail.com</p>
+      </div>
+      <img src="public/images/logo_senza_scritta.svg" alt="logo" />
+    </div>
+  </footer>
 </body>
+<script src="public/js/scrollup.js"></script>
 
 </html>
