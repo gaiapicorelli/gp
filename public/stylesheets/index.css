@@ -17,7 +17,7 @@
   DESCRIZIONE
 */
 #descrizione {
-  padding: 4rem 0;
+  padding: 4rem 1em;
 }
 
 #sottodescrizione {
@@ -54,7 +54,7 @@
   grid-column-gap: 2%;
   grid-template-columns: 32% 32% 32%;
   grid-row-gap: 2.5%;
-  margin: 4rem 0;
+  margin: 4rem 1rem;
 }
 
 #portfolio-grid-img img {
@@ -65,20 +65,18 @@
   AGGIORNAMENTI
 */
 #aggiornamenti {
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   margin: auto;
   max-width: 65em;
   display: grid;
-  grid-template-columns: max-content 60% auto;
+  grid-template-columns: min-content 60% auto;
   grid-template-areas:
     "logo title   img"
-    ".    content img"
-    ".    .       img";
+    "content content img"
 }
 
 #aggiornamenti h2 {
   grid-area: title;
-  margin-left: 2em;
 }
 
 #logo-aggiornamenti {

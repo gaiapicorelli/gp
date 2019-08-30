@@ -1,7 +1,7 @@
 /*
             COMMONS
         */
-        /* SE LE COSE VANNO STORTE GRID DI EMERGENZA 12 COLONNE */
+/* SE LE COSE VANNO STORTE GRID DI EMERGENZA 12 COLONNE */
 /* .gridded {
   display: grid;
   grid-template-columns: repeat(12, 8.333%);
@@ -10,10 +10,14 @@
 body {
   margin: 0;
   width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+
 }
 
 .padding-conteiner {
-  padding-top:4rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
 }
 
@@ -131,6 +135,8 @@ button:hover span:after {
   margin-right: -3rem;
   width: 6rem;
   height: 6rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* questo è un brekpoint */
@@ -159,6 +165,7 @@ button:hover span:after {
               diventa centrato */
   left: 50%;
   margin-left: -1.5rem;
+  background-color: white;
 }
 
 .tablinks {
@@ -205,11 +212,18 @@ header {
 .central {
   max-width: 1024px;
   margin: auto;
+  padding: 1rem;
+}
+
+#content-header {
+  /* Serve per eliminare il padding di central, non spostare */
+  padding: 0;
 }
 
 #logo-header {
   height: 6.6rem;
   padding: 0.4rem 0;
+  margin-left: 1rem;
 }
 
 nav {
@@ -245,6 +259,10 @@ nav a:hover {
   height: 2rem;
   margin: auto 0;
 }
+
+#social-header {
+  margin-right: 1rem;
+}
 /*
             FOOTER
          */
@@ -275,5 +293,3 @@ footer img {
   width: 6.6rem;
   padding: 0.4rem 0;
 }
-
-
