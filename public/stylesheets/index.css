@@ -105,9 +105,8 @@
   }
 
   #aggiornamenti {
-    padding: 1rem;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-areas:
       "logo"
       "h2"
@@ -136,9 +135,4 @@
     grid-area: p;
     justify-self: center;
   }
-
- button {
-  
- }
-
 }

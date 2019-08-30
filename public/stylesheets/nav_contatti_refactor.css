@@ -37,3 +37,18 @@
 #sezioni {
     padding: 2rem;
 }
+
+/* questo è un brekpoint */
+@media screen and (max-width: 870px) {
+    #pulsanteContatti {
+      display: none;
+    }
+    #sidebutton {
+      display: none;
+    }
+
+    #content {
+        padding:1em;
+    }
+  }
+  
