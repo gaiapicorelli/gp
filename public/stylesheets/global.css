@@ -204,30 +204,33 @@ header {
 }
 
 #content-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas: "logo nav social";
+  grid-template-columns: 7rem auto 7rem;
+  grid-template-rows: 7rem;
 }
 
 .central {
   max-width: 1024px;
   margin: auto;
-  padding: 1rem;
 }
 
 #content-header {
-  /* Serve per eliminare il padding di central, non spostare */
-  padding: 0;
 }
 
 #logo-header {
-  height: 6.6rem;
-  padding: 0.4rem 0;
+  /* fa coppia con margin-left */
+  max-width: 6rem;
   margin-left: 1rem;
+  /* fa coppia con il padding sotto */
+  max-height: 6.2rem;
+  padding: 0.4rem 0;
 }
 
 nav {
-  height: 100%;
-  margin: auto 0;
+  grid-area: nav;
+  align-self: center;
+  justify-self: center;
 }
 
 nav a {
@@ -256,10 +259,12 @@ nav a:hover {
 #social-header,
 #social-header img {
   height: 2rem;
-  margin: auto 0;
 }
 
 #social-header {
+  grid-area: social;
+  align-self: center;
+  justify-self: end;
   margin-right: 1rem;
 }
 /*
