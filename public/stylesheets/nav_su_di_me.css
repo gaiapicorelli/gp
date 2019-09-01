@@ -172,4 +172,44 @@
     padding-right: 1rem;
   }
   }
+
+  /*brekpoint 654px */
+@media screen and (max-width: 645px) {
+  #content-descrizione {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "img img"
+      "text text"
+      "icon icon";
+  }
+  
+  #content-descrizione > img {
+    width: 50%;
+    grid-area: img;
+    justify-self: center;
+  }
+  
+  #content-descrizione > h2 {
+    grid-area: title;
+  }
+  
+  #content-descrizione > p {
+    grid-area: text;
+  }
+  
+  #content-descrizione > .iconbutton-row {
+    grid-area: icon;
+    margin: 2em 0;
+  }
+  
+  #content-descrizione > h2,
+  #content-descrizione > p,
+  #content-descrizione > .iconbutton-row {
+    margin-left: 4vw;
+  }
+  
+  }
+  }
+ 
  
