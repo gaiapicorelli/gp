@@ -25,7 +25,7 @@
     <header>
         <div id="content-header" class="central">
             <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
-            <nav>
+            <nav id="nav">
                 <a href="index.html">HOME</a>
                 <a href="nav_su_di_me.html">SU DI ME</a>
                 <a href="nav_grafica_refactor.html">GRAFICA</a>
@@ -42,10 +42,12 @@
                     <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
                 </a>
             </div>
-            <img id="hamburger" src="public/images/menu-black-circular-button.svg"/>
+            <img id="hamburger" src="public/images/menu-black-circular-button.svg" onclick="javascript:toggleHeader()" />
         </div>
     </header>
+    <script src="public/js/animazioneHeader.js"></script>
 
+    <div id="drawer"></div>
 
     <!-- GALLERIA -->
     <main>
@@ -155,15 +157,15 @@
     </main>
 
     <!-- SIDEBUTTON E PULSANTE CONTATTI -->
-    
-        <div id="sidebutton">
-            <div id="pulsanteContatti">
-                <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg"
-                        alt="contatti" /></a>
-            </div>
-            <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
+
+    <div id="sidebutton">
+        <div id="pulsanteContatti">
+            <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti.svg"
+                    alt="contatti" /></a>
         </div>
-  
+        <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
+    </div>
+
 
 
     <footer>
