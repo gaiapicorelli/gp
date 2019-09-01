@@ -31,9 +31,8 @@
 #secondary {
   display: grid;
   width: 100%;
-  grid-template-areas:
-    "img . text";
-  grid-template-columns: 40% 20% 40%;
+  grid-template-areas: "img text";
+  grid-template-columns: 50% 50%;
 }
 
 #secondary > img {
@@ -44,6 +43,7 @@
 #secondary > p {
   grid-area: text;
   margin: auto 0;
+  padding-left: 5rem;
 }
 
 #container-tertiary {
@@ -54,20 +54,14 @@
 #tertiary {
   display: grid;
   width: 100%;
-  grid-template-areas:
-    "img3 . img4";
-  grid-template-columns: 40% 20% 40%;
+  grid-template-columns: 50% 50%;
 }
 
-#tertiary > #img-prodotto3 {
-  width: 100%;
- grid-area: img3;
+#tertiary > img {
+  width: 95%;
+  justify-self: center;
+  align-self: center;
 }
-
-#tertiary > #mg-prodotto4 {
-    width: 100%;
-   grid-area: img4;
-  }
 
 #sezioni {
   padding: 2rem;
