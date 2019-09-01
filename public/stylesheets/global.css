@@ -207,15 +207,12 @@ header {
   display: grid;
   grid-template-areas: "logo nav social";
   grid-template-columns: 7rem auto 7rem;
-  grid-template-rows: 7rem;
+  height: 7rem;
 }
 
 .central {
   max-width: 1024px;
   margin: auto;
-}
-
-#content-header {
 }
 
 #logo-header {
@@ -281,17 +278,20 @@ nav a:hover {
 @media screen and (max-width: 950px) {
   #content-header {
     grid-template-areas: "social logo hamburger";
+    height: 5rem;
   }
   #logo-header {
     justify-self: center;
+    height: 4.2rem;
+    margin-left: 0;
   }
   nav {
     display: none;
   }
   #hamburger {
     display: initial;
-    
   }
+ 
 }
 /*
             FOOTER
