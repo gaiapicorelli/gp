@@ -274,7 +274,7 @@ nav a:hover {
 }
 
 /* Header per dispositivi mobile */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 948px) {
   #content-header {
     grid-template-areas: "social logo hamburger" "nav nav nav";
     grid-template-rows: 5rem auto;
@@ -346,3 +346,13 @@ footer img {
   width: 6.6rem;
   padding: 0.4rem 0;
 }
+
+/* footer per dispositivi mobile */
+@media screen and (max-width: 948px) {
+  #logo-footer {
+    width: 4.2rem;
+    margin: 1rem;
+  }
+  }
+ 
+  
