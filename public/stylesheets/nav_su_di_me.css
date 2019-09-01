@@ -165,4 +165,11 @@
 }
 
 
-
+/*brekpoint 1024px */
+@media screen and (max-width: 1024px) {
+  #container-descrizione, #container-formazione,#container-competenze-prof-pers, #container-competenze-informatiche, #container-altriinteressi{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  }
+ 
