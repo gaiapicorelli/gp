@@ -207,7 +207,12 @@
     margin-top: 1rem;
   }
 }
+
+
+  /*brekpoint 375px */
+  @media screen and (max-width: 375px) {
   
+  }
   
  
  

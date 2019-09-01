@@ -138,16 +138,6 @@ button:hover span:after {
   border-radius: 50%;
 }
 
-/* questo è un brekpoint */
-@media screen and (max-width: 1440px) {
-  #pulsanteContatti {
-    display: none;
-  }
-  #sidebutton {
-    display: none;
-  }
-}
-
 #btornasu {
   display: none;
   background-color: transparent;
@@ -273,7 +263,42 @@ nav a:hover {
   margin-right: 1rem;
 }
 
-/* Header per dispositivi mobile */
+/*
+            FOOTER
+         */
+footer {
+  background-color: #dee1f2;
+}
+
+#content-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-txt {
+  margin: auto;
+  height: 100%;
+}
+
+footer p {
+  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
+    sans-serif;
+  font-weight: lighter;
+  color: #032ba5;
+  text-align: center;
+}
+
+footer .empty,
+footer img {
+  width: 6.6rem;
+  padding: 0.4rem 0;
+}
+
+
+
+/* BREKPOINT */
+
+/* Header per dispositivi mobile 948px in giù */
 @media screen and (max-width: 948px) {
   #content-header {
     grid-template-areas: "social logo hamburger" "nav nav nav";
@@ -315,44 +340,31 @@ nav a:hover {
   to {
     height: 100%;
   }
-}
-/*
-            FOOTER
-         */
-footer {
-  background-color: #dee1f2;
+} 
+
+/* brekpoint 1440px */
+@media screen and (max-width: 1440px) {
+  #pulsanteContatti {
+    display: none;
+  }
+  #sidebutton {
+    display: none;
+  }
 }
 
-#content-footer {
-  display: flex;
-  justify-content: space-between;
+ 
+  /* brekpoint 425px */
+@media screen and (max-width: 425px) {
+  .iconbutton-row img{
+    width: 2.5rem;
+
+  }
 }
 
-#footer-txt {
-  margin: auto;
-  height: 100%;
-}
-
-footer p {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
-  font-weight: lighter;
-  color: #032ba5;
-  text-align: center;
-}
-
-footer .empty,
-footer img {
-  width: 6.6rem;
-  padding: 0.4rem 0;
-}
-
-/* footer per dispositivi mobile */
+/* footer per dispositivi mobile 948px in giù  */
 @media screen and (max-width: 948px) {
   #logo-footer {
     width: 4.2rem;
     margin: 1rem;
   }
   }
- 
-  
