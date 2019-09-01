@@ -26,25 +26,32 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="anav">HOME</a></li>
-        <li><a href="nav_su_di_me.html" class="anav">SU DI ME</a></li>
-        <li><a href="nav_grafica_refactor.html" class="anav">GRAFICA</a></li>
-        <li><a href="nav_illustrazione.html" class="anav">ILLUSTRAZIONE</a></li>
-        <li><a href="nav_fumetto.html" class="anav">FUMETTO</a></li>
-        <li><a href="nav_fotografia.html" class="anav">FOTOGRAFIA</a></li>
-        <li><a href="nav_contatti_refactor.html" class="anav">CONTATTI</a></li>
-      </ul>
-    </nav>
-    <img id="logoheader" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
-    <div id="social">
-      <a href="https://www.instagram.com/gaiapicorelli/?hl=it"><img src="public/images/instagram_logo.svg"
-          alt="Link Instagram" /></a>
-      <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"><img src="public/images/logo_linkedin.svg"
-          alt="Link LinkedIn" /></a>
+    <div id="content-header" class="central">
+        <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
+        <nav id="nav">
+            <a href="index.html">HOME</a>
+            <a href="nav_su_di_me.html">SU DI ME</a>
+            <a href="nav_grafica_refactor.html">GRAFICA</a>
+            <a href="nav_illustrazione.html">ILLUSTRAZIONE</a>
+            <a href="nav_fumetto.html">FUMETTO</a>
+            <a href="nav_fotografia.html">FOTOGRAFIA</a>
+            <a href="nav_contatti_refactor.html">CONTATTI</a>
+        </nav>
+        <div id="social-header">
+            <a href="https://www.instagram.com/gaiapicorelli/?hl=it">
+                <img src="public/images/instagram_logo.svg" alt="Link Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+                <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
+            </a>
+        </div>
+        <img id="hamburger" src="public/images/menu-black-circular-button.svg" onclick="javascript:toggleHeader()" />
     </div>
-  </header>
+</header>
+<script src="public/js/animazioneHeader.js"></script>
+
+<div id="drawer"></div>
+
 
 
     <!-- PAGINA PRODOTTO 1 GRAFICA  CSS DI RIFERMENTO UNICO PER TUTTE LE PAGINE PRODOTTO-->

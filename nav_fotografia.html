@@ -23,27 +23,32 @@
 
 <body>
   <header>
-    <div id="content-header" class="central">
-      <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="nav_su_di_me.html">SU DI ME</a>
-        <a href="nav_grafica_refactor.html">GRAFICA</a>
-        <a href="nav_illustrazione.html">ILLUSTRAZIONE</a>
-        <a href="nav_fumetto.html">FUMETTO</a>
-        <a href="nav_fotografia.html">FOTOGRAFIA</a>
-        <a href="nav_contatti_refactor.html">CONTATTI</a>
-      </nav>
-      <div id="social-header">
-        <a href="https://www.instagram.com/gaiapicorelli/?hl=it">
-          <img src="public/images/instagram_logo.svg" alt="Link Instagram" />
-        </a>
-        <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
-          <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
-        </a>
+      <div id="content-header" class="central">
+          <img id="logo-header" src="public/images/logo_senza_scritta1.svg" alt="Logo" />
+          <nav id="nav">
+              <a href="index.html">HOME</a>
+              <a href="nav_su_di_me.html">SU DI ME</a>
+              <a href="nav_grafica_refactor.html">GRAFICA</a>
+              <a href="nav_illustrazione.html">ILLUSTRAZIONE</a>
+              <a href="nav_fumetto.html">FUMETTO</a>
+              <a href="nav_fotografia.html">FOTOGRAFIA</a>
+              <a href="nav_contatti_refactor.html">CONTATTI</a>
+          </nav>
+          <div id="social-header">
+              <a href="https://www.instagram.com/gaiapicorelli/?hl=it">
+                  <img src="public/images/instagram_logo.svg" alt="Link Instagram" />
+              </a>
+              <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+                  <img src="public/images/logo_linkedin.svg" alt="Link LinkedIn" />
+              </a>
+          </div>
+          <img id="hamburger" src="public/images/menu-black-circular-button.svg" onclick="javascript:toggleHeader()" />
       </div>
-    </div>
   </header>
+  <script src="public/js/animazioneHeader.js"></script>
+
+  <div id="drawer"></div>
+
 
   <main>
     <!-- SERVIZI -->
@@ -174,10 +179,11 @@
         <p>Web Graphic Designer</p>
         <p>gaiapicorelli@gmail.com</p>
       </div>
-      <img src="public/images/logo_senza_scritta.svg" alt="logo" />
+      <img id="logo-footer" src="public/images/logo_senza_scritta.svg" alt="logo" />
     </div>
   </footer>
-</body>
+</body> 
+
 <script src="public/js/scrollup.js"></script>
 
 </html>
