@@ -1,3 +1,4 @@
+/* BLOCCO IMAGGINI 1 */
 #container-mainblock {
   background-color: aliceblue;
   padding: 4rem;
@@ -23,6 +24,8 @@
   width: 100%;
 }
 
+
+/* BLOCCO IMMAGINI 2 */
 #container-secondary {
   background-color: gainsboro;
   padding: 4em;
@@ -46,6 +49,7 @@
   padding-left: 5rem;
 }
 
+/* BLOCCO IMMAGINI 3 */
 #container-tertiary {
   background-color: aliceblue;
   padding: 4em;
@@ -66,3 +70,47 @@
 #sezioni {
   padding: 2rem;
 }
+
+
+/* per dispositivi mobile laptop */
+@media screen and (max-width: 1140px) {
+    #mainblock-content {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "title" "image" "text";
+        grid-template-columns: 100%;
+      }
+      
+      #mainblock-content > h1 {
+        grid-area: title;
+      }
+      #mainblock-content > p {
+        grid-area: text;
+       padding:2rem;
+      }
+      
+      #mainblock-content > img {
+        grid-area: image;
+        width: 100%;
+      }
+    }
+
+    /* per dispositivi mobile tablet */
+@media screen and (max-width: 678px) {
+    #secondary {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "img" "text";
+        grid-template-columns: 100%;
+      }
+      
+      #secondary > img {
+        width: 100%;
+        grid-area: img;
+      }
+      
+      #secondary > p {
+        grid-area: text;
+        padding:2rem;
+      }
+    }
