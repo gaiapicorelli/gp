@@ -197,11 +197,12 @@
   
   #content-descrizione > p {
     grid-area: text;
+    margin:0rem;
+    margin-top: 1rem;
   }
   
   #content-descrizione > .iconbutton-row {
     grid-area: icon;
-    margin: 2em 0;
   }
 }
   
