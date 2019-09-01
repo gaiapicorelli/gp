@@ -42,71 +42,7 @@
 }
 
 #illustrazionesudime {
-  width: 50%;
-  margin: auto;
-  display: grid;
-}
-
-#illustrazionesudime > #correttore-immagine {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  padding-left: 30%;
-}
-
-#didascalie {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  /* Questo non fa nulla, serve per il successivo absolute */
-  position: relative;
-}
-
-.titoletti-didascalie {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
-  font-weight: bolder;
-  color: #f2b604;
-}
-
-.testo-didascalie {
-  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-weight: lighter;
-  color: #434143;
-}
-
-#pformazione1 {
-  position: absolute;
-  right: 49%;
-  top: 20%;
-}
-
-#pformazione1a {
-  position: absolute;
-  right: 49%;
-  top: 25%;
-}
-
-#pformazione2 {
-  position: absolute;
-  right: 60%;
-  top: 44%;
-}
-
-#pformazione2a {
-  position: absolute;
-  right: 60%;
-  top: 49%;
-}
-
-#pformazione3 {
-  position: absolute;
-  right: 71%;
-  top: 63%;
-}
-
-#pformazione3a {
-  position: absolute;
-  right: 71%;
-  top: 68%;
+  width: 100%;
 }
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
