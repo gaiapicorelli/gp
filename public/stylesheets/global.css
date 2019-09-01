@@ -267,6 +267,32 @@ nav a:hover {
   justify-self: end;
   margin-right: 1rem;
 }
+
+#hamburger {
+  display: none;
+  grid-area: hamburger;
+  width: 3rem;
+  align-self: center;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+/* Header per dispositivi mobile */
+@media screen and (max-width: 950px) {
+  #content-header {
+    grid-template-areas: "social logo hamburger";
+  }
+  #logo-header {
+    justify-self: center;
+  }
+  nav {
+    display: none;
+  }
+  #hamburger {
+    display: initial;
+    
+  }
+}
 /*
             FOOTER
          */
