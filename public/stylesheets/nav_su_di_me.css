@@ -173,7 +173,7 @@
   }
   }
 
-  /*brekpoint 654px */
+  /*brekpoint 645px */
 @media screen and (max-width: 645px) {
   #content-descrizione {
     display: grid;
@@ -183,6 +183,7 @@
       "text text"
       "icon icon";
   }
+  
   
   #content-descrizione > img {
     width: 50%;
@@ -202,14 +203,8 @@
     grid-area: icon;
     margin: 2em 0;
   }
+}
   
-  #content-descrizione > h2,
-  #content-descrizione > p,
-  #content-descrizione > .iconbutton-row {
-    margin-left: 4vw;
-  }
   
-  }
-  }
  
  
