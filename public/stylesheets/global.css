@@ -347,11 +347,7 @@ footer img {
   #pulsanteContatti {
     display: none;
   }
-  #sidebutton {
-    display: none;
-  }
 }
-
  
   /* brekpoint 425px */
 @media screen and (max-width: 425px) {
@@ -366,5 +362,9 @@ footer img {
   #logo-footer {
     width: 4.2rem;
     margin: 1rem;
+  }
+
+  #sidebutton {
+    display: none;
   }
   }
