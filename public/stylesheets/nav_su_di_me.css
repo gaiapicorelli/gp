@@ -203,6 +203,8 @@
   
   #content-descrizione > .iconbutton-row {
     grid-area: icon;
+    margin:0rem;
+    margin-top: 1rem;
   }
 }
   
