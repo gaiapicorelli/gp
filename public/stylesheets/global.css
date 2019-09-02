@@ -352,6 +352,46 @@ nav a:hover {
   animation-iteration-count: 1;
 }
 
+.snip1217 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1217 a {
+  padding: 0.3em 0;
+  position: relative;
+}
+
+.snip1217 a:before,
+.snip1217 a:after {
+  height: 0.1rem;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #F8EB5A;
+  width: 0;
+}
+
+.snip1217 a:before {
+  top: 0;
+  left: 0;
+}
+
+.snip1217 a:after {
+  bottom: 0;
+  right: 0;
+}
+
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
+  width: 100%;
+}
+
 /*
             FOOTER
          */
