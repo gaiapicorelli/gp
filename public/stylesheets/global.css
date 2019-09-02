@@ -51,6 +51,7 @@ p {
   color: #434143;
 }
 
+/* button + animazioni, sia tasti sia pulsantiera */
 button {
   height: 3em;
   border-radius: 1.5em;
@@ -107,18 +108,27 @@ button:hover span:after {
   transform: scaleX(-1);
 }
 
-/* DA SISTEMARE */
 .iconbutton:link,
 .iconbutton:visited {
   text-decoration: none;
-  /*color: #032ba5;*/
 }
 
-.iconbutton:hover {
-  color: #f2b604;
-  text-decoration-line: line-through;
+.iconbutton:hover p{
+  color: #F8EB5A;
 }
 
+.hovergrey img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hovergrey :hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* pulsanti a lato */
 #sidebutton {
   position: absolute;
   top: 7rem;
@@ -156,7 +166,7 @@ button:hover span:after {
   margin-left: -1.5rem;
   background-color: white;
 }
-
+ /* tab */
 .tablinks {
   background-color: #f1f1f1;
   width: 100%;
@@ -204,6 +214,7 @@ header {
   margin: auto;
 }
 
+/* logo + animazione */
 #logo-header {
   /* fa coppia con margin-left */
   max-width: 6rem;
@@ -223,6 +234,47 @@ header {
   }
 }
 
+/* menù + animazione */
+
+.snip1217 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1217 a {
+  padding: 0.3em 0;
+  position: relative;
+}
+
+.snip1217 a:before,
+.snip1217 a:after {
+  height: 0.1rem;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #F8EB5A;
+  width: 0;
+}
+
+.snip1217 a:before {
+  top: 0;
+  left: 0;
+}
+
+.snip1217 a:after {
+  bottom: 0;
+  right: 0;
+}
+
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
+  width: 100%;
+}
 nav {
   grid-area: nav;
   align-self: center;
@@ -240,6 +292,17 @@ nav a:hover {
   color: #f2b604;
 }
 
+/* menù mobile */
+#hamburger {
+  display: none;
+  grid-area: hamburger;
+  width: 3rem;
+  align-self: center;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+/* social + animazione */
 #social-header a {
   display: inline-block;
   margin-left: 0.5rem;
@@ -252,15 +315,6 @@ nav a:hover {
 
 #social-header {
   grid-area: social;
-  align-self: center;
-  justify-self: end;
-  margin-right: 1rem;
-}
-
-#hamburger {
-  display: none;
-  grid-area: hamburger;
-  width: 3rem;
   align-self: center;
   justify-self: end;
   margin-right: 1rem;
@@ -343,46 +397,6 @@ nav a:hover {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-}
-
-.snip1217 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-.snip1217 a {
-  padding: 0.3em 0;
-  position: relative;
-}
-
-.snip1217 a:before,
-.snip1217 a:after {
-  height: 0.1rem;
-  position: absolute;
-  content: '';
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  background-color: #F8EB5A;
-  width: 0;
-}
-
-.snip1217 a:before {
-  top: 0;
-  left: 0;
-}
-
-.snip1217 a:after {
-  bottom: 0;
-  right: 0;
-}
-
-.snip1217 a:hover:before,
-.snip1217 .current a:before,
-.snip1217 a:hover:after,
-.snip1217 .current a:after {
-  width: 100%;
 }
 
 /*
