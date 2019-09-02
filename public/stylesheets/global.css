@@ -211,7 +211,7 @@ header {
   /* fa coppia con il padding sotto */
   max-height: 6.2rem;
   padding: 0.4rem 0;
-  -webkit-animation: rotation 1s linear;
+  -webkit-animation: rotation 0.8s linear;
 }
 
 @-webkit-keyframes rotation {
