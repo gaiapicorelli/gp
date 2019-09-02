@@ -13,6 +13,7 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
+  background-color: #F2F2F2;
 }
 
 .padding-conteiner {
@@ -200,7 +201,7 @@ button:hover span:after {
   HEADER
 */
 header {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #F8EB5A;
 }
 
 #content-header {
@@ -235,7 +236,6 @@ header {
 }
 
 /* menù + animazione */
-
 .snip1217 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -286,10 +286,11 @@ nav a {
   font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
   font-weight: lighter;
   text-decoration-line: none;
+  color: #0C0C0C;
 }
 
 nav a:hover {
-  color: #f2b604;
+  color:#F25252;
 }
 
 /* menù mobile */
