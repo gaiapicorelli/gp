@@ -236,15 +236,8 @@ nav a {
   text-decoration-line: none;
 }
 
-nav a:link,
-nav a:visited {
-  text-decoration: none;
-  color: #032ba5;
-}
-
 nav a:hover {
   color: #f2b604;
-  text-decoration-line: line-through;
 }
 
 #social-header a {
