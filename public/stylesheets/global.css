@@ -202,6 +202,7 @@ button:hover span:after {
 */
 header {
   border-bottom: 1px solid #F8EB5A;
+  background-color: #0C0C0C;
 }
 
 #content-header {
