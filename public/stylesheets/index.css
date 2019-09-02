@@ -8,12 +8,6 @@
   text-align: center;
 }
 
-@media screen and (max-width:950px) {
-  #galleria {
-    height: auto;
-  }
-}
-
 #galleria img {
   margin: auto 0;
   max-width: 100%;
@@ -68,6 +62,14 @@
   width: 100%;
 }
 
+.grow:hover
+{
+        -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+        transform: scale(1.08);
+        transition: .4s ease;
+  
+}
 /*
   AGGIORNAMENTI
 */
@@ -102,7 +104,23 @@
   grid-area: content;
 }
 
-/* questo è un brekpoint */
+
+
+
+
+
+/* BREKPOINT */
+/* 1440px */
+
+
+/* 950px */
+@media screen and (max-width:950px) {
+  #galleria {
+    height: auto;
+  }
+}
+
+/* 870px */
 @media screen and (max-width: 870px) {
   #pulsanteContatti {
     display: none;

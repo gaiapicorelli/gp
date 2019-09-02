@@ -298,7 +298,14 @@ footer img {
 
 /* BREKPOINT */
 
-/* Header per dispositivi mobile 948px in giù */
+/* 1440px */
+@media screen and (max-width: 1440px) {
+  #pulsanteContatti {
+    display: none;
+  }
+}
+
+/* Header 948px  */
 @media screen and (max-width: 948px) {
   #content-header {
     grid-template-areas: "social logo hamburger" "nav nav nav";
@@ -342,22 +349,7 @@ footer img {
   }
 } 
 
-/* brekpoint 1440px */
-@media screen and (max-width: 1440px) {
-  #pulsanteContatti {
-    display: none;
-  }
-}
- 
-  /* brekpoint 425px */
-@media screen and (max-width: 425px) {
-  .iconbutton-row img{
-    width: 2.5rem;
-
-  }
-}
-
-/* footer per dispositivi mobile 948px in giù  */
+/* footer 948px */
 @media screen and (max-width: 948px) {
   #logo-footer {
     width: 4.2rem;
@@ -368,3 +360,12 @@ footer img {
     display: none;
   }
   }
+ 
+  /* 425px */
+@media screen and (max-width: 425px) {
+  .iconbutton-row img{
+    width: 2.5rem;
+
+  }
+}
+
