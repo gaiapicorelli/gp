@@ -211,6 +211,16 @@ header {
   /* fa coppia con il padding sotto */
   max-height: 6.2rem;
   padding: 0.4rem 0;
+  -webkit-animation: rotation 1s linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
 }
 
 nav {
