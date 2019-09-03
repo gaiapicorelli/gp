@@ -13,7 +13,7 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #F2F2F0;
 }
 
 .padding-conteiner {
@@ -31,7 +31,7 @@ h3 {
 h1 {
   font-weight: bold;
   font-size: 3rem;
-  color: #f2b604;
+  color: #FF8A00;
 }
 
 h2 {
@@ -201,8 +201,7 @@ button:hover span:after {
   HEADER
 */
 header {
-  border-bottom: 1px solid #f8eb5a;
-  background-color: #0c0c0c;
+  border-bottom: 1px solid #FF8A00;
 }
 
 #content-header {
@@ -259,7 +258,7 @@ header {
 }
 
 .snip1217 a {
-  padding: 0.3em 0;
+  padding: 0.5em 0;
   position: relative;
 }
 
@@ -270,7 +269,7 @@ header {
   content: "";
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #f8eb5a;
+  background-color: #FF6544;
   width: 0;
 }
 
@@ -301,11 +300,11 @@ nav a {
   font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
   font-weight: lighter;
   text-decoration-line: none;
-  color: #0c0c0c;
+  color: #0C0DB0;
 }
 
 nav a:hover {
-  color: #f25252;
+  color: #FA7A0E;
 }
 
 /* menù mobile */
