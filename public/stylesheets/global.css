@@ -114,17 +114,17 @@ button:hover span:after {
   text-decoration: none;
 }
 
-.iconbutton:hover p {
+.iconbutton p {
   color: #f8eb5a;
 }
 
-.hovergrey img {
+.hovergrey img, .hovergrey p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.hovergrey :hover img {
+.hovergrey :hover img, .hovergrey :hover p {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
