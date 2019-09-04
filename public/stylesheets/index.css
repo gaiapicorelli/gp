@@ -2,31 +2,16 @@
   GALLERIA
 */
 #galleria {
-  height: 89vh;
- 
+  height: 88vh;
   display: grid;
 }
 
 #background-galleria {
   grid-column: 1/2;
   grid-row: 1/2;
-  align-self: center;
-  justify-self: center;
   margin: auto 0;
   max-width: 100%;
   max-height: 100%;
-}
-
-#logo-scritta {
-  font-family: 'Assistant', sans-serif;
-  font-weight: 200;
-  letter-spacing: 30;
-}
-
-#logo-scritta2{
-  font-family: 'Encode Sans Condensed', sans-serif;
-  font-weight: 500;
-  letter-spacing: -55;
 }
 
 /* logo + animazione */
@@ -35,13 +20,9 @@
   grid-row: 1/2;
   align-self: center;
   justify-self: center;
-  /* fa coppia con margin-left */
-  max-width: 30rem;
-  /* fa coppia con il padding sotto */
-  max-height: 30rem;
- 
-  animation: rotation 2s ease;
-  -webkit-animation: rotation 2s ease;
+  position: relative;
+  height: 30rem;
+  width: 39rem;
 }
 
 @keyframes rotation {
@@ -66,15 +47,80 @@
   }
 }
 
+@keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#logo-home img {
+  height: 100%;
+
+  animation: rotation 2s ease;
+  -webkit-animation: rotation 2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#logo-scritta {
+  position: absolute;
+  bottom: 2.3rem;
+  right: 0;
+  font-family: "Assistant", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.21rem;
+  font-size: 2rem;
+  color:#07288C ;
+}
+
+#logo-scritta2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color:#07288C ;
+}
+
+#logo-scritta,
+#logo-scritta2 {
+  width: 16rem;
+  text-align: center;
+  animation: fade-in-logo 2s ease;
+  -webkit-animation: fade-in-logo 2s ease;
+}
+
 /*
   DESCRIZIONE
 */
 #descrizione {
   padding: 4rem 1em;
-  background-color:  #FFE64D;
+  background-color: #FAE26B;
 }
 
-#descrizione>p {
+#descrizione > p {
   padding-top: 1rem;
 }
 
@@ -116,13 +162,11 @@
   width: 100%;
 }
 
-.grow:hover
-{
-        -webkit-transform: scale(1.08);
-        -ms-transform: scale(1.08);
-        transform: scale(1.08);
-        transition: .4s ease;
-  
+.grow:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+  transition: 0.4s ease;
 }
 /*
   AGGIORNAMENTI
@@ -158,17 +202,11 @@
   grid-area: content;
 }
 
-
-
-
-
-
 /* BREKPOINT */
 /* 1440px */
 
-
 /* 950px */
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
   #galleria {
     height: auto;
   }
@@ -202,7 +240,6 @@
     grid-area: logo;
     justify-self: center;
   }
-
 
   #img-aggiornamenti {
     grid-area: img-aggiornamenti;
