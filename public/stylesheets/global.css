@@ -47,8 +47,8 @@ h2 {
 h3 {
   font-weight: lighter;
   font-size: 1rem;
-  font-weight: 400;
-  color: #F2B604;
+  font-weight: 500;
+  color: #2D28AD;
 }
 
 p {
@@ -151,7 +151,7 @@ button:hover span:after {
   margin-right: -3rem;
   width: 6rem;
   height: 6rem;
-  background-color: #F9F9F9
+  background-color: #F9F9F9;
   border-radius: 50%;
 }
 
@@ -172,11 +172,11 @@ button:hover span:after {
               diventa centrato */
   left: 50%;
   margin-left: -1.5rem;
-  background-color: #F9F9F9
+  background-color: #F9F9F9;
 }
 /* tab */
 .tablinks {
-  background-color: #f1f1f1;
+  background-color: #262626;
   width: 100%;
   border-radius: initial;
   border: none;
@@ -187,16 +187,16 @@ button:hover span:after {
 }
 
 .tablinks:hover {
-  background-color: #ddd;
+  background-color: #2D28AD;
 }
 
 .tablinks.active {
-  background-color: #ccc;
+  background-color: #262626;
 }
 
 .tabcontent {
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #262626;
   border-top: none;
 }
 

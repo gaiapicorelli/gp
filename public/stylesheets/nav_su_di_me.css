@@ -1,8 +1,4 @@
 /* DESCRIZIONE */
-#container-descrizione {
-  background-color: white;
-}
-
 #content-descrizione {
   display: grid;
   grid-template-areas:
@@ -38,7 +34,7 @@
 
 /* FORMAZIONE */
 #container-formazione {
-  background-color: #f2b604;
+  background-color: #FAE26B;
 }
 
 #illustrazionesudime {
@@ -47,7 +43,7 @@
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
 #container-competenze-prof-pers {
-  background-color: aquamarine;
+  background-color: #FAE26B;
 }
 
 #tabcontent {
@@ -76,7 +72,7 @@
 
 /* COMPETENZE INFORMATICHE */
 #container-competenze-informatiche {
-  background-color: antiquewhite;
+  background-color: #FAE26B;
 }
 
 #h2competenzeinformatiche {
@@ -111,11 +107,11 @@
   left: 0;
   right: 0;
   bottom: 50%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #2D28AD;
 }
 
 .slider-cursor {
-  border: 1px solid black;
+  border: 1px solid #0704AC;
   border-radius: 50%;
   height: 1em;
   width: 1em;
@@ -123,7 +119,7 @@
   top: 50%;
   margin-top: -0.6em;
   margin-left: -0.6em;
-  background-color: blue;
+  background-color:#0704AC;
 }
 
 #linea-competenza1 > .slider-cursor {
@@ -149,21 +145,9 @@
 }
 
 /* ALTRI INTERESSI */
-
-#container-altriinteressi {
-  background-color: coral;
-}
-
 #h2altriinteressi {
   padding-bottom: 6rem;;
 }
-
-/* PULSANTIERA SEZIONI */
-
-#container-pulsantierasezioni {
-  background-color: darkgray;
-}
-
 
 /*brekpoint 1024px */
 @media screen and (max-width: 1024px) {
