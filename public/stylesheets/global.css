@@ -24,32 +24,36 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 0.2rem;
+
 }
 
 h1 {
   font-weight:bold;
   font-size: 3rem;
-  color: #0704AC;
+  font-weight: 700;
+  color: #2D28AD;
 
 }
 
 h2 {
   font-weight: bold;
   font-size: 2rem;
+  font-weight: 500;
   color:#716BFA;
 }
 
 h3 {
   font-weight: lighter;
   font-size: 1rem;
-  color: #F9A26C;
+  font-weight: 400;
+  color: #F2B604;
 }
 
 p {
-  font-family: "Lato", "Open Sans", "Roboto", sans-serif;
-  font-weight: lighter;
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
   color: #262626;
 }
 
@@ -57,11 +61,10 @@ p {
 button {
   height: 3em;
   border-radius: 1.5em;
-  background-color:#0704AC;
-  border: #0704AC;
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
-  font-weight: bolder;
+  background-color:#2D28AD;
+  border: #2D28AD;
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
   color: #F9F9F9;
   text-align: center;
   transition: all 0.5s;
@@ -100,10 +103,11 @@ button:hover span:after {
   grid-row: 1/2;
   justify-self: center;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .iconbutton img {
-  width: 4rem;
+  width: 3rem;
 }
 
 .flipped {
@@ -117,7 +121,7 @@ button:hover span:after {
 }
 
 .iconbutton p {
-  color: #f8eb5a;
+  color: #2D28AD;
 }
 
 .hovergrey img, .hovergrey p {
@@ -147,7 +151,7 @@ button:hover span:after {
   margin-right: -3rem;
   width: 6rem;
   height: 6rem;
-  background-color: white;
+  background-color: #F9F9F9
   border-radius: 50%;
 }
 
@@ -168,7 +172,7 @@ button:hover span:after {
               diventa centrato */
   left: 50%;
   margin-left: -1.5rem;
-  background-color: #F2F2F0;
+  background-color: #F9F9F9
 }
 /* tab */
 .tablinks {
@@ -238,7 +242,7 @@ header {
 }
 
 .snip1217 a {
-  padding: 0.5em 0em;
+  padding: 0.3em 0.8em;
   position: relative;
 }
 
@@ -277,8 +281,8 @@ nav {
 
 nav a {
   margin: auto 0.5rem;
-  font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
-  font-weight: lighter;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
   text-decoration-line: none;
   color: #262626;
 }
@@ -412,9 +416,8 @@ footer {
 }
 
 footer p {
-  font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
-    sans-serif;
-  font-weight: lighter;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 500;
   color: #262626;
   text-align: center;
 }
