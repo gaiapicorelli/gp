@@ -2,15 +2,68 @@
   GALLERIA
 */
 #galleria {
-  height: 86vh;
-  padding: 1vh;
-  text-align: center;
+  height: 89vh;
+ 
+  display: grid;
 }
 
-#galleria img {
+#background-galleria {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
   margin: auto 0;
   max-width: 100%;
   max-height: 100%;
+}
+
+#logo-scritta {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
+  letter-spacing: 30;
+}
+
+#logo-scritta2{
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: -55;
+}
+
+/* logo + animazione */
+#logo-home {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  /* fa coppia con margin-left */
+  max-width: 30rem;
+  /* fa coppia con il padding sotto */
+  max-height: 30rem;
+ 
+  animation: rotation 2s ease;
+  -webkit-animation: rotation 2s ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+    -webkit-transform: rotate(1080deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+    -webkit-transform: rotate(1080deg);
+  }
 }
 
 /*
@@ -21,9 +74,14 @@
   background-color:  #FFE64D;
 }
 
+#descrizione>p {
+  padding-top: 1rem;
+}
+
 #sottodescrizione {
   max-width: 50em;
   margin: auto;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -42,7 +100,7 @@
   PORTFOLIO
 */
 #portfolio {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -51,7 +109,7 @@
   grid-column-gap: 2%;
   grid-template-columns: 32% 32% 32%;
   grid-row-gap: 2.5%;
-  margin: 4rem 1rem;
+  margin: 2rem 1rem;
 }
 
 #portfolio-grid-img img {

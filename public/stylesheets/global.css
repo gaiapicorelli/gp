@@ -57,12 +57,12 @@ p {
 button {
   height: 3em;
   border-radius: 1.5em;
-  background-color:#9BD7D1;
-  border: #9BD7D1;
+  background-color:#0704AC;
+  border: #0704AC;
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
   font-weight: bolder;
-  color: #262626;
+  color: #F9F9F9;
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
@@ -226,30 +226,7 @@ header {
   /* fa coppia con il padding sotto */
   max-height: 6.2rem;
   padding: 0.4rem 0;
-  animation: rotation 0.5s linear;
-  -webkit-animation: rotation 0.5s linear;
-}
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-  }
 }
 
 /* menù + animazione */
