@@ -13,7 +13,7 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
-  background-color: #F2F2F0;
+  background-color: #F9F9F9;
 }
 
 .padding-conteiner {
@@ -29,38 +29,40 @@ h3 {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight:bold;
   font-size: 3rem;
-  color: #FF8A00;
+  color: #0704AC;
+
 }
 
 h2 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2rem;
-  color:#FF6544;
+  color:#716BFA;
 }
 
 h3 {
   font-weight: lighter;
   font-size: 1rem;
-  color: #0C0DB0;
+  color: #F9A26C;
 }
 
 p {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
   font-weight: lighter;
-  color: #0D0D0D;
+  color: #262626;
 }
 
 /* button + animazioni, sia tasti sia pulsantiera */
 button {
   height: 3em;
   border-radius: 1.5em;
-  border: lightgrey;
+  background-color:#9BD7D1;
+  border: #9BD7D1;
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
   font-weight: bolder;
-  color: #434143;
+  color: #262626;
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
@@ -202,7 +204,7 @@ button:hover span:after {
   HEADER
 */
 header {
-  border-bottom: 1px solid #FF8A00;
+  border-bottom: 1px solid #0704AC;
 }
 
 #content-header {
@@ -270,7 +272,7 @@ header {
   content: "";
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #FF6544;
+  background-color: #0704AC;
   width: 0;
 }
 
@@ -301,11 +303,11 @@ nav a {
   font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
   font-weight: lighter;
   text-decoration-line: none;
-  color: #0C0DB0;
+  color: #262626;
 }
 
 nav a:hover {
-  color: #FA7A0E;
+  color: #0704AC;
 }
 
 /* menù mobile */
@@ -419,7 +421,7 @@ nav a:hover {
             FOOTER
          */
 footer {
-  background-color: #dee1f2;
+  background-color: #DEE1F2;
 }
 
 #content-footer {
@@ -436,7 +438,7 @@ footer p {
   font-family: "Josefin Sans", sans-serif, "Montserrat", sans-serif, "Raleway",
     sans-serif;
   font-weight: lighter;
-  color: #032ba5;
+  color: #262626;
   text-align: center;
 }
 
