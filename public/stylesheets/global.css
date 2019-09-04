@@ -37,19 +37,19 @@ h1 {
 h2 {
   font-weight: normal;
   font-size: 2rem;
-  color: red;
+  color:#FF6544;
 }
 
 h3 {
   font-weight: lighter;
   font-size: 1rem;
-  color: greenyellow;
+  color: #0C0DB0;
 }
 
 p {
   font-family: "Lato", "Open Sans", "Roboto", sans-serif;
   font-weight: lighter;
-  color: #434143;
+  color: #0D0D0D;
 }
 
 /* button + animazioni, sia tasti sia pulsantiera */
@@ -152,8 +152,9 @@ button:hover span:after {
 #btornasu {
   display: none;
   background-color: transparent;
-  border: 1px solid lightgrey;
+  border: 1px solid #0C0DB0;
   font-size: 2rem;
+  color: #0C0DB0;
   text-align: center;
   height: 3rem;
   /* Width legata al margin-left più in basso */
@@ -165,7 +166,7 @@ button:hover span:after {
               diventa centrato */
   left: 50%;
   margin-left: -1.5rem;
-  background-color: white;
+  background-color: #F2F2F0;
 }
 /* tab */
 .tablinks {
