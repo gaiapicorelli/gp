@@ -1,6 +1,5 @@
 /* BLOCCO IMAGGINI 1 */
 #container-mainblock {
-  background-color: aliceblue;
   padding: 4rem;
 }
 
@@ -27,7 +26,7 @@
 
 /* BLOCCO IMMAGINI 2 */
 #container-secondary {
-  background-color: gainsboro;
+  background-color: #FAE26B;
   padding: 4em;
 }
 
@@ -51,7 +50,6 @@
 
 /* BLOCCO IMMAGINI 3 */
 #container-tertiary {
-  background-color: aliceblue;
   padding: 4em;
 }
 
