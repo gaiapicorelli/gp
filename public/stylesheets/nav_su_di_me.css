@@ -45,6 +45,35 @@
 #container-competenze-prof-pers {
   background-color: #FAE26B;
 }
+/* tab */
+.tablinks {
+  background-color:#2D28AD;
+  width: 100%;
+  border-radius: initial;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  background-color: #2D28AD;
+}
+
+.tablinks.active {
+  background-color: #262626;
+}
+
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #F9F9F9;
+  border-top: none;
+}
+
+.tabcontent.inactive {
+  display: none;
+}
 
 #tabcontent {
   display: grid;

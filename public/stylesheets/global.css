@@ -174,35 +174,6 @@ button:hover span:after {
   margin-left: -1.5rem;
   background-color: #F9F9F9;
 }
-/* tab */
-.tablinks {
-  background-color: #262626;
-  width: 100%;
-  border-radius: initial;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-.tablinks:hover {
-  background-color: #2D28AD;
-}
-
-.tablinks.active {
-  background-color: #262626;
-}
-
-.tabcontent {
-  padding: 6px 12px;
-  border: 1px solid #262626;
-  border-top: none;
-}
-
-.tabcontent.inactive {
-  display: none;
-}
 
 /*
   HEADER
