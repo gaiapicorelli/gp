@@ -1,8 +1,4 @@
 /* SERVIZI */
-#container-servizi {
-  background-color: aqua;
-}
-
 #content-servizi > h2 {
   grid-area: title;
 }
