@@ -34,21 +34,39 @@
 
 /* FORMAZIONE */
 #container-formazione {
-  background-color: #FAE26B;
+  background-color: #fae26b;
+}
+
+#grid-formazione {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "testo img img img "
+    "testo img img img"
+    "testo img img img";
+  grid-auto-columns: 10% 30% 30% 30%;
+}
+
+#grid-formazione > h2 {
+  grid-area: title;
+}
+
+#testo-formazione {
+  grid-area: testo;
 }
 
 #illustrazionesudime {
-  width: 80%;
-  
+  width: 100%;
+  grid-area: img;
 }
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
 #container-competenze-prof-pers {
-  background-color: #FAE26B;
+  background-color: #fae26b;
 }
 /* tab */
 .tablinks {
-  background-color:#2D28AD;
+  background-color: #2d28ad;
   width: 100%;
   border-radius: initial;
   border: none;
@@ -59,7 +77,7 @@
 }
 
 .tablinks:hover {
-  background-color: #2D28AD;
+  background-color: #2d28ad;
 }
 
 .tablinks.active {
@@ -68,7 +86,7 @@
 
 .tabcontent {
   padding: 6px 12px;
-  border: 1px solid #F9F9F9;
+  border: 1px solid #f9f9f9;
   border-top: none;
 }
 
@@ -102,11 +120,11 @@
 
 /* COMPETENZE INFORMATICHE */
 #container-competenze-informatiche {
-  background-color: #FAE26B;
+  background-color: #fae26b;
 }
 
 #h2competenzeinformatiche {
-  padding-bottom: 6rem;;
+  padding-bottom: 6rem;
 }
 
 #content-competenze-informatiche {
@@ -137,11 +155,11 @@
   left: 0;
   right: 0;
   bottom: 50%;
-  border-bottom: 1px solid #2D28AD;
+  border-bottom: 1px solid #2d28ad;
 }
 
 .slider-cursor {
-  border: 1px solid #0704AC;
+  border: 1px solid #0704ac;
   border-radius: 50%;
   height: 1em;
   width: 1em;
@@ -149,7 +167,7 @@
   top: 50%;
   margin-top: -0.6em;
   margin-left: -0.6em;
-  background-color:#0704AC;
+  background-color: #0704ac;
 }
 
 #linea-competenza1 > .slider-cursor {
@@ -176,18 +194,22 @@
 
 /* ALTRI INTERESSI */
 #h2altriinteressi {
-  padding-bottom: 6rem;;
+  padding-bottom: 6rem;
 }
 
 /*brekpoint 1024px */
 @media screen and (max-width: 1024px) {
-  #container-descrizione, #container-formazione,#container-competenze-prof-pers, #container-competenze-informatiche, #container-altriinteressi{
+  #container-descrizione,
+  #container-formazione,
+  #container-competenze-prof-pers,
+  #container-competenze-informatiche,
+  #container-altriinteressi {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  }
+}
 
-  /*brekpoint 645px */
+/*brekpoint 645px */
 @media screen and (max-width: 645px) {
   #content-descrizione {
     display: grid;
@@ -197,36 +219,30 @@
       "text text"
       "icon icon";
   }
-  
-  
+
   #content-descrizione > img {
     width: 50%;
     grid-area: img;
     justify-self: center;
   }
-  
+
   #content-descrizione > h2 {
     grid-area: title;
   }
-  
+
   #content-descrizione > p {
     grid-area: text;
-    margin:0rem;
+    margin: 0rem;
     margin-top: 1rem;
   }
-  
+
   #content-descrizione > .iconbutton-row {
     grid-area: icon;
-    margin:0rem;
+    margin: 0rem;
     margin-top: 1rem;
   }
 }
 
-
-  /*brekpoint 375px */
-  @media screen and (max-width: 375px) {
-  
-  }
-  
- 
- 
+/*brekpoint 375px */
+@media screen and (max-width: 375px) {
+}
