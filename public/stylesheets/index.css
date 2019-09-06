@@ -116,8 +116,6 @@
   DESCRIZIONE
 */
 #descrizione {
-  padding-top: 1rem;
-  padding-bottom:1rem;
   background-color: #fae26b;
 }
 
@@ -131,6 +129,7 @@
   padding-top:1rem;
   display: flex;
   justify-content: center;
+  padding-top:2rem;
 }
 
 #sottodescrizione img {
@@ -148,7 +147,7 @@
 */
 #portfolio {
   text-align: center;
-  padding-top:1rem;
+  padding-top:2rem;
 }
 
 #portfolio-grid-img {
