@@ -2,8 +2,9 @@
   GALLERIA
 */
 #galleria {
-  height: 88vh;
+  height: 85vh;
   display: grid;
+  padding-bottom: 4vh ;
 }
 
 #background-galleria {
@@ -73,7 +74,6 @@
 
 #logo-home img {
   height: 100%;
-
   animation: rotation 2s ease;
   -webkit-animation: rotation 2s ease;
   position: absolute;
@@ -116,7 +116,7 @@
   DESCRIZIONE
 */
 #descrizione {
-  padding: 4rem 1em;
+  padding-top:1rem;
   background-color: #FAE26B;
 }
 
