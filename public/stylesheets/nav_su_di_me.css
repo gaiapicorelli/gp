@@ -1,4 +1,8 @@
 /* DESCRIZIONE */
+#container-descrizione {
+  background-color: #F2F2F2;
+}
+
 #content-descrizione {
   display: grid;
   grid-template-areas:
@@ -45,6 +49,7 @@
     "testo img img img"
     "testo img img img";
   grid-auto-columns: 10% 30% 30% 30%;
+  padding-bottom: 2rem;
 }
 
 #grid-formazione > h2 {
@@ -61,31 +66,19 @@
 }
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
-#container-competenze-prof-pers {
-  background-color: #fae26b;
-}
 /* tab */
 .tablinks {
   background-color: #2d28ad;
   width: 100%;
   border-radius: initial;
   border: none;
-  outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 16px 18px;
   transition: 0.3s;
 }
 
-.tablinks:hover {
-  background-color: #2d28ad;
-}
-
-.tablinks.active {
-  background-color: #262626;
-}
-
 .tabcontent {
-  padding: 6px 12px;
+  padding: 1rem 2rem;
   border: 1px solid #f9f9f9;
   border-top: none;
 }
@@ -119,10 +112,6 @@
 }
 
 /* COMPETENZE INFORMATICHE */
-#container-competenze-informatiche {
-  background-color: #fae26b;
-}
-
 #h2competenzeinformatiche {
   padding-bottom: 6rem;
 }
