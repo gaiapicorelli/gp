@@ -160,21 +160,18 @@ button:hover span:after {
 #btornasu {
   display: none;
   background-color: transparent;
-  border: 1px solid #0C0DB0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #0C0DB0;
-  text-align: center;
+ justify-self: center;
   height: 3rem;
   /* Width legata al margin-left più in basso */
   width: 3rem;
-  border-radius: 50%;
   position: absolute;
   bottom: 5vh;
   /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
               diventa centrato */
   left: 50%;
   margin-left: -1.5rem;
-  background-color: #F9F9F9;
 }
 
 /*
