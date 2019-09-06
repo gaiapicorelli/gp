@@ -1,4 +1,8 @@
 /* SERVIZI */
+#container-servizi{
+  background-color: #FAE26B;
+}
+
 #content-servizi > h2 {
   grid-area: title;
 }
@@ -42,13 +46,17 @@
   height: 100%;
   transition: 0.4s ease;
   opacity: 0;
-  color: green;
-  font-size: 1.5rem;
+  color: #2D28AD;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
   text-align: start;
+  padding:1rem;
 }
 
 .container-immaginiclasse:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 /* BREKPOINT */
