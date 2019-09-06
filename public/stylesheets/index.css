@@ -4,7 +4,7 @@
 #galleria {
   height: 85vh;
   display: grid;
-  padding-bottom: 4vh ;
+  padding-bottom: 4vh;
 }
 
 #background-galleria {
@@ -91,7 +91,7 @@
   font-weight: 200;
   letter-spacing: 0.21rem;
   font-size: 2rem;
-  color:#07288C ;
+  color: #07288c;
 }
 
 #logo-scritta2 {
@@ -101,7 +101,7 @@
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  color:#07288C ;
+  color: #07288c;
 }
 
 #logo-scritta,
@@ -116,8 +116,8 @@
   DESCRIZIONE
 */
 #descrizione {
-  padding-top:1rem;
-  background-color: #FAE26B;
+  padding-top: 1rem;
+  background-color: #fae26b;
 }
 
 #descrizione > p {
@@ -145,12 +145,13 @@
 /*
   PORTFOLIO
 */
-#portfolio-container{
-background-color: #FAE26B;
+#portfolio-container {
+  background-color: #fae26b;
+  padding-top: 0.5rem;
 }
 
 #portfolio {
-  padding: 1rem 0;
+
   text-align: center;
 }
 
@@ -175,8 +176,8 @@ background-color: #FAE26B;
 /*
   AGGIORNAMENTI
 */
-#aggiornamenti-container{
- background-color: #F2F2F2;
+#aggiornamenti-container {
+  background-color: #f2f2f2;
 }
 
 #aggiornamenti {
@@ -184,26 +185,20 @@ background-color: #FAE26B;
   margin: auto;
   max-width: 65em;
   display: grid;
-  grid-template-columns: min-content 60% auto;
+  grid-template-columns: 60% 40%;
   grid-template-areas:
-    "logo title   img"
-    "content content img";
+    ". img"
+    "title img"
+    "content img";
 }
 
 #aggiornamenti h2 {
   grid-area: title;
 }
 
-#logo-aggiornamenti {
-  grid-area: logo;
-  height: 3rem;
-  justify-self: start;
-  padding: 1em;
-}
-
 #img-aggiornamenti {
   grid-area: img;
-  width: 100%;
+  width: 80%;
 }
 
 #contenuto-aggiornamenti {
