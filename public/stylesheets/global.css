@@ -16,6 +16,10 @@ body {
   background-color:#FFFFFF;
 }
 
+hr {
+  margin:0rem;
+}
+
 .padding-conteiner {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -373,7 +377,7 @@ nav a:hover {
             FOOTER
          */
 footer {
-  background-color: #DEE1F2;
+  background-color: #F2F2F2;
 }
 
 #content-footer {
