@@ -117,6 +117,7 @@
 */
 #descrizione {
   padding-top: 1rem;
+  padding-bottom:1rem;
   background-color: #fae26b;
 }
 
@@ -127,7 +128,7 @@
 #sottodescrizione {
   max-width: 50em;
   margin: auto;
-  padding-top: 1rem;
+  padding-top:1rem;
   display: flex;
   justify-content: center;
 }
@@ -145,14 +146,9 @@
 /*
   PORTFOLIO
 */
-#portfolio-container {
-  background-color: #fae26b;
-  padding-top: 0.5rem;
-}
-
 #portfolio {
-
   text-align: center;
+  padding-top:1rem;
 }
 
 #portfolio-grid-img {
@@ -187,9 +183,9 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-areas:
-    ". img"
     "title img"
-    "content img";
+    "content img"
+    ". img";
 }
 
 #aggiornamenti h2 {
