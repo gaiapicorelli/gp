@@ -145,6 +145,10 @@
 /*
   PORTFOLIO
 */
+#portfolio-container{
+background-color: #FAE26B;
+}
+
 #portfolio {
   padding: 1rem 0;
   text-align: center;
@@ -171,6 +175,10 @@
 /*
   AGGIORNAMENTI
 */
+#aggiornamenti-container{
+ background-color: #F2F2F2;
+}
+
 #aggiornamenti {
   padding: 4rem 1rem;
   margin: auto;
