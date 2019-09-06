@@ -186,6 +186,11 @@
   padding-bottom: 2rem;
 }
 
+#container-altriinteressi {
+  padding-bottom:4rem;
+  padding-top:4rem;
+}
+
 /*brekpoint 1024px */
 @media screen and (max-width: 1024px) {
   #container-descrizione,
