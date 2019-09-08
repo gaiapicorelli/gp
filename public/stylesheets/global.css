@@ -29,7 +29,7 @@ hr {
 h1,
 h2,
 h3 {
-  font-family: "Assistant", sans-serif;
+  font-family:'Lato', sans-serif;
   margin:0rem;
 }
 
@@ -38,7 +38,6 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   color: #2D28AD;
-  letter-spacing: 0.4rem;
 }
 
 h2 {
@@ -46,7 +45,6 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   color:#716BFA;
-  letter-spacing: 0.4rem;
 }
 
 h3 {
@@ -57,7 +55,7 @@ h3 {
 }
 
 p {
-  font-family: "Assistant", sans-serif;
+  font-family:'Libre Baskerville', serif;
   font-weight: 500;
   color: #262626;
   margin-top:1rem;
@@ -70,7 +68,7 @@ button {
   border-radius: 1.5em;
   background-color:#2D28AD;
   border: #2D28AD;
-  font-family: "Assistant", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   color: #F9F9F9;
   text-align: center;
@@ -257,7 +255,7 @@ nav {
 
 nav a {
   margin: auto 0.5rem;
-  font-family: "Assistant", sans-serif;
+  font-family:'Lato', sans-serif;
   font-weight: 600;
   text-decoration-line: none;
   color: #262626;
@@ -392,7 +390,7 @@ footer {
 }
 
 footer p {
-  font-family: "Encode Sans Condensed", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   color: #262626;
   text-align: center;
@@ -430,7 +428,7 @@ footer img {
   nav a {
     display: block;
     margin: 1rem;
-    font-family: "Josefin Sans", "Montserrat", "Raleway", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: lighter;
     text-decoration-line: none;
     text-align: center;

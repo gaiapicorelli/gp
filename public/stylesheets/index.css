@@ -121,6 +121,7 @@
 
 #descrizione > p {
   padding-top: 1rem;
+  font-style:italic;
 }
 
 #sottodescrizione {
