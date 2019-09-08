@@ -31,7 +31,7 @@ h2,
 h3 {
   font-family:
   'Libre Baskerville', serif;
-  margin:0rem;
+ 
 }
 
 h1 {
@@ -39,6 +39,8 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   color: #2D28AD;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
 }
 
 h2 {
@@ -53,6 +55,7 @@ h3 {
   font-size: 1rem;
   font-weight: 500;
   color: #2D28AD;
+  margin:0rem;
 }
 
 p {
