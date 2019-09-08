@@ -1,6 +1,6 @@
 /* SERVIZI */
-#container-servizi{
-  background-color: #FAE26B;
+#container-servizi {
+  background-color: #fae26b;
 }
 
 #content-servizi > h2 {
@@ -27,6 +27,7 @@
   display: grid;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .imggrafica,
@@ -37,24 +38,29 @@
 
 .imggrafica {
   width: 100%;
+  position: relative;
 }
 
 .overlay {
+  position: relative;
   background: white;
   color: #f1f1f1;
   width: 100%;
   height: 100%;
   transition: 0.4s ease;
   opacity: 0;
-  color: #2D28AD;
+  color: #2d28ad;
   font-family: "Assistant", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   text-decoration: none;
-  text-align: start;
-  padding:1rem;
 }
 
+.overlay>p{
+position: absolute;
+top:24rem;
+left:7rem;
+}
 .container-immaginiclasse:hover .overlay {
   opacity: 0.5;
 }
