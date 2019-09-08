@@ -41,9 +41,9 @@
   display: grid;
   grid-template-areas:
     "title title title title"
-    "testo img img img "
-    "testo img img img"
-    "testo img img img";
+    "testo testo img img "
+    "testo testo img img"
+    "testo testo img img";
   grid-auto-columns: 10% 30% 30% 30%;
   padding-bottom: 2rem;
 }
@@ -63,6 +63,15 @@
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
 /* tab */
+li{
+  font-family:'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #262626;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
 .tablinks {
   background-color: #2d28ad;
   width: 100%;
@@ -156,11 +165,11 @@
 }
 
 #linea-competenza1 > .slider-cursor {
-  left: 80%;
+  left: 90%;
 }
 
 #linea-competenza2 > .slider-cursor {
-  left: 30%;
+  left: 45%;
 }
 
 .animate {
