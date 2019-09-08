@@ -1,8 +1,4 @@
 /* DESCRIZIONE */
-#container-descrizione {
-  background-color: #F2F2F2;
-}
-
 #content-descrizione {
   display: grid;
   grid-template-areas:
