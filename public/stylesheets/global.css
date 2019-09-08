@@ -26,12 +26,6 @@ hr {
   padding-bottom: 2rem;
 }
 
-p,
-h2,
-h3 {
-  font-family:'Lato', sans-serif;
-}
-
 h1 {
   font-family:'Montserrat', sans-serif;
   font-weight:600;
@@ -39,6 +33,12 @@ h1 {
   color: #2D28AD;
   margin-top:0.5rem;
   margin-bottom:0.5rem;
+}
+
+p,
+h2,
+h3 {
+  font-family:'Lato', sans-serif;
 }
 
 h2 {
@@ -49,9 +49,9 @@ h2 {
 }
 
 h3 {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #2D28AD;
   margin:0rem;
 }
@@ -391,7 +391,7 @@ footer {
 }
 
 footer p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #262626;
   text-align: center;
