@@ -63,14 +63,6 @@
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
 /* tab */
-li{
-  font-family:'Lato', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #262626;
-  margin-top:1rem;
-  margin-bottom:1rem;
-}
 
 .tablinks {
   background-color: #2d28ad;
