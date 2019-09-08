@@ -56,11 +56,18 @@ h3 {
   margin:0rem;
 }
 
-p {
+p{
+  font-size: 1.2rem;
   font-weight: 500;
   color: #262626;
   margin-top:1rem;
   margin-bottom:1rem;
+  line-height:2.5rem;
+}
+
+.bold-p{
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
 }
 
 /* button + animazioni, sia tasti sia pulsantiera */
@@ -69,7 +76,7 @@ button {
   border-radius: 1.5em;
   background-color:#2D28AD;
   border: #2D28AD;
-  font-family: 'Lato', sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-weight: 500;
   color: #F9F9F9;
   text-align: center;
@@ -130,6 +137,7 @@ button:hover span:after {
 
 .iconbutton p {
   color: #2D28AD;
+  font-family:'Montserrat', sans-serif;
 }
 
 .hovergrey img, .hovergrey p {
