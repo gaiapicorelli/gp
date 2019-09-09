@@ -5,12 +5,9 @@
 
 #content-servizi > p {
   grid-area: content;
+  padding-bottom: 2rem;
 }
 
-#content-servizi > .iconbutton-row {
-  grid-area: icons;
-  margin: 2em 0;
-}
 
 /* IMMAGINI */
 
@@ -54,11 +51,11 @@
 
 .overlay>p{
 position: absolute;
-top:24rem;
-left:7rem;
+top:20rem;
+left:2rem;
 }
 .container-immaginiclasse:hover .overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* BREKPOINT */
