@@ -13,12 +13,12 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
-  background-color:#FFFFFF;
+  background-color: #ffffff;
 }
 
 hr {
-  margin:0rem;
-  color:#07288C;
+  margin: 0rem;
+  color: #07288c;
 }
 
 .padding-conteiner {
@@ -27,70 +27,70 @@ hr {
 }
 
 h1 {
-  font-family:'Montserrat', sans-serif;
-  font-weight:600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   font-size: 4rem;
-  color: #2D28AD;
-  margin-top:0.5rem;
-  margin-bottom:0.5rem;
+  color: #2d28ad;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p,
 h2,
 h3 {
-  font-family:'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
   font-weight: bold;
   font-size: 2rem;
   font-weight: 500;
-  color:#716BFA;
+  color: #716bfa;
 }
 
 h3 {
   font-weight: 400;
   font-size: 1rem;
   font-weight: 400;
-  color: #2D28AD;
-  margin:0rem;
+  color: #2d28ad;
+  margin: 0rem;
 }
 
-p{
+p {
   font-size: 1.2rem;
   font-weight: 500;
   color: #262626;
-  margin-top:1rem;
-  margin-bottom:1rem;
-  line-height:2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
 }
 
-.bold-p{
+.bold-p {
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-li{
-  font-family:'Lato', sans-serif;
+li {
+  font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #262626;
-  margin-top:1rem;
-  margin-bottom:1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* button + animazioni, sia tasti sia pulsantiera */
 button {
   height: 3em;
   border-radius: 1.5em;
-  background-color:#2D28AD;
-  border: #2D28AD;
-  font-family:'Montserrat', sans-serif;
+  background-color: #2d28ad;
+  border: #2d28ad;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #F9F9F9;
+  color: #f9f9f9;
   text-align: center;
-  padding-left:1rem;
-  padding-right:1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -145,17 +145,19 @@ button:hover span:after {
 }
 
 .iconbutton p {
-  color: #2D28AD;
-  font-family:'Montserrat', sans-serif;
+  color: #2d28ad;
+  font-family: "Montserrat", sans-serif;
 }
 
-.hovergrey img, .hovergrey p {
+.hovergrey img,
+.hovergrey p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.hovergrey :hover img, .hovergrey :hover p {
+.hovergrey :hover img,
+.hovergrey :hover p {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
@@ -182,24 +184,24 @@ button:hover span:after {
   display: none;
   background-color: transparent;
   font-size: 2.5rem;
-  color: #0C0DB0;
- justify-self: center;
-  height: 3rem;
+  color: #0c0db0;
+  justify-self: center;
+  height: 4rem;
   /* Width legata al margin-left più in basso */
-  width: 3rem;
+  width: 4rem;
   position: absolute;
   bottom: 5vh;
   /* Mettendolo distante da destra del 50% e poi "spostandolo" di metà della sua larghezza con il margin negativo
               diventa centrato */
   left: 50%;
-  margin-left: -1.5rem;
+  margin-left: -2rem;
 }
 
 /*
   HEADER
 */
 header {
-  border-bottom: 1px solid #0704AC;
+  border-bottom: 1px solid #0704ac;
 }
 
 #content-header {
@@ -221,7 +223,6 @@ header {
   /* fa coppia con il padding sotto */
   max-height: 6.2rem;
   padding: 0.4rem 0;
-
 }
 
 /* menù + animazione */
@@ -245,7 +246,7 @@ header {
   content: "";
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #0704AC;
+  background-color: #0704ac;
   width: 0;
 }
 
@@ -273,14 +274,14 @@ nav {
 
 nav a {
   margin: auto 0.5rem;
-  font-family:'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   text-decoration-line: none;
   color: #262626;
 }
 
 nav a:hover {
-  color: #0704AC;
+  color: #0704ac;
 }
 
 /* menù mobile */
@@ -394,7 +395,7 @@ nav a:hover {
             FOOTER
          */
 footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 #content-footer {
@@ -408,7 +409,7 @@ footer {
 }
 
 footer p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #262626;
   text-align: center;
@@ -446,7 +447,7 @@ footer img {
   nav a {
     display: block;
     margin: 1rem;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: lighter;
     text-decoration-line: none;
     text-align: center;
