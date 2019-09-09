@@ -3,6 +3,10 @@
   padding: 4rem;
 }
 
+#title-pag-progetto{
+  padding-bottom:2rem;
+}
+
 #mainblock-content {
   display: grid;
   width: 100%;
