@@ -129,4 +129,12 @@
     #img-aggiornamenti {
         width: 50%;
     }
+
+    form {
+        text-align: center;
+    }
+
+    form button {
+        width: 60%;
+    }
 }
