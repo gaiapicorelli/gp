@@ -449,11 +449,22 @@ h3{
   font-size: 0.9rem;
 }
 
+li {
+  font-size: 1rem;
+}
 
+.iconbutton-row {
+  display: none;
+}
   #content-header {
     grid-template-areas: "social logo hamburger" "nav nav nav";
     grid-template-rows: 5rem auto;
   }
+
+  /* .snip1217{
+    display: none;
+  } */
+  
   #logo-header {
     justify-self: center;
     height: 4.2rem;
