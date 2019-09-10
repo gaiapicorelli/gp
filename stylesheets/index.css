@@ -2,15 +2,15 @@
   GALLERIA
 */
 #galleria {
-    height: 85.5vh;
+    height: 89.5vh;
     display: grid;
-    padding-bottom: 4vh;
+    /* padding-bottom: 4vh; */
 }
 
 #background-galleria {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin: auto 0;
+    margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
 }
