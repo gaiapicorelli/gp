@@ -223,17 +223,31 @@
 
 /* 425px */
 @media screen and (max-width: 425px) {
-  #galleria {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #logo-home {
+  #galleria{
     display: none;
   }
 
-  #galleria {
+#background-galleria{
+  display: none;
+}
+
+#logo-home {
+  display: none;
+}
+
+  #galleria-mobile {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 100%;
+  }
+
+  #background-galleria-mobile{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto 0;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   #logo-home-mobile {
@@ -241,7 +255,7 @@
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
-    padding-top: 1rem;
+    
     justify-self: center;
     height: 20vw;
     width: 50vw;
@@ -255,13 +269,8 @@
     display: none;
   }
 
-  #logo-scritta-mobile,
-  #logo-scritta2-mobile {
-    animation: fade-in-logo 2s ease;
-    -webkit-animation: fade-in-logo 2s ease;
-  }
-
   #logo-home-mobile img {
+   
     animation: rotation 2s ease;
     -webkit-animation: rotation 2s ease;
   }
