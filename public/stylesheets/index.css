@@ -223,6 +223,11 @@
 
 /* 1280px */
 @media screen and (max-width: 1280px) {
+#galleria{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
   #logo-home {
     display: none;
   }
