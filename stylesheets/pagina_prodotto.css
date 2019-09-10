@@ -1,118 +1,74 @@
 /* BLOCCO IMAGGINI 1 */
 #container-mainblock {
-  padding: 4rem;
+    padding: 1rem;
 }
 
-#title-pag-progetto{
-  padding-bottom:2rem;
+#title-pag-progetto {
+    padding-bottom: 2rem;
 }
 
 #mainblock-content {
-  display: grid;
-  width: 100%;
-  grid-template-areas: "title title" "text image";
-  grid-template-columns: 25% 75%;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "title title" "text image";
+    grid-template-columns: 25% 75%;
 }
 
 #mainblock-content > h1 {
-  grid-area: title;
+    grid-area: title;
 }
+
 #mainblock-content > p {
-  grid-area: text;
-  padding-right: 3rem;
+    grid-area: text;
 }
 
 #mainblock-content > img {
-  grid-area: image;
-  width: 100%;
+    grid-area: image;
+    justify-self: right;
+    width: 90%;
 }
 
 
 /* BLOCCO IMMAGINI 2 */
 #container-secondary {
-  background-color: #FAE26B;
-  padding: 4em;
+    background-color: #FAE26B;
+    padding: 4rem 0;
 }
 
 #secondary {
-  display: grid;
-  width: 100%;
-  grid-template-areas: "img text";
-  grid-template-columns: 50% 50%;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "img text";
+    grid-template-columns: 50% 50%;
 }
 
 #secondary > img {
-  width: 100%;
-  grid-area: img;
+    width: 90%;
+    justify-content: left;
+    grid-area: img;
 }
 
 #secondary > p {
-  grid-area: text;
-  margin: auto 0;
-  padding-left: 5rem;
+    grid-area: text;
 }
 
 /* BLOCCO IMMAGINI 3 */
 #container-tertiary {
-  padding: 4em;
+    padding: 4rem 0;
 }
 
 #tertiary {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
 }
 
 #tertiary > img {
-  width: 95%;
-  justify-self: center;
-  align-self: center;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
 }
 
 #sezioni {
-  padding: 2rem;
+    padding: 2rem;
 }
-
-
-/* per dispositivi mobile laptop */
-@media screen and (max-width: 1140px) {
-    #mainblock-content {
-        display: grid;
-        width: 100%;
-        grid-template-areas: "title" "image" "text";
-        grid-template-columns: 100%;
-      }
-      
-      #mainblock-content > h1 {
-        grid-area: title;
-      }
-      #mainblock-content > p {
-        grid-area: text;
-       padding:2rem;
-      }
-      
-      #mainblock-content > img {
-        grid-area: image;
-        width: 100%;
-      }
-    }
-
-    /* per dispositivi mobile tablet */
-@media screen and (max-width: 678px) {
-    #secondary {
-        display: grid;
-        width: 100%;
-        grid-template-areas: "img" "text";
-        grid-template-columns: 100%;
-      }
-      
-      #secondary > img {
-        width: 100%;
-        grid-area: img;
-      }
-      
-      #secondary > p {
-        grid-area: text;
-        padding:2rem;
-      }
-    }
