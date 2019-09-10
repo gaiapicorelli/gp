@@ -1,0 +1,14 @@
+@media screen and (max-width: 425px) {
+    #container-servizi > .central {
+        margin: 0 1rem;
+    }
+
+    #immagini-grid-img {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .container-immaginiclasse p {
+        display: none;
+    }
+}
