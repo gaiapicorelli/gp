@@ -474,8 +474,6 @@ footer img {
   }
 }
 
-/* footer 948px */
-@media screen and (max-width: 948px) {
   #logo-footer {
     width: 4.2rem;
     margin: 1rem;
@@ -484,10 +482,10 @@ footer img {
   #sidebutton {
     display: none;
   }
-}
+
 
 /* 425px */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1024px) {
   .iconbutton-row img {
     width: 2.5rem;
   }
