@@ -11,15 +11,17 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/global.css">
+  <link rel="stylesheet" href="stylesheets/mobile.css">
   <link rel="stylesheet" href="stylesheets/nav_grafica.css">
+  <link rel="stylesheet" href="stylesheets/nav_grafica_mobile.css">
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
       <div id="content-header" class="central">
-          <img id="logo-header" src="images/logoGP8_senza_scritta2.svg" alt="Logo" />
-          <nav id="nav" class="snip1217">
+          <img id="logo-header" src="images/logoGP8_senza_scritta2.svg" alt="Logo"/>
+          <nav id="nav" class="snip1217 closed-header">
               <a class="current" href="index.html">HOME</a>
               <a class="current" href="nav_su_di_me.html">CHI SONO</a>
               <a class="current" href="nav_grafica.html">GRAFICA</a>
@@ -29,15 +31,15 @@
           </nav>
           <div id="social-header">
               <a class="wobble" href="https://www.instagram.com/gaiapicorelli/?hl=it">
-                  <img src="images/instagram2.svg" alt="Link Instagram" />
+                  <img src="images/instagram2.svg" alt="Link Instagram"/>
               </a>
 
               <a class="wobble" href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
-                  <img src="images/linkedin2.svg" alt="Link LinkedIn" />
+                  <img src="images/linkedin2.svg" alt="Link LinkedIn"/>
               </a>
           </div>
-          <img id="hamburger" src="images/menu-black-circular-button.svg"
-              onclick="javascript:toggleHeader()" />
+          <img id="hamburger" src="images/menu-black-circular-button.svg" alt="hamburger_menu"
+               onclick="toggleHeader()"/>
       </div>
   </header>
   <script src="js/animazioneHeader.js"></script>
