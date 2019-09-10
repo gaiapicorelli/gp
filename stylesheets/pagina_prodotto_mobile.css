@@ -1,5 +1,5 @@
 /* per dispositivi mobile laptop */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
     #mainblock-content {
         display: grid;
         width: 100%;
