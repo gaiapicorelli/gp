@@ -500,8 +500,7 @@ li {
 }
 
   #logo-footer {
-    width: 4.2rem;
-    margin: 1rem;
+display: none;
   }
 
   #sidebutton {
