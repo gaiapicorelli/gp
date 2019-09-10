@@ -235,6 +235,14 @@
   display: none;
 }
 
+#logo-scritta-mobile {
+  display: none;
+}
+
+#logo-scritta2-mobile {
+  display: none;
+}
+
   #galleria-mobile {
     display: grid;
     padding-left: 1rem;
@@ -261,16 +269,7 @@
     width: 40vw;
   }
 
-  #logo-scritta-mobile {
-    display: none;
-  }
-
-  #logo-scritta2-mobile {
-    display: none;
-  }
-
   #logo-home-mobile img {
-   
     animation: rotation 2s ease;
     -webkit-animation: rotation 2s ease;
   }
@@ -318,17 +317,12 @@
     grid-area: text-sottodescrizione-mobile;
   }
 
-  #portfolio {
-    text-align: center;
-    padding-top: 1rem;
-  }
-
   #portfolio-grid-img {
     display: grid;
-    grid-column-gap: 2%;
-    grid-template-columns: 32% 32% 32%;
-    grid-row-gap: 2.5%;
-    margin: 2rem 1rem;
+    grid-column-gap: 0%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+  
   }
 
   #portfolio-grid-img img {
