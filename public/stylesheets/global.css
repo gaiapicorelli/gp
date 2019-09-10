@@ -430,8 +430,8 @@ footer img {
   }
 }
 
-/* Header 1280px  */
-@media screen and (max-width: 1280px) {
+/* Header 850px  */
+@media screen and (max-width: 850px) {
   .padding-conteiner {
     padding-top: 1rem;
     padding-bottom: 1rem;
