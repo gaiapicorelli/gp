@@ -21,7 +21,7 @@ hr {
   color: #07288c;
 }
 
-.padding-conteiner {
+.padding-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -432,7 +432,7 @@ footer img {
 
 /* Header 425px  */
 @media screen and (max-width: 425px) {
-  .padding-conteiner {
+  .padding-container {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }

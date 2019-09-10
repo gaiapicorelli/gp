@@ -2,230 +2,230 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>GP Graphic Designer</title>
     <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="public/stylesheets/global.css">
-    <link rel="stylesheet" href="public/stylesheets/index.css">
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/index_mobile.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div id="content-header" class="central">
-            <img id="logo-header" src="public/images/logoGP8_senza_scritta2.svg" alt="Logo" />
-            <nav id="nav" class="snip1217">
-                <a class="current" href="index.html">HOME</a>
-                <a class="current" href="nav_su_di_me.html">CHI SONO</a>
-                <a class="current" href="nav_grafica.html">GRAFICA</a>
-                <a class="current" href="nav_illustrazione.html">ILLUSTRAZIONE</a>
-                <a class="current" href="nav_fumetto.html">FUMETTO</a>
-                <a class="current" href="nav_contatti.html">CONTATTI</a>
-            </nav>
-            <div id="social-header">
-                <a class="wobble" href="https://www.instagram.com/gaiapicorelli/?hl=it">
-                    <img src="public/images/instagram2.svg" alt="Link Instagram" />
-                </a>
+<!-- HEADER -->
+<header>
+    <div id="content-header" class="central">
+        <img id="logo-header" src="images/logoGP8_senza_scritta2.svg" alt="Logo"/>
+        <nav id="nav" class="snip1217">
+            <a class="current" href="index.html">HOME</a>
+            <a class="current" href="nav_su_di_me.html">CHI SONO</a>
+            <a class="current" href="nav_grafica.html">GRAFICA</a>
+            <a class="current" href="nav_illustrazione.html">ILLUSTRAZIONE</a>
+            <a class="current" href="nav_fumetto.html">FUMETTO</a>
+            <a class="current" href="nav_contatti.html">CONTATTI</a>
+        </nav>
+        <div id="social-header">
+            <a class="wobble" href="https://www.instagram.com/gaiapicorelli/?hl=it">
+                <img src="images/instagram2.svg" alt="Link Instagram"/>
+            </a>
 
-                <a class="wobble" href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
-                    <img src="public/images/linkedin2.svg" alt="Link LinkedIn" />
-                </a>
-            </div>
-            <img id="hamburger" src="public/images/menu-black-circular-button.svg"
-                onclick="javascript:toggleHeader()" />
+            <a class="wobble" href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+                <img src="images/linkedin2.svg" alt="Link LinkedIn"/>
+            </a>
         </div>
-    </header>
-    <script src="public/js/animazioneHeader.js"></script>
+        <img id="hamburger" src="images/menu-black-circular-button.svg"
+             onclick="javascript:toggleHeader()"/>
+    </div>
+</header>
+<script src="js/animazioneHeader.js"></script>
 
-    <div id="drawer"></div>
+<div id="drawer"></div>
 
-    <!-- GALLERIA -->
-    <main>
-        <div id="galleria">
-            <img id="background-galleria" src="public/images/illustrazione iniziale2.svg" alt="Immagine di galleria" />
-            <div id="logo-home">
-                <img class="rotate" src="public/images/logoGP8_senza_scritta.svg" alt="Logo" />
+<!-- GALLERIA -->
+<main>
+    <div id="galleria">
+        <img id="background-galleria" src="images/illustrazione iniziale2.svg" alt="Immagine di galleria"/>
+        <div id="logo-home">
+            <img class="rotate" src="images/logoGP8_senza_scritta.svg" alt="Logo"/>
 
-                <div id="logo-scritta">
-                    Gaia Picorelli
-                </div>
-                <div id="logo-scritta2">
-                    Graphic Designer
-                </div>
+            <div id="logo-scritta">
+                Gaia Picorelli
             </div>
-        </div>
-        <!-- logo mobile -->
-        <div id="galleria-mobile">
-            <img id="background-galleria-mobile" src="public/images/illustrazione iniziale2.svg"
-                alt="Immagine di galleria" />
-            <div id="logo-home-mobile">
-                <img class="rotate" src="public/images/logoGP8_senza_scritta.svg" alt="Logo" />
+            <div id="logo-scritta2">
+                Graphic Designer
             </div>
         </div>
-
-        <!-- DESCRIZIONE -->
-        <div id="descrizione" class="padding-conteiner">
-            <h1 class="central">
-                HOME
-            </h1>
-            <p id="intro" class="central">
-                <span class="virgolette central">"</span>
-                La fantasia è come la marmellata,<br>
-                bisogna che sia spalmata su una solida fetta di pane.
-                <span class="virgolette central">"</span></p>
-            <p class="italo central">(Italo Calvino)</p>
-
-            <div id="sottodescrizione">
-                <img src="public/images/io_piccola.jpg" alt="Foto personale" />
-                <div>
-                    <p>
-                        Amo le storie e ogni <span class="bold-p">mezzo</span> per raccontarle.<br />
-                        Un buon racconto plasma il pensiero,<br>
-                        il buon pensiero, plasma la <span class="bold-p">realtà</span>.
-                    </p>
-                    <form>
-                        <button formaction="nav_su_di_me.html"><span> Vai al CV </span></button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- sottodescrizione mobile da 850px -->
-            <div id="sottodescrizione-mobile">
-                <img src="public/images/io_piccola.jpg" alt="Foto personale" />
-                <div>
-                    <p>
-                        Sono <span class="bold-p">Gaia Picorelli</span> e sono una <span class="bold-p">graphic
-                            designer</span>,
-                        vuoi saperne di più?
-                        Clicca e scopri le mie skills.
-                    </p>
-                    <form>
-                        <button formaction="nav_su_di_me.html"><span> Vai al CV </span></button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- PORTFOLIO -->
-            <div id="portfolio" class="central">
-                <h2>
-                    Portfolio
-                </h2>
-                <p>
-                    Visita le sezioni e guarda l'anteprima completa.
-                </p>
-                <div id="portfolio-grid-img">
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio1.jpg" alt="portfolio1" />
-                        </a>
-                    </div>
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio2.jpg" alt="portfolio2" />
-                        </a>
-                    </div>
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio6.jpg" alt="portfolio3" />
-                        </a>
-                    </div>
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio3.jpg" alt="portfolio4" />
-                        </a>
-                    </div>
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio5.jpg" alt="portfolio5" />
-                        </a>
-                    </div>
-                    <div class="grow">
-                        <a href="pagina_prodotto.html">
-                            <img src="public/images/portfolio4ù.jpg" alt="portfolio6" />
-                        </a>
-                    </div>
-                </div>
-
-                <div id="sezioni" class="iconbutton-row hovergrey">
-                    <a class="iconbutton" href="nav_grafica.html" title="Visita grafica">
-                        <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione grafica" />
-                        <p>Grafica</p>
-                    </a>
-                    <a class="iconbutton" href="nav_illustrazione.html" title="Visita illustrazione">
-                        <img class="flipped" src="public/images/arrow_sezioni.svg" alt="sezione illustrazione" />
-                        <p>Illustrazione</p>
-                    </a>
-                    <a class="iconbutton" href="nav_fumetto.html " title="Visita fumetto">
-                        <img src="public/images/arrow_sezioni.svg" alt="sezione fumetto" />
-                        <p>Fumetto</p>
-                    </a>
-                    <a class="iconbutton" href="nav_su_di_me.html" title="Visita chi sono">
-                        <img src="public/images/arrow_sezioni.svg" alt="sezione chi sono" />
-                        <p>Chi sono</p>
-                    </a>
-                </div>
-            </div>
+    </div>
+    <!-- logo mobile -->
+    <div id="galleria-mobile" class="mobile">
+        <img id="background-galleria-mobile" src="images/illustrazione iniziale2.svg"
+             alt="Immagine di galleria"/>
+        <div id="logo-home-mobile">
+            <img class="rotate" src="images/logoGP8_senza_scritta.svg" alt="Logo"/>
         </div>
-
-
-
-        <!-- AGGIORNAMENTI -->
-        <div id="aggiornamenti-container" class="padding-conteiner">
-            <div id="aggiornamenti" class="central">
-                <h2>
-                    News
-                </h2>
-                <img id="img-aggiornamenti" src="public/images/aggiornamenti2.svg" alt="Aggiornamenti" />
-                <div id="contenuto-aggiornamenti">
-                    <p>
-                        <span class="bold-p"> 23.08.2019 <br></span>
-                        L'ultimo lavoro è stato una bella sfida,<br>
-                        si tratta di un progetto editoriale per una cooperativa sociale: Etimos.<br>
-                        Ho realizzato per loro un rendiconto finale sui bilanci annuali del loro operato in Abruzzo.<br>
-                        Vuoi saperne di più?<br>
-                        <span class="bold-p">Clicca e vai alla sezione!</span></p>
-                    <form>
-                        <button formaction="pagina_prodotto.html"><span> Scopri di più </span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- SIDEBUTTON E PULSANTE CONTATTI -->
-
-    <div id="sidebutton">
-        <div id="pulsanteContatti">
-            <a href="nav_contatti.html" title="Vai ai contatti"><img src="public/images/bottone_contatti1.svg"
-                    alt="contatti" /></a>
-        </div>
-        <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <hr>
-        <div id="content-footer" class="central padding-conteiner">
-            <div class="empty"></div>
-            <div id="footer-txt">
-                <p>Gaia Picorelli</p>
-                <p>Web Graphic Designer</p>
-                <p>gaiapicorelli@gmail.com</p>
-                <p>Credits</p>
+    <!-- DESCRIZIONE -->
+    <div id="descrizione" class="padding-container">
+        <h1 class="central">
+            HOME
+        </h1>
+        <p id="intro" class="central">
+            <span class="virgolette central">"</span>
+            La fantasia è come la marmellata,<br>
+            bisogna che sia spalmata su una solida fetta di pane.
+            <span class="virgolette central">"</span></p>
+        <p class="italo central">(Italo Calvino)</p>
+
+        <div id="sottodescrizione">
+            <img src="images/io_piccola.jpg" alt="Foto personale"/>
+            <div>
+                <p>
+                    Amo le storie e ogni <span class="bold-p">mezzo</span> per raccontarle.<br/>
+                    Un buon racconto plasma il pensiero,<br>
+                    il buon pensiero, plasma la <span class="bold-p">realtà</span>.
+                </p>
+                <form>
+                    <button formaction="nav_su_di_me.html"><span> Vai al CV </span></button>
+                </form>
             </div>
-            <img id="logo-footer" src="public/images/logoGP8_senza_scritta.svg" alt="logo" />
         </div>
-    </footer>
+
+        <!-- sottodescrizione mobile da 850px -->
+        <div id="sottodescrizione-mobile" class="mobile">
+            <img src="images/io_piccola.jpg" alt="Foto personale"/>
+            <div>
+                <p>
+                    Sono <span class="bold-p">Gaia Picorelli</span> e sono una <span class="bold-p">graphic
+                            designer</span>,
+                    vuoi saperne di più?
+                    Clicca e scopri le mie skills.
+                </p>
+                <form>
+                    <button formaction="nav_su_di_me.html"><span> Vai al CV </span></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div id="portfolio" class="central">
+            <h2>
+                Portfolio
+            </h2>
+            <p>
+                Visita le sezioni e guarda l'anteprima completa.
+            </p>
+            <div id="portfolio-grid-img">
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio1.jpg" alt="portfolio1"/>
+                    </a>
+                </div>
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio2.jpg" alt="portfolio2"/>
+                    </a>
+                </div>
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio6.jpg" alt="portfolio3"/>
+                    </a>
+                </div>
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio3.jpg" alt="portfolio4"/>
+                    </a>
+                </div>
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio5.jpg" alt="portfolio5"/>
+                    </a>
+                </div>
+                <div class="grow">
+                    <a href="pagina_prodotto.html">
+                        <img src="images/portfolio4ù.jpg" alt="portfolio6"/>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sezioni" class="iconbutton-row hovergrey">
+                <a class="iconbutton" href="nav_grafica.html" title="Visita grafica">
+                    <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione grafica"/>
+                    <p>Grafica</p>
+                </a>
+                <a class="iconbutton" href="nav_illustrazione.html" title="Visita illustrazione">
+                    <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione illustrazione"/>
+                    <p>Illustrazione</p>
+                </a>
+                <a class="iconbutton" href="nav_fumetto.html " title="Visita fumetto">
+                    <img src="images/arrow_sezioni.svg" alt="sezione fumetto"/>
+                    <p>Fumetto</p>
+                </a>
+                <a class="iconbutton" href="nav_su_di_me.html" title="Visita chi sono">
+                    <img src="images/arrow_sezioni.svg" alt="sezione chi sono"/>
+                    <p>Chi sono</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AGGIORNAMENTI -->
+    <div id="aggiornamenti-container" class="padding-container">
+        <div id="aggiornamenti" class="central">
+            <h2>
+                News
+            </h2>
+            <img id="img-aggiornamenti" src="images/aggiornamenti2.svg" alt="Aggiornamenti"/>
+            <div id="contenuto-aggiornamenti">
+                <p>
+                    <span class="bold-p"> 23.08.2019 <br></span>
+                    L'ultimo lavoro è stato una bella sfida,<br>
+                    si tratta di un progetto editoriale per una cooperativa sociale: Etimos.<br>
+                    Ho realizzato per loro un rendiconto finale sui bilanci annuali del loro operato in Abruzzo.<br>
+                    Vuoi saperne di più?<br>
+                    <span class="bold-p">Clicca e vai alla sezione!</span></p>
+                <form>
+                    <button formaction="pagina_prodotto.html"><span> Scopri di più </span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- SIDEBUTTON E PULSANTE CONTATTI -->
+
+<div id="sidebutton">
+    <div id="pulsanteContatti">
+        <a href="nav_contatti.html" title="Vai ai contatti"><img src="images/bottone_contatti1.svg"
+                                                                 alt="contatti"/></a>
+    </div>
+    <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <hr>
+    <div id="content-footer" class="central padding-container">
+        <div class="empty"></div>
+        <div id="footer-txt">
+            <p>Gaia Picorelli</p>
+            <p>Web Graphic Designer</p>
+            <p>gaiapicorelli@gmail.com</p>
+            <p>Credits</p>
+        </div>
+        <img id="logo-footer" src="images/logoGP8_senza_scritta.svg" alt="logo"/>
+    </div>
+</footer>
 </body>
-<script src="public/js/scrollup.js"></script>
+<script src="js/scrollup.js"></script>
 
 </html>

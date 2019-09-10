@@ -1,0 +1,217 @@
+/*
+  GALLERIA
+*/
+#galleria {
+    height: 85.5vh;
+    display: grid;
+    padding-bottom: 4vh;
+}
+
+#background-galleria {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* logo + animazione */
+#logo-home {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    height: 30rem;
+    width: 39rem;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+    }
+}
+
+@keyframes fade-in-logo {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-logo {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#logo-home img {
+    height: 100%;
+    animation: rotation 2s ease;
+    -webkit-animation: rotation 2s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#logo-scritta {
+    position: absolute;
+    bottom: 2.3rem;
+    right: 0;
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.21rem;
+    font-size: 2rem;
+    color: #07288c;
+}
+
+#logo-scritta2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #07288c;
+}
+
+#logo-scritta,
+#logo-scritta2 {
+    width: 16rem;
+    text-align: center;
+    animation: fade-in-logo 2s ease;
+    -webkit-animation: fade-in-logo 2s ease;
+}
+
+/*
+  DESCRIZIONE
+*/
+#descrizione {
+    background-color: #fae26b;
+}
+
+#intro {
+    padding-top: 1rem;
+    font-family: "Montserrat", "sans-serif";
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.virgolette {
+    font-family: "Montserrat", "sans-serif";
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.italo {
+    padding-top: 0.5rem;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#sottodescrizione {
+    max-width: 50em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#sottodescrizione img {
+    height: 15rem;
+    padding: 1rem;
+}
+
+#sottodescrizione div {
+    height: 100%;
+    margin: auto 1rem;
+}
+
+/*
+  PORTFOLIO
+*/
+#portfolio {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#portfolio-grid-img {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: 32% 32% 32%;
+    grid-row-gap: 2.5%;
+    margin: 2rem 1rem;
+}
+
+#portfolio-grid-img img {
+    width: 100%;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 0.4s ease;
+}
+
+/*
+  AGGIORNAMENTI
+*/
+
+#aggiornamenti {
+    margin: auto;
+    max-width: 65em;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "title img" "content img" ". img";
+}
+
+#aggiornamenti h2 {
+    grid-area: title;
+}
+
+#img-aggiornamenti {
+    grid-area: img;
+    width: 80%;
+}
+
+#contenuto-aggiornamenti {
+    grid-area: content;
+}
+
+.mobile {
+    display: none;
+}
