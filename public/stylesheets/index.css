@@ -275,14 +275,11 @@
   }
   
   #intro {
-    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height:2 rem;
   }
   
   .virgolette {
-  
     font-weight: 900;
     font-size: 1.5rem;
   }
@@ -293,23 +290,50 @@
     font-weight: 400;
   }
   
+#descrizione{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
   #sottodescrizione {
-    max-width: 50em;
-    margin: auto;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
+    display:grid;
+    grid-auto-columns: "100%" "100%";
+    grid-template-areas: "img" "text-sottodescrizione";
+    padding: 0rem;
   }
   
   #sottodescrizione img {
-    height: 15rem;
-    padding: 1rem;
+    grid-area: img;
+    height: 10rem;
+    justify-self: center;
   }
   
   #sottodescrizione div {
-    height: 100%;
-    margin: auto 1rem;
+    grid-area: text-sottodescrizione;
+  }
+
+  #portfolio {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  #portfolio-grid-img {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: 32% 32% 32%;
+    grid-row-gap: 2.5%;
+    margin: 2rem 1rem;
+  }
+  
+  #portfolio-grid-img img {
+    width: 100%;
+  }
+  
+  .grow:hover {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 0.4s ease;
   }
 
 }
