@@ -25,19 +25,12 @@
 /* BREAKPOINT */
 
 /* 1440px */
-@media screen and (max-width: 1440px) {
-    #sidebutton {
-        display: none;
-    }
-
+@media screen and (max-width: 768px) {
     .closed-header {
         height: 0;
         overflow: hidden;
     }
-}
 
-/* Header 425px  */
-@media screen and (max-width: 425px) {
     .padding-container {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -109,5 +102,11 @@
     footer p {
         margin: 0;
         line-height: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    #sidebutton {
+        display: none;
     }
 }
