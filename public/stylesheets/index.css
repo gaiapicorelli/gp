@@ -318,7 +318,6 @@
   }
   
   #intro {
-    
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -326,17 +325,15 @@
   }
   
   .virgolette {
-    font-family: "Montserrat", "sans-serif";
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 3rem;
+  
+    font-weight: 900;
+    font-size: 1.5rem;
   }
   
   .italo {
-    padding-top: 0.5rem;
     font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
   }
   
   #sottodescrizione {
