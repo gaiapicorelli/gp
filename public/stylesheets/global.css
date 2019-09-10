@@ -508,9 +508,14 @@ display: none;
   
   #content-footer {
     display: block;
-    justify-content: space-between;
+   justify-self: center;
   }
 
+  footer p {
+    margin:0rem;
+    line-height: 1.5rem;
+  }
+  
   #sidebutton {
     display: none;
   }
