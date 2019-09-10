@@ -39,7 +39,7 @@
 }
 
 
-/* brekpoint 1024px */
+/* breakpoint 1024px */
 @media screen and (max-width: 1024px) {
 #content {
     padding-left: 1rem;
@@ -47,7 +47,7 @@
 }
 }
 
-/* brekpoint 740px */
+/* breakpoint 740px */
 @media screen and (max-width: 740px) {
     #mainblock {
         display: grid;

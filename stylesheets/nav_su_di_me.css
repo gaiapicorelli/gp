@@ -1,239 +1,185 @@
 /* DESCRIZIONE */
 #content-descrizione {
-  display: grid;
-  grid-template-areas:
-    "img title"
-    "img content"
-    "img icons";
+    display: grid;
+    grid-template-areas: "img title" "img content" "img icons";
 }
 
 #content-descrizione > img {
-  width: 15rem;
-  grid-area: img;
-  align-self: center;
+    width: 15rem;
+    grid-area: img;
+    align-self: center;
 }
 
 #content-descrizione > h2 {
-  grid-area: title;
+    grid-area: title;
 }
 
 #content-descrizione > p {
-  grid-area: content;
+    grid-area: content;
 }
 
 #content-descrizione > .iconbutton-row {
-  grid-area: icons;
-  margin: 2em 0;
-}
-
-#content-descrizione > h2,
-#content-descrizione > p,
-#content-descrizione > .iconbutton-row {
-  margin-left: 4vw;
+    grid-area: icons;
+    margin: 2em 0;
 }
 
 /* FORMAZIONE */
 #container-formazione {
-  background-color: #fae26b;
+    background-color: #fae26b;
 }
 
 #grid-formazione {
-  display: grid;
-  grid-template-areas:
-    "title title title title"
-    "testo testo img img "
-    "testo testo img img"
-    "testo testo img img";
-  grid-auto-columns: 10% 30% 30% 30%;
-  padding-bottom: 2rem;
+    display: grid;
+    grid-template-areas: "title title" "testo img" "testo img" "testo img";
+    grid-auto-columns: 40% 60%;
+    padding-bottom: 2rem;
 }
 
 #grid-formazione > h2 {
-  grid-area: title;
+    grid-area: title;
 }
 
 #testo-formazione {
-  grid-area: testo;
+    grid-area: testo;
 }
 
 #illustrazionesudime {
-  width: 100%;
-  grid-area: img;
+    width: 100%;
+    grid-area: img;
 }
 
 /* COMPETENZE PROFESSIONALI E PERSONALI */
 /* tab */
 
 .tablinks {
-  background-color: #2d28ad;
-  width: 100%;
-  border-radius: initial;
-  border: none;
-  cursor: pointer;
-  padding: 16px 18px;
-  transition: 0.3s;
+    background-color: #2d28ad;
+    width: 100%;
+    border-radius: initial;
+    border: none;
+    cursor: pointer;
+    /*padding: 16px 18px;*/
+    transition: 0.3s;
 }
 
+
 .tabcontent {
-  padding: 1rem 2rem;
-  border: 1px solid #f9f9f9;
-  border-top: none;
+    padding: 1rem 2rem;
+    border: 1px solid #f9f9f9;
+    background-color: #f2f2f2;
+    border-top: none;
 }
 
 .tabcontent.inactive {
-  display: none;
+    display: none;
 }
 
 #tabcontent {
-  display: grid;
-  grid-template-areas:
-    "profh persh"
-    "profb persb";
-  grid-auto-columns: 50%;
+    display: grid;
+    grid-template-areas: "profh persh" "profb persb";
+    grid-auto-columns: 50%;
 }
 
 #tabhead-prof {
-  grid-area: profh;
+    grid-area: profh;
 }
 
 #tabhead-pers {
-  grid-area: persh;
+    grid-area: persh;
 }
 
 #competenze-professionali {
-  grid-area: profb;
+    grid-area: profb;
 }
 
 #competenze-personali {
-  grid-area: persb;
+    grid-area: persb;
 }
 
 /* COMPETENZE INFORMATICHE */
-#h2competenzeinformatiche {
-  padding-bottom: 2rem;
-}
-
 #content-competenze-informatiche {
-  display: grid;
-  grid-template-areas:
-    "linea-competenza1 linea-competenza2"
-    "competenze1 competenze2";
-  grid-auto-columns: 50%;
+    display: grid;
+    grid-template-areas: "linea-competenza1 linea-competenza2" "competenze1 competenze2";
+    grid-auto-columns: 50%;
 }
 
 #linea-competenza1 {
-  grid-area: "linea-competenza1";
+    grid-area: linea-competenza1;
 }
 
 #linea-competenza2 {
-  grid-area: "linea-competenza2";
+    grid-area: linea-competenza2;
 }
 
 .slider-container {
-  position: relative;
-  height: 3rem;
-  margin: 1rem;
+    position: relative;
+    height: 3rem;
+    margin: 1rem;
 }
 
 .slider-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 50%;
-  border-bottom: 1px solid #2d28ad;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    border-bottom: 1px solid #2d28ad;
 }
 
 .slider-cursor {
-  border: 1px solid #0704ac;
-  border-radius: 50%;
-  height: 1em;
-  width: 1em;
-  position: absolute;
-  top: 50%;
-  margin-top: -0.6em;
-  margin-left: -0.6em;
-  background-color: #0704ac;
+    border: 1px solid #0704ac;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.6em;
+    margin-left: -0.6em;
+    background-color: #0704ac;
 }
 
 #linea-competenza1 > .slider-cursor {
-  left: 90%;
+    left: 90%;
 }
 
 #linea-competenza2 > .slider-cursor {
-  left: 45%;
+    left: 45%;
 }
 
 .animate {
-  animation: animate 0.8s ease forwards;
+    animation: animate 0.8s ease forwards;
+}
+
+.animate2 {
+    animation: animate2 0.8s ease forwards;
 }
 
 @keyframes animate {
-  from {
-    left: 0%;
-  }
+    from {
+        left: 0;
+    }
 
-  to {
-    left: 80;
-  }
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 45%;
+    }
 }
 
 /* ALTRI INTERESSI */
 #h2altriinteressi {
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 #container-altriinteressi {
-  padding-bottom:4rem;
-  padding-top:4rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
-/*brekpoint 1024px */
-@media screen and (max-width: 1024px) {
-  #container-descrizione,
-  #container-formazione,
-  #container-competenze-prof-pers,
-  #container-competenze-informatiche,
-  #container-altriinteressi {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/*brekpoint 645px */
-@media screen and (max-width: 645px) {
-  #content-descrizione {
-    display: grid;
-    grid-template-areas:
-      "title title"
-      "img img"
-      "text text"
-      "icon icon";
-  }
-
-  #content-descrizione > img {
-    width: 50%;
-    grid-area: img;
-    justify-self: center;
-  }
-
-  #content-descrizione > h2 {
-    grid-area: title;
-  }
-
-  #content-descrizione > p {
-    grid-area: text;
-    margin: 0rem;
-    margin-top: 1rem;
-  }
-
-  #content-descrizione > .iconbutton-row {
-    grid-area: icon;
-    margin: 0rem;
-    margin-top: 1rem;
-  }
-}
-
-/*brekpoint 375px */
-@media screen and (max-width: 375px) {
-}

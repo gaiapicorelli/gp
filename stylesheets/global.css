@@ -17,7 +17,7 @@ body {
 }
 
 hr {
-    margin: 0rem;
+    margin: 0;
     color: #07288c;
 }
 
@@ -51,7 +51,7 @@ h3 {
     font-weight: 400;
     font-size: 1rem;
     color: #2d28ad;
-    margin: 0rem;
+    margin: 0;
 }
 
 p {

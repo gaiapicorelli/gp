@@ -1,5 +1,3 @@
-
-
 /* BREAKPOINT */
 
 /* 425px */
@@ -94,6 +92,10 @@
 
     #sottodescrizione-mobile div {
         grid-area: text-sottodescrizione-mobile;
+    }
+
+    #portfolio {
+        padding-top: 0;
     }
 
     #portfolio-grid-img {

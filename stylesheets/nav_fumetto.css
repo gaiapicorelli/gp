@@ -1,69 +1,69 @@
 /* SERVIZI */
 #content-servizi > h2 {
-  grid-area: title;
+    grid-area: title;
 }
 
 #content-servizi > p {
-  grid-area: content;
-  padding-bottom: 2rem;
+    grid-area: content;
+    padding-bottom: 2rem;
 }
 
 
 /* IMMAGINI */
 
 #immagini-grid-img {
-  display: grid;
-  grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .container-immaginiclasse {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .imggrafica,
 .overlay {
-  grid-row: 1/2;
-  grid-column: 1/2;
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 .imggrafica {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 .overlay {
-  position: relative;
-  background: #FAE26B;
-  color: #FAE26B;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s ease;
-  opacity: 0;
-  color: #2d28ad;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  text-decoration: none;
+    position: relative;
+    background: #FAE26B;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease;
+    opacity: 0;
+    color: #2d28ad;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
-.overlay>p{
-position: absolute;
-top:20rem;
-left:2rem;
+.overlay > p {
+    position: absolute;
+    top: 20rem;
+    left: 2rem;
 }
+
 .container-immaginiclasse:hover .overlay {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
-/* BREKPOINT */
+/* BREAKPOINT */
 
 /* 1024px */
 @media screen and (max-width: 1024px) {
-  #container-servizi {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    #container-servizi {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
