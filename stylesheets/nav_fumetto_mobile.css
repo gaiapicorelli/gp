@@ -3,10 +3,6 @@
         margin: 0 1rem;
     }
 
-    #immagini-grid-img {
-        grid-template-columns: auto auto;
-    }
-
     .container-immaginiclasse p {
         display: none;
     }
