@@ -430,8 +430,8 @@ footer img {
   }
 }
 
-/* Header 948px  */
-@media screen and (max-width: 948px) {
+/* Header 1280px  */
+@media screen and (max-width: 1280px) {
   #content-header {
     grid-template-areas: "social logo hamburger" "nav nav nav";
     grid-template-rows: 5rem auto;
