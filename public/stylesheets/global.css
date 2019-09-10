@@ -461,10 +461,6 @@ li {
     grid-template-rows: 5rem auto;
   }
 
-  .snip1217{
-    display: none;
-  }
-
   #logo-header {
     justify-self: center;
     height: 4.2rem;
