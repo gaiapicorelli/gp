@@ -1,80 +1,82 @@
 /* per dispositivi mobile laptop */
 @media screen and (max-width: 975px) {
-    #mainblock-content {
-        display: grid;
-        width: 100%;
-        grid-template-areas: "title" "image" "text";
-        grid-template-columns: 100%;
-    }
+  #mainblock-content {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "title" "image" "text";
+    grid-template-columns: 100%;
+  }
 
-    #mainblock-content > h1 {
-        grid-area: title;
-    }
+  #mainblock-content > h1 {
+    grid-area: title;
+  }
 
-    #mainblock-content > p {
-        grid-area: text;
-    }
+  #mainblock-content > p {
+    grid-area: text;
+  }
 
-    #mainblock-content > img {
-        grid-area: image;
-        width: 100%;
-    }
+  #mainblock-content > img {
+    grid-area: image;
+    width: 100%;
+  }
 
-    #secondary {
-        display: grid;
-        width: 100%;
-        grid-template-areas: "img" "text";
-        grid-template-columns: 100%;
-    }
+  #secondary {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "img" "text";
+    grid-template-columns: 100%;
+  }
 
-    #secondary > img {
-        width: 100%;
-        grid-area: img;
-    }
+  #secondary > img {
+    width: 100%;
+    grid-area: img;
+  }
 
-    #secondary > p {
-        grid-area: text;
-    }
+  #secondary > p {
+    grid-area: text;
+  }
 
-    #container-secondary, #container-tertiary {
-        padding: 1rem;
-    }
-    #tertiary {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-    }
-
-    #tertiary > img {
-        width: 100%;
-        margin: .5rem 0;
-    }
-}
-
-#container-quaternary, #container-five {
+  #container-secondary,
+  #container-tertiary {
     padding: 1rem;
-}
-#quaternary {
+  }
+  #tertiary {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-}
+  }
 
-#quaternary > img {
+  #tertiary > img {
     width: 100%;
-    margin: .5rem 0;
-}
+    margin: 0.5rem 0;
+  }
 
-#container-quaternary, #container-five {
+  #container-quaternary,
+  #container-five {
     padding: 1rem;
-}
-#five {
+  }
+  #quaternary {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-}
+  }
 
-#five > img {
+  #quaternary > img {
     width: 100%;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
+  }
+
+  #container-five {
+    padding: 1rem;
+  }
+  #five {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  #five > img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 }
