@@ -53,7 +53,7 @@
 
   #container-quaternary,
   #container-five {
-    padding: 1rem;
+    padding:0rem;
   }
   #quaternary {
     display: grid;
@@ -67,7 +67,7 @@
   }
 
   #container-five {
-    padding: 1rem;
+    padding: 0rem;
   }
   #five {
     display: grid;
