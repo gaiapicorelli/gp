@@ -50,3 +50,33 @@
         margin: .5rem 0;
     }
 }
+
+#container-quaternary,
+  #container-five {
+    padding:0rem;
+  }
+  #quaternary {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  #quaternary > img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  #container-five {
+    padding: 0rem;
+  }
+  #five {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  #five > img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
