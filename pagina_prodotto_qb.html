@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>GP Graphic Designer</title>
+    <meta name="Description" content="Gaia Picorelli è una grafica, illustratrice e web developer in provincia di Padova.">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/mobile.css">
+    <link rel="stylesheet" href="stylesheets/pagina_prodotto.css">
+    <link rel="stylesheet" href="stylesheets/pagina_prodotto_mobile.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="content-header" class="central">
+            <img id="logo-header" src="images/logoGP8_senza_scritta2.svg" alt="Logo"/>
+            <nav id="nav" class="snip1217 closed-header">
+                <a class="current" href="index.html">HOME</a>
+                <a class="current" href="su_di_me.html">CHI SONO</a>
+                <a class="current" href="grafica.html">GRAFICA</a>
+                <a class="current" href="illustrazione.html">ILLUSTRAZIONE</a>
+                <a class="current" href="fumetto.html">FUMETTO</a>
+                <a class="current" href="contatti.html">CONTATTI</a>
+            </nav>
+            <div id="social-header">
+                <a class="wobble" href="https://www.instagram.com/gaiapicorelli/?hl=it">
+                    <img src="images/instagram2.svg" alt="Link Instagram"/>
+                </a>
+
+                <a class="wobble" href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
+                    <img src="images/linkedin2.svg" alt="Link LinkedIn"/>
+                </a>
+            </div>
+            <img id="hamburger" src="images/menu-black-circular-button.svg" alt="hamburger_menu"
+                 onclick="toggleHeader()"/>
+        </div>
+    </header>
+    <script src="js/animazioneHeader.js"></script>
+
+    <div id="drawer"></div>
+
+    <!-- PAGINA PRODOTTO QB -->
+
+    <main>
+        <!-- FOTO E DESCRIZIONE 1 -->
+        <div id="container-mainblock">
+            <div id="mainblock" class="central">
+                <h1 id="title-pag-progetto">IL PROGETTO</h1>
+                <div id="mainblock-content">
+                    <p>
+                    
+                     <span class="bold-p">
+                 
+                    </p>
+                    <img src="images/qb.jpg" alt="Immagine blocco principale" />
+                </div>
+            </div>
+
+
+        <!-- FOTO 2 E 3 -->
+        <div id="container-tertiary">
+            <div id="tertiary" class="central">
+                <img id="img-prodotto2" src="images/qb3.jpg" alt="Prima immagine blocco terziario" />
+                <img id="img-prodotto3" src="images/qb2.jpg" alt="Seconda immagine blocco terziario" />
+            </div>
+        </div>
+
+        <!-- PULSANTIERA SEZIONI -->
+        <div id="sezioni" class="iconbutton-row central hovergrey">
+            <a class="iconbutton" href="grafica.html" title="Visita grafica">
+                <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione grafica" />
+                <p>Grafica</p>
+            </a>
+            <a class="iconbutton" href="illustrazione.html" title="Visita illustrazione">
+                <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione illustrazione" />
+                <p>Illustrazione</p>
+            </a>
+            <a class="iconbutton" href="fumetto.html " title="Visita fumetto">
+                <img src="images/arrow_sezioni.svg" alt="sezione fumetto" />
+                <p>Fumetto</p>
+            </a>
+            <a class="iconbutton" href="su_di_me.html" title="Visita Chi sono">
+                <img src="images/arrow_sezioni.svg" alt="sezione Chi sono" />
+                <p>Chi sono</p>
+            </a>
+        </div>
+
+        <div id="sidebutton">
+            <div id="pulsanteContatti">
+              <a href="contatti.html" title="Vai ai contatti"><img src="images/bottone_contatti1.svg"
+                                                                   alt="contatti" /></a>
+            </div>
+      
+            <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
+          </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <div id="content-footer" class="central padding-container">
+            <div class="empty"></div>
+            <div id="footer-txt">
+                <p>Gaia Picorelli</p>
+                <p>Web Graphic Designer</p>
+                <p>gaiapicorelli@gmail.com</p>
+            </div>
+            <img id="logo-footer" src="images/logoGP8_senza_scritta.svg" alt="logo" />
+        </div>
+    </footer>
+</body>
+<script src="js/scrollup.js"></script>
+
+</html>
