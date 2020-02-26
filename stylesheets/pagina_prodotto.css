@@ -54,7 +54,7 @@
 
 /* BLOCCO IMMAGINI 3 */
 #container-tertiary {
-    padding: 4rem 0;
+    padding: 2em 0;
 }
 
 #tertiary {
@@ -64,6 +64,24 @@
 }
 
 #tertiary > img {
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/* BLOCCO IMMAGINI 4 */
+#container-quaternary {
+    padding-bottom: 2rem;
+}
+
+#quaternary {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#quaternary > img {
     width: 95%;
     justify-self: center;
     align-self: center;
