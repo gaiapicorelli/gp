@@ -48,10 +48,10 @@
         width: 40vw;
     }
 
-    #logo-home-mobile img {
+    /* #logo-home-mobile img {
         animation: rotation 2s ease;
         -webkit-animation: rotation 2s ease;
-    }
+    } */
 
     #intro {
         font-size: 1.5rem;
