@@ -50,8 +50,9 @@
 
 .overlay > p {
     position: absolute;
-    top: 20rem;
-    left: 2rem;
+    bottom: 5%;
+    left: 5%;
+    margin: 0;
 }
 
 .container-immaginiclasse:hover .overlay {
