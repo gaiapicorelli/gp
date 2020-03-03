@@ -2,7 +2,7 @@
 
 $fab-margin: 1.5em;
 $fab-size: 2 * (base.$app-bar-height - $fab-margin);
-$pseudo-size: 11px;
+$pseudo-size:  10px;
 $background-color: grey;
 $page-color: white;
 
@@ -47,8 +47,8 @@ nav {
     // line-height fissata serve per centrare verticalmente il testo nel div
     line-height: base.$app-bar-height;
     // bordo inferiore delle tab
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: $pseudo-size;
+    border-bottom-right-radius: $pseudo-size;
     // devono avere il default color
     background: $background-color;
   }
