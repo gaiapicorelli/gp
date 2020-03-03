@@ -1,235 +1,32 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gaia Picorelli Web e Graphic Designer Padova PD</title>
+    <meta
+      name="Description"
+      content="Gaia Picorelli è una grafica, illustratrice e web developer in provincia di Padova."
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
 
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>GP Graphic Designer</title>
-    <meta name="Description" content="Gaia Picorelli è una grafica, illustratrice e web developer in provincia di Padova.">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
-          rel="stylesheet">
-    <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-            rel="stylesheet">
-    <link rel="stylesheet" href="style/global.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/index_mobile.css">
-</head>
-
-<body>
-<!-- HEADER -->
-<header>
-    <div id="content-header" class="central">
-        <img id="logo-header" src="images/logoGP8_senza_scritta2.svg" alt="Logo"/>
-        <nav id="nav" class="snip1217 closed-header">
-            <a class="current" href="index.html">HOME</a>
-            <a class="current" href="su_di_me.html">CHI SONO</a>
-            <a class="current" href="grafica.html">GRAFICA</a>
-            <a class="current" href="illustrazione.html">ILLUSTRAZIONE</a>
-            <a class="current" href="fumetto.html">FUMETTO</a>
-            <a class="current" href="contatti.html">CONTATTI</a>
-        </nav>
-        <div id="social-header">
-            <a class="wobble" href="https://www.instagram.com/gaiapicorelli/?hl=it">
-                <img src="images/instagram.svg" alt="Link Instagram"/>
-            </a>
-
-            <a class="wobble" href="https://www.linkedin.com/in/gaia-picorelli-70949718b/">
-                <img src="images/linkedin.svg" alt="Link LinkedIn"/>
-            </a>
-        </div>
-        <img id="hamburger" src="images/menu-black-circular-button.svg" alt="hamburger_menu"
-             onclick="toggleHeader()"/>
-    </div>
-</header>
-<script src="js/animazioneHeader.js"></script>
-
-<div id="drawer"></div>
-
-<!-- GALLERIA -->
-<main>
-    <div id="galleria">
-        <img id="background-galleria" class="central" src="images/illustrazione-iniziale3.jpg" alt="Immagine di galleria"/>
-        <div id="logo-home">
-            <img class="rotate" src="images/logoGP8_senza_scritta.svg" alt="Logo"/>
-
-            <div id="logo-scritta">
-                Gaia Picorelli
-            </div>
-            <div id="logo-scritta2">
-                Graphic Designer
-            </div>
-        </div>
-    </div>
-    <!-- logo mobile -->
-    <div id="galleria-mobile" class="mobile">
-        <img id="background-galleria-mobile" src="images/illustrazione iniziale2.svg"
-             alt="Immagine di galleria"/>
-        <div id="logo-home-mobile">
-            <img class="rotate" src="images/logoGP8_senza_scritta.svg" alt="Logo"/>
-        </div>
-    </div>
-
-    <!-- DESCRIZIONE -->
-    <div id="descrizione" class="padding-container">
-        <h1 class="central">
-            HOME
-        </h1>
-        <p id="intro" class="central">
-            <span class="virgolette central">"</span>
-            La fantasia è come la marmellata,<br>
-            bisogna che sia spalmata su una solida fetta di pane.
-            <span class="virgolette central">"</span></p>
-        <p class="italo central">(Italo Calvino)</p>
-
-        <div id="sottodescrizione">
-            <img src="images/io_piccola.jpg" alt="Foto personale"/>
-            <div>
-                <p>
-                    Amo le storie e ogni <span class="bold-p">mezzo</span> per raccontarle.<br/>
-                    Un buon racconto plasma il pensiero,<br>
-                    il buon pensiero, plasma la <span class="bold-p">realtà</span>.
-                </p>
-                <form>
-                    <button formaction="su_di_me.html"><span> Vai al CV </span></button>
-                </form>
-            </div>
-        </div>
-
-        <!-- sottodescrizione mobile da 850px -->
-        <div id="sottodescrizione-mobile" class="mobile">
-            <img src="images/io_piccola.jpg" alt="Foto personale"/>
-            <div>
-                <p>
-                    Sono <span class="bold-p">Gaia Picorelli</span> e sono una <span class="bold-p">graphic
-                            designer</span>,
-                    vuoi saperne di più?
-                    Clicca e scopri le mie skills.
-                </p>
-                <form>
-                    <button formaction="nav_su_di_me.html"><span> Vai al CV </span></button>
-                </form>
-            </div>
-        </div>
-
-        <!-- PORTFOLIO -->
-        <div id="portfolio" class="central">
-            <h2>
-                Portfolio
-            </h2>
-            <p>
-                Visita le sezioni e guarda l'anteprima completa.
-            </p>
-            <div id="portfolio-grid-img">
-                <div class="grow">
-                    <a href="pagina_prodotto_qb.html">
-                        <img src="images/portfolio1.jpg" alt="portfolio1"/>
-                    </a>
-                </div>
-                <div class="grow">
-                    <a href="pagina_prodotto_archibest.html">
-                        <img src="images/archibest3.jpg" alt="portfolio2"/>
-                    </a>
-                </div>
-                <div class="grow">
-                    <a href="pagina_prodotto_aimove.html">
-                        <img src="images/aimove (5).jpg" alt="portfolio3"/>
-                    </a>
-                </div>
-                <div class="grow">
-                    <a href="pagina_prodotto_green_to_grow.html">
-                        <img src="images/greentogrow2 .jpg" alt="portfolio4"/>
-                    </a>
-                </div>
-                <div class="grow">
-                    <a href="pagina_prodotto_newfloor.html">
-                        <img src="images/portfolio10.jpg" alt="portfolio5"/>
-                    </a>
-                </div>
-                <div class="grow">
-                    <a href="pagina_prodotto_esteticamente.html">
-                        <img src="images/portfolio4.jpg" alt="portfolio6"/>
-                    </a>
-                </div>
-            </div>
-
-            <div id="sezioni" class="iconbutton-row hovergrey">
-                <a class="iconbutton" href="grafica.html" title="Visita grafica">
-                    <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione grafica"/>
-                    <p>Grafica</p>
-                </a>
-                <a class="iconbutton" href="illustrazione.html" title="Visita illustrazione">
-                    <img class="flipped" src="images/arrow_sezioni.svg" alt="sezione illustrazione"/>
-                    <p>Illustrazione</p>
-                </a>
-                <a class="iconbutton" href="fumetto.html " title="Visita fumetto">
-                    <img src="images/arrow_sezioni.svg" alt="sezione fumetto"/>
-                    <p>Fumetto</p>
-                </a>
-                <a class="iconbutton" href="su_di_me.html" title="Visita chi sono">
-                    <img src="images/arrow_sezioni.svg" alt="sezione chi sono"/>
-                    <p>Chi sono</p>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- AGGIORNAMENTI -->
-    <div id="aggiornamenti-container" class="padding-container">
-        <div id="aggiornamenti" class="central">
-            <h2>
-                News
-            </h2>
-            <img id="img-aggiornamenti" src="images/aggiornamenti2.svg" alt="Aggiornamenti"/>
-            <div id="contenuto-aggiornamenti">
-                <p>
-                    <span class="bold-p"> Back to memories <br></span>
-                    Nel 2017 quando mi aggiravo per Bologna per i miei studi,<br>
-                    ho avuto modo di realizzare un progetto con cui mi sono molto divertita,<br>
-                    dovevo cogliere il fantastico nel reale. Decisi di realizzarlo in uno dei posti iconici e da me più amati di Bologna:
-                    i portici di San Luca.<br>
-                    Vuoi saperne di più?<br>
-                    <span class="bold-p">Clicca e vai alla sezione!</span></p>
-                <form>
-                    <button formaction="pagina_prodotto_varchi.html"><span> Scopri di più </span></button>
-                </form>
-            </div>
-        </div>
-    </div>
-</main>
-
-<!-- SIDEBUTTON E PULSANTE CONTATTI -->
-
-<div id="sidebutton">
-    <div id="pulsanteContatti">
-        <a href="contatti.html" title="Vai ai contatti"><img src="images/bottone_contatti1.svg"
-                                                             alt="contatti"/></a>
-    </div>
-    <button onclick="topFunction()" id="btornasu" title="Torna su">&#11161</button>
-</div>
-
-<!-- FOOTER -->
-<footer>
-    <hr>
-    <div id="content-footer" class="central padding-container">
-        <div class="empty"></div>
-        <div id="footer-txt">
-            <p>Gaia Picorelli</p>
-            <p>Web Graphic Designer</p>
-            <p>gaiapicorelli@gmail.com</p>
-        </div>
-        <img id="logo-footer" src="images/logoGP8_senza_scritta.svg" alt="logo"/>
-    </div>
-</footer>
-</body>
-<script src="js/scrollup.js"></script>
-
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="images/logoGP8_senza_scritta2.svg" alt="" />
+      </a>
+      <h1>Picorelli Design</h1>
+      <a href="https://www.instagram.com/gaiapicorelli/?hl=it"
+        ><img class="social" src="images/instagram.svg" alt=""
+      /></a>
+      <a href="https://www.linkedin.com/in/gaia-picorelli-70949718b/"
+        ><img class="social" src="images/linkedin.svg" alt=""
+      /></a>
+    </header>
+    <main>Content</main>
+    <nav></nav>
+  </body>
 </html>

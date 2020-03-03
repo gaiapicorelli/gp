@@ -1,0 +1,48 @@
+@use 'base';
+
+$logo-margin: 0.5em;
+$social-icon-margin: 0.8em;
+$shadow-size: .1em;
+
+header {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: base.$app-bar-height;
+
+  box-shadow: 0px $shadow-size $shadow-size lightgray;
+
+  a {
+    height: base.$app-bar-height;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: base.$app-bar-height - 2 * $logo-margin;
+    margin: 0 $logo-margin;
+  }
+
+  h1 {
+    @include base.font-title;
+  }
+
+  a:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .social {
+    height: base.$app-bar-height - 2 * $social-icon-margin;
+    margin: 0 $social-icon-margin/2;
+  }
+  padding-right: $social-icon-margin/2;
+}
+
+main {
+  position: relative;
+  top: base.$app-bar-height;
+}
