@@ -11,7 +11,7 @@ header {
   left: 0;
   right: 0;
   height: 3.5em;
-  box-shadow: 0px 0.1em 0.1em lightgray;
+  box-shadow: 0px 0.1em 0.1em lightgrey;
   padding-right: 0.4em;
 }
 header a {
@@ -63,7 +63,7 @@ nav {
   height: 3.5em;
   display: flex;
 }
-nav a {
+nav .pseudo-front {
   flex-grow: 2;
   height: 95%;
   position: relative;
@@ -72,9 +72,16 @@ nav .empty {
   width: 5.5em;
   flex-grow: 1;
 }
-nav div {
-  height: 100%;
-  line-height: 3.5em;
+nav a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+nav .pseudo-back {
+  display: block;
+  line-height: 3.325em;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background: grey;
@@ -82,53 +89,55 @@ nav div {
 nav .active {
   z-index: 3;
 }
-nav .active div {
+nav .active .pseudo-back {
   background: white;
-  margin-top: -1px;
 }
-nav a:before,
-nav a:after,
-nav a > div:before,
-nav a > div:after {
+nav .pseudo-front:before,
+nav .pseudo-front:after,
+nav .pseudo-front > .pseudo-back:before,
+nav .pseudo-front > .pseudo-back:after {
   position: absolute;
   top: 0;
 }
 nav .active:before,
 nav .active:after,
-nav .active > div:before,
-nav .active > div:after {
+nav .active > .pseudo-back:before,
+nav .active > .pseudo-back:after {
   content: "";
 }
 nav .active:before,
 nav .active:after {
   background: white;
   z-index: 1;
-  top: -1px;
 }
-nav a:before,
-nav a:after {
+nav .active:before:active,
+nav .active:after:active {
+  color: blue;
+}
+nav .pseudo-front:before,
+nav .pseudo-front:after {
   background: white;
   width: 10px;
   height: 10px;
 }
-nav a:before {
-  left: -9px;
+nav .pseudo-front:before {
+  left: -10px;
 }
-nav a:after {
-  right: -9px;
+nav .pseudo-front:after {
+  right: -10px;
 }
-nav a > div:before,
-nav a > div:after {
+nav .pseudo-front > .pseudo-back:before,
+nav .pseudo-front > .pseudo-back:after {
   width: 20px;
   height: 20px;
   border-radius: 10px;
   background: grey;
   z-index: 2;
 }
-nav a > div:before {
+nav .pseudo-front > .pseudo-back:before {
   left: -20px;
 }
-nav a > div:after {
+nav .pseudo-front > .pseudo-back:after {
   right: -20px;
 }
 

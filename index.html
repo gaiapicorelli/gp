@@ -9,6 +9,7 @@
       name="Description"
       content="Gaia Picorelli è una grafica, illustratrice e web developer in provincia di Padova."
     />
+    <meta name="theme-color" content="lightgrey" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="style/index.css" />
   </head>
@@ -28,8 +29,12 @@
     </header>
     <main>Content</main>
     <nav>
-      <a href="./index.html" class="active"><div>Home</div></a>
-      <a href="./contatti.html"><div>Contatti</div></a>
+      <div class="active pseudo-front">
+        <a href="./index.html" class="pseudo-back">Home</a>
+      </div>
+      <div class="pseudo-front">
+        <a href="./contatti.html" class="pseudo-back">Contatti</a>
+      </div>
       <div class="empty"></div>
     </nav>
     <div id="fab">></div>

@@ -2,7 +2,6 @@
 
 $logo-margin: 0.5em;
 $social-icon-margin: 0.8em;
-$shadow-size: .1em;
 
 header {
   display: flex;
@@ -14,7 +13,7 @@ header {
   right: 0;
   height: base.$app-bar-height;
 
-  box-shadow: 0px $shadow-size $shadow-size lightgray;
+  box-shadow: base.$shadow;
 
   a {
     height: base.$app-bar-height;

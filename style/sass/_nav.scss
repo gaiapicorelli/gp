@@ -2,7 +2,7 @@
 
 $fab-margin: 1.5em;
 $fab-size: 2 * (base.$app-bar-height - $fab-margin);
-$pseudo-size:  10px;
+$pseudo-size: 10px;
 $background-color: grey;
 $page-color: white;
 
@@ -30,7 +30,7 @@ nav {
 
   // display: flex per visualizzare in orizzontale
   display: flex;
-  a {
+  .pseudo-front {
     // flex-grow serve a regolare la spaziatura con div vuoto che fa da segnaposto per il fab
     flex-grow: 2;
     height: 95%;
@@ -42,10 +42,19 @@ nav {
     flex-grow: 1;
   }
 
-  div {
-    height: 100%;
+  // serve a rimuovere il feedback sul click delle tab, che crea problemi con gli pseudoelements
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    font-family: base.$title-font-family;
+    font-weight: bold;
+  }
+
+  .pseudo-back {
+    display: block;
     // line-height fissata serve per centrare verticalmente il testo nel div
-    line-height: base.$app-bar-height;
+    line-height: base.$app-bar-height * 0.95;
     // bordo inferiore delle tab
     border-bottom-left-radius: $pseudo-size;
     border-bottom-right-radius: $pseudo-size;
@@ -56,18 +65,16 @@ nav {
   .active {
     // La tab attiva è in cima a tutto
     z-index: 3;
-    div {
+    .pseudo-back {
       background: $page-color;
-      // margin negativo elimina un singolo pixel di sfondo
-      margin-top: -1px;
     }
   }
 
   // tutti gli pseudoelements sono posizionati in cima
-  a:before,
-  a:after,
-  a > div:before,
-  a > div:after {
+  .pseudo-front:before,
+  .pseudo-front:after,
+  .pseudo-front > .pseudo-back:before,
+  .pseudo-front > .pseudo-back:after {
     position: absolute;
     top: 0;
   }
@@ -75,8 +82,8 @@ nav {
   // solo l'active tab necessita di pseudoelements in realtà
   .active:before,
   .active:after,
-  .active > div:before,
-  .active > div:after {
+  .active > .pseudo-back:before,
+  .active > .pseudo-back:after {
     content: "";
   }
 
@@ -85,29 +92,32 @@ nav {
     background: $page-color;
     // quadrati sotto i cerchi
     z-index: 1;
-    // pixel correttivo
-    top: -1px;
+  }
+
+  .active:before:active,
+  .active:after:active {
+    color: blue;
   }
 
   // rendo i quadrati quadrati
-  a:before,
-  a:after {
+  .pseudo-front:before,
+  .pseudo-front:after {
     background: $page-color;
     width: $pseudo-size;
     height: $pseudo-size;
   }
 
   // posiziono i quadrati (con il solito pixel correttivo)
-  a:before {
-    left: -$pseudo-size + 1px;
+  .pseudo-front:before {
+    left: -$pseudo-size;
   }
-  a:after {
-    right: -$pseudo-size + 1px;
+  .pseudo-front:after {
+    right: -$pseudo-size;
   }
 
   // cerchi
-  a > div:before,
-  a > div:after {
+  .pseudo-front > .pseudo-back:before,
+  .pseudo-front > .pseudo-back:after {
     width: 2 * $pseudo-size;
     height: 2 * $pseudo-size;
     border-radius: $pseudo-size;
@@ -118,10 +128,10 @@ nav {
   }
 
   // posiziono i cerchi
-  a > div:before {
+  .pseudo-front > .pseudo-back:before {
     left: -2 * $pseudo-size;
   }
-  a > div:after {
+  .pseudo-front > .pseudo-back:after {
     right: -2 * $pseudo-size;
   }
 }
