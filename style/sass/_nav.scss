@@ -1,12 +1,127 @@
 @use 'base';
 
+$fab-margin: 1.5em;
+$fab-size: 2 * (base.$app-bar-height - $fab-margin);
+$pseudo-size: 11px;
+$background-color: grey;
+$page-color: white;
+
+#fab {
+  position: fixed;
+  right: $fab-margin;
+  bottom: $fab-margin;
+  height: $fab-size;
+  width: $fab-size;
+  border-radius: 50%;
+  background-color: yellow;
+  line-height: base.$app-bar-height;
+  text-align: center;
+}
+
 nav {
+  /* Useremo gli pseudo elements sovrapposti come in https://css-tricks.com/tabs-with-round-out-borders/ */
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
+  background-color: $background-color;
   text-align: center;
-
   height: base.$app-bar-height;
+
+  // display: flex per visualizzare in orizzontale
+  display: flex;
+  a {
+    // flex-grow serve a regolare la spaziatura con div vuoto che fa da segnaposto per il fab
+    flex-grow: 2;
+    height: 95%;
+    // position: relative serve a poter posizionare gli pseudo dopo
+    position: relative;
+  }
+  .empty {
+    width: $fab-size + $fab-margin;
+    flex-grow: 1;
+  }
+
+  div {
+    height: 100%;
+    // line-height fissata serve per centrare verticalmente il testo nel div
+    line-height: base.$app-bar-height;
+    // bordo inferiore delle tab
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    // devono avere il default color
+    background: $background-color;
+  }
+
+  .active {
+    // La tab attiva è in cima a tutto
+    z-index: 3;
+    div {
+      background: $page-color;
+      // margin negativo elimina un singolo pixel di sfondo
+      margin-top: -1px;
+    }
+  }
+
+  // tutti gli pseudoelements sono posizionati in cima
+  a:before,
+  a:after,
+  a > div:before,
+  a > div:after {
+    position: absolute;
+    top: 0;
+  }
+
+  // solo l'active tab necessita di pseudoelements in realtà
+  .active:before,
+  .active:after,
+  .active > div:before,
+  .active > div:after {
+    content: "";
+  }
+
+  .active:before,
+  .active:after {
+    background: $page-color;
+    // quadrati sotto i cerchi
+    z-index: 1;
+    // pixel correttivo
+    top: -1px;
+  }
+
+  // rendo i quadrati quadrati
+  a:before,
+  a:after {
+    background: $page-color;
+    width: $pseudo-size;
+    height: $pseudo-size;
+  }
+
+  // posiziono i quadrati (con il solito pixel correttivo)
+  a:before {
+    left: -$pseudo-size + 1px;
+  }
+  a:after {
+    right: -$pseudo-size + 1px;
+  }
+
+  // cerchi
+  a > div:before,
+  a > div:after {
+    width: 2 * $pseudo-size;
+    height: 2 * $pseudo-size;
+    border-radius: $pseudo-size;
+    background: $background-color;
+
+    // cerchi sopra ai quadrati
+    z-index: 2;
+  }
+
+  // posiziono i cerchi
+  a > div:before {
+    left: -2 * $pseudo-size;
+  }
+  a > div:after {
+    right: -2 * $pseudo-size;
+  }
 }

@@ -40,7 +40,20 @@ main {
   top: 3.5em;
 }
 
+#fab {
+  position: fixed;
+  right: 1.5em;
+  bottom: 1.5em;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-color: yellow;
+  line-height: 3.5em;
+  text-align: center;
+}
+
 nav {
+  /* Useremo gli pseudo elements sovrapposti come in https://css-tricks.com/tabs-with-round-out-borders/ */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -48,6 +61,75 @@ nav {
   background-color: grey;
   text-align: center;
   height: 3.5em;
+  display: flex;
+}
+nav a {
+  flex-grow: 2;
+  height: 95%;
+  position: relative;
+}
+nav .empty {
+  width: 5.5em;
+  flex-grow: 1;
+}
+nav div {
+  height: 100%;
+  line-height: 3.5em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: grey;
+}
+nav .active {
+  z-index: 3;
+}
+nav .active div {
+  background: white;
+  margin-top: -1px;
+}
+nav a:before,
+nav a:after,
+nav a > div:before,
+nav a > div:after {
+  position: absolute;
+  top: 0;
+}
+nav .active:before,
+nav .active:after,
+nav .active > div:before,
+nav .active > div:after {
+  content: "";
+}
+nav .active:before,
+nav .active:after {
+  background: white;
+  z-index: 1;
+  top: -1px;
+}
+nav a:before,
+nav a:after {
+  background: white;
+  width: 11px;
+  height: 11px;
+}
+nav a:before {
+  left: -10px;
+}
+nav a:after {
+  right: -10px;
+}
+nav a > div:before,
+nav a > div:after {
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background: grey;
+  z-index: 2;
+}
+nav a > div:before {
+  left: -22px;
+}
+nav a > div:after {
+  right: -22px;
 }
 
 /*# sourceMappingURL=index.css.map */
