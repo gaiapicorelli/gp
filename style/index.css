@@ -169,4 +169,17 @@ nav .active:visited {
   font-style: italic;
 }
 
+.anteprime {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.anteprime a {
+  line-height: 0;
+}
+.anteprime img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */

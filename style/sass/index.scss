@@ -21,3 +21,17 @@
   font-weight: 300;
   font-style: italic;
 }
+
+.anteprime {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  a {
+    // a sarebbe più grande dell'immagine contenuta. Così la avvolge perfettamente
+    line-height: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
