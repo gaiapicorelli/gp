@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,400,500,600,700&display=swap");
 body {
+  margin: 0;
   color: #262626;
 }
 
 header {
+  z-index: 1;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 3.5rem;
+  background-color: #fafafa;
   box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
   padding-right: 0.4rem;
 }
@@ -71,7 +76,7 @@ nav a {
   text-decoration: none;
   font-weight: 600;
 }
-nav a:visited {
+nav a, nav a:visited {
   color: #262626;
 }
 nav .empty {
@@ -82,6 +87,51 @@ nav .active,
 nav .active:visited {
   color: #ffb300;
   text-decoration: underline;
+}
+
+#main-img {
+  width: 100%;
+  display: grid;
+}
+
+#background-main-img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#logo-main-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  width: 55%;
+  position: relative;
+}
+#logo-main-img img {
+  width: 40%;
+}
+
+#scritta1-main-img {
+  position: absolute;
+  bottom: 1.38rem;
+  right: 0;
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.036rem;
+  font-size: 1.2rem;
+  color: #07288c;
+}
+
+#scritta2-main-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  letter-spacing: -0.024rem;
+  color: #07288c;
 }
 
 /*# sourceMappingURL=index.css.map */

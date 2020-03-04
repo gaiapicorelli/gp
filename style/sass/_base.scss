@@ -7,7 +7,7 @@ $title-font-family: "Lato", sans-serif;
 $accent-color-dark: #ffb300;
 $accent-color: #fdd835;
 $text-color: #262626;
-$whiteless: #fafafa;
+$whitey: #fafafa;
 $grey: #e0e0e0;
 
 @mixin font-title {
@@ -16,7 +16,8 @@ $grey: #e0e0e0;
 }
 
 body {
+  margin: 0;
   color: $text-color;
 }
 
-$shadow: 0px 0.1rem 0.1rem #e0e0e0;
+$shadow: 0px 0.1rem 0.1rem $grey;

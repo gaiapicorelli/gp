@@ -4,14 +4,16 @@ $logo-margin: 0.5rem;
 $social-icon-margin: 0.8rem;
 
 header {
+  z-index: 1;
   display: flex;
   align-items: center;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: base.$app-bar-height;
+  background-color: base.$whitey;
 
   box-shadow: base.$shadow;
 
