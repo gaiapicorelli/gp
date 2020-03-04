@@ -1,8 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body {
   margin: 0;
   color: #262626;
+  font-family: "Lato", sans-serif;
+  background: #fafafa;
+}
+
+p {
+  margin: 1rem 0.3rem;
+}
+
+.emph {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: 300;
 }
 
 header {
@@ -14,7 +26,7 @@ header {
   left: 0;
   right: 0;
   height: 3.5rem;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
   padding-right: 0.4rem;
 }
@@ -44,7 +56,7 @@ main {
   top: 3.5rem;
 }
 
-#fab {
+.fab {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
@@ -63,6 +75,7 @@ nav {
   bottom: 0;
   width: 100%;
   border-top: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
   height: 3.5rem;
   display: flex;
 }
@@ -72,9 +85,10 @@ nav a {
   text-align: center;
   font-family: "Lato", sans-serif;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
-nav a, nav a:visited {
+nav a,
+nav a:visited {
   color: #262626;
 }
 nav .empty {
