@@ -73,6 +73,12 @@ main {
   justify-content: center;
 }
 
+.fab,
+.fab:visited {
+  color: #262626;
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   left: 0;

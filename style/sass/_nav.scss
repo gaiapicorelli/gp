@@ -23,6 +23,12 @@ $pseudo-size: 10px;
   justify-content: center;
 }
 
+.fab,
+.fab:visited {
+  color: base.$text-color;
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   left: 0;
