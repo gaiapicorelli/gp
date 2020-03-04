@@ -4,12 +4,20 @@
 @use 'main-logo';
 
 .intro-emozionale {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.5em;
+  border-bottom: 2px dotted base.$grey;
 }
 
 .intro-emozionale:first-letter {
-//   float: left;
+  //   float: left;
   font-size: 2em;
-  margin-right: -.1em;
+  margin-right: -0.1em;
   line-height: 1em;
+}
+
+.cit {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: italic;
 }

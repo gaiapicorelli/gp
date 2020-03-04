@@ -56,6 +56,10 @@ main {
   top: 3.5rem;
 }
 
+.nav-filler {
+  height: 3.5rem;
+}
+
 .fab {
   position: fixed;
   right: 1.5rem;
