@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body {
   color: #262626;
 }
@@ -10,135 +11,77 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 3.5em;
-  box-shadow: 0px 0.1em 0.1em lightgrey;
-  padding-right: 0.4em;
+  height: 3.5rem;
+  box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
+  padding-right: 0.4rem;
 }
 header a {
-  height: 3.5em;
+  height: 3.5rem;
   display: flex;
   align-items: center;
 }
 header img {
-  height: 2.5em;
-  margin: 0 0.5em;
+  height: 2.5rem;
+  margin: 0 0.5rem;
 }
 header h1 {
   font-family: "Lato", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 header a:nth-of-type(2) {
   margin-left: auto;
 }
 header .social {
-  height: 1.9em;
-  margin: 0 0.4em;
+  height: 1.9rem;
+  margin: 0 0.4rem;
 }
 
 main {
   position: relative;
-  top: 3.5em;
+  top: 3.5rem;
 }
 
 #fab {
   position: fixed;
-  right: 1.5em;
-  bottom: 1.5em;
-  height: 4em;
-  width: 4em;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
-  background-color: yellow;
-  line-height: 3.5em;
-  text-align: center;
+  background-color: #fdd835;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  /* Useremo gli pseudo elements sovrapposti come in https://css-tricks.com/tabs-with-round-out-borders/ */
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
-  text-align: center;
-  height: 3.5em;
+  border-top: 1px solid #e0e0e0;
+  height: 3.5rem;
   display: flex;
 }
-nav .pseudo-front {
+nav a {
   flex-grow: 2;
-  height: 95%;
-  position: relative;
+  line-height: 3.5rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:visited {
+  color: #262626;
 }
 nav .empty {
-  width: 5.5em;
+  width: 5.5rem;
   flex-grow: 1;
 }
-nav a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-}
-nav .pseudo-back {
-  display: block;
-  line-height: 3.325em;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: grey;
-}
-nav .active {
-  z-index: 3;
-}
-nav .active .pseudo-back {
-  background: white;
-}
-nav .pseudo-front:before,
-nav .pseudo-front:after,
-nav .pseudo-front > .pseudo-back:before,
-nav .pseudo-front > .pseudo-back:after {
-  position: absolute;
-  top: 0;
-}
-nav .active:before,
-nav .active:after,
-nav .active > .pseudo-back:before,
-nav .active > .pseudo-back:after {
-  content: "";
-}
-nav .active:before,
-nav .active:after {
-  background: white;
-  z-index: 1;
-}
-nav .active:before:active,
-nav .active:after:active {
-  color: blue;
-}
-nav .pseudo-front:before,
-nav .pseudo-front:after {
-  background: white;
-  width: 10px;
-  height: 10px;
-}
-nav .pseudo-front:before {
-  left: -10px;
-}
-nav .pseudo-front:after {
-  right: -10px;
-}
-nav .pseudo-front > .pseudo-back:before,
-nav .pseudo-front > .pseudo-back:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: grey;
-  z-index: 2;
-}
-nav .pseudo-front > .pseudo-back:before {
-  left: -20px;
-}
-nav .pseudo-front > .pseudo-back:after {
-  right: -20px;
+nav .active,
+nav .active:visited {
+  color: #ffb300;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

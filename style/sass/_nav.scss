@@ -1,10 +1,11 @@
 @use 'base';
 
-$fab-margin: 1.5em;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$fab-margin: 1.5rem;
 $fab-size: 2 * (base.$app-bar-height - $fab-margin);
 $pseudo-size: 10px;
-$background-color: grey;
-$page-color: white;
+// $background-color: #f5f5f5;
 
 #fab {
   position: fixed;
@@ -13,125 +14,46 @@ $page-color: white;
   height: $fab-size;
   width: $fab-size;
   border-radius: 50%;
-  background-color: yellow;
-  line-height: base.$app-bar-height;
-  text-align: center;
+  background-color: base.$accent-color;
+  // display, align e justify servono a centrare l'icona
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  /* Useremo gli pseudo elements sovrapposti come in https://css-tricks.com/tabs-with-round-out-borders/ */
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: $background-color;
-  text-align: center;
+  border-top: 1px solid base.$grey;
+  // background-color: $background-color;
   height: base.$app-bar-height;
 
   // display: flex per visualizzare in orizzontale
   display: flex;
-  .pseudo-front {
+  a {
     // flex-grow serve a regolare la spaziatura con div vuoto che fa da segnaposto per il fab
     flex-grow: 2;
-    height: 95%;
-    // position: relative serve a poter posizionare gli pseudo dopo
-    position: relative;
+    // line-height allinea il testo verticalmente
+    line-height: base.$app-bar-height;
+    text-align: center;
+    font-family: base.$title-font-family;
+    text-decoration: none;
+    font-weight: 600;
   }
+  a:visited {
+    color: base.$text-color;
+  }
+
   .empty {
     width: $fab-size + $fab-margin;
     flex-grow: 1;
   }
 
-  // serve a rimuovere il feedback sul click delle tab, che crea problemi con gli pseudoelements
-  a {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-    text-decoration: none;
-    font-family: base.$title-font-family;
-    font-weight: bold;
-  }
-
-  .pseudo-back {
-    display: block;
-    // line-height fissata serve per centrare verticalmente il testo nel div
-    line-height: base.$app-bar-height * 0.95;
-    // bordo inferiore delle tab
-    border-bottom-left-radius: $pseudo-size;
-    border-bottom-right-radius: $pseudo-size;
-    // devono avere il default color
-    background: $background-color;
-  }
-
-  .active {
-    // La tab attiva è in cima a tutto
-    z-index: 3;
-    .pseudo-back {
-      background: $page-color;
-    }
-  }
-
-  // tutti gli pseudoelements sono posizionati in cima
-  .pseudo-front:before,
-  .pseudo-front:after,
-  .pseudo-front > .pseudo-back:before,
-  .pseudo-front > .pseudo-back:after {
-    position: absolute;
-    top: 0;
-  }
-
-  // solo l'active tab necessita di pseudoelements in realtà
-  .active:before,
-  .active:after,
-  .active > .pseudo-back:before,
-  .active > .pseudo-back:after {
-    content: "";
-  }
-
-  .active:before,
-  .active:after {
-    background: $page-color;
-    // quadrati sotto i cerchi
-    z-index: 1;
-  }
-
-  .active:before:active,
-  .active:after:active {
-    color: blue;
-  }
-
-  // rendo i quadrati quadrati
-  .pseudo-front:before,
-  .pseudo-front:after {
-    background: $page-color;
-    width: $pseudo-size;
-    height: $pseudo-size;
-  }
-
-  // posiziono i quadrati (con il solito pixel correttivo)
-  .pseudo-front:before {
-    left: -$pseudo-size;
-  }
-  .pseudo-front:after {
-    right: -$pseudo-size;
-  }
-
-  // cerchi
-  .pseudo-front > .pseudo-back:before,
-  .pseudo-front > .pseudo-back:after {
-    width: 2 * $pseudo-size;
-    height: 2 * $pseudo-size;
-    border-radius: $pseudo-size;
-    background: $background-color;
-
-    // cerchi sopra ai quadrati
-    z-index: 2;
-  }
-
-  // posiziono i cerchi
-  .pseudo-front > .pseudo-back:before {
-    left: -2 * $pseudo-size;
-  }
-  .pseudo-front > .pseudo-back:after {
-    right: -2 * $pseudo-size;
+  .active,
+  .active:visited {
+    color: base.$accent-color-dark;
+    text-decoration: underline;
   }
 }
