@@ -122,7 +122,7 @@ nav .active:visited {
   grid-column: 1/2;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: 8rem max-content;
+  grid-template-columns: 7rem max-content;
 }
 .logo-main-img img {
   width: 95%;
@@ -137,8 +137,8 @@ nav .active:visited {
   align-self: end;
   font-family: "Assistant", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.0514285714rem;
-  font-size: 1.7142857143rem;
+  letter-spacing: 0.045rem;
+  font-size: 1.5rem;
 }
 
 .scritta2-main-img {
@@ -147,8 +147,8 @@ nav .active:visited {
   align-self: start;
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 200;
-  font-size: 1.7142857143rem;
-  letter-spacing: -0.0342857143rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.03rem;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
