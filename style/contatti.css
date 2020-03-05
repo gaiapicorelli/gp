@@ -5,8 +5,9 @@ body {
   background-color: #fafafa;
 }
 
-p {
-  margin: 1rem 0.3rem;
+p, h3 {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .emph {

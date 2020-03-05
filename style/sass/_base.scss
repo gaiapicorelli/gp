@@ -22,8 +22,9 @@ body {
   background-color: $whitey;
 }
 
-p {
-  margin: 1rem $margin-small;
+p, h3 {
+  margin-left: $margin-small;
+  margin-right: $margin-small;
 }
 
 .emph {
