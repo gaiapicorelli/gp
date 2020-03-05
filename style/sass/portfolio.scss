@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   div {
+    cursor: pointer;
     margin: base.$margin-small 0.2rem;
     padding: 0.5em;
     background-color: base.$grey;
