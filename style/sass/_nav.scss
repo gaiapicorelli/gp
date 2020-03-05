@@ -2,11 +2,11 @@
 
 $fab-margin: 1.5rem;
 $fab-size: 2 * (base.$app-bar-height - $fab-margin);
-$pseudo-size: 10px;
+// $pseudo-size: 10px;
 // $background-color: #f5f5f5;
 
 .nav-filler {
-  height: base.$app-bar-height;
+  height: base.$app-bar-height + 0.5 * $fab-size;
 }
 
 .fab {
@@ -25,7 +25,7 @@ $pseudo-size: 10px;
 
 .fab,
 .fab:visited {
-  color: base.$text-color;
+  color: base.$text-accent-color;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ nav {
 
   .active,
   .active:visited {
-    color: base.$accent-color-dark;
+    color: base.$accent-color;
     text-decoration: underline;
   }
 }

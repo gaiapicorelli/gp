@@ -8,9 +8,10 @@
   display: flex;
   flex-wrap: wrap;
   div {
-    margin: base.$margin-small;
+    margin: base.$margin-small 0.2rem;
     padding: 0.5em;
     background-color: base.$grey;
+    // color: base.$text-accent-color;
     border-radius: 3em;
   }
   .current {
@@ -27,7 +28,7 @@
 
   display: block;
 
-  margin: base.$margin-small;
+  margin: 2 * base.$margin-small base.$margin-small;
   border: 1px solid base.$grey;
   border-radius: 1rem;
   overflow: hidden;
@@ -50,16 +51,38 @@
   .label {
     display: flex;
     justify-content: flex-end;
+    span {
+      display: none;
+      background-color: base.$grey;
+      border-radius: 3em;
+      padding: 0.1em 0.3em;
+      margin: 0.1em;
+    }
   }
 }
 
-.brand-identity {
-  .label > span:after {
-    white-space: pre-line;
-    content: "brand-identity";
+.grafica-editoriale {
+  .label > .grafica-editoriale {
     display: inline-block;
-    background-color: base.$grey;
-    border-radius: 3em;
-    padding: 0.1em 0.3em;
+  }
+}
+.brand-identity {
+  .label > .brand-identity {
+    display: inline-block;
+  }
+}
+.web-social {
+  .label > .web-social {
+    display: inline-block;
+  }
+}
+.advertising {
+  .label > .advertising {
+    display: inline-block;
+  }
+}
+.illustrazione {
+  .label > .illustrazione {
+    display: inline-block;
   }
 }

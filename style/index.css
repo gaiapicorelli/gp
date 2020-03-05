@@ -5,7 +5,8 @@ body {
   background-color: #fafafa;
 }
 
-p, h3 {
+p,
+h3 {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
@@ -58,7 +59,7 @@ main {
 }
 
 .nav-filler {
-  height: 3.5rem;
+  height: 5.5rem;
 }
 
 .fab {
@@ -68,7 +69,7 @@ main {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: #fdd835;
+  background-color: #b71c1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +77,7 @@ main {
 
 .fab,
 .fab:visited {
-  color: #262626;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -108,7 +109,7 @@ nav .empty {
 }
 nav .active,
 nav .active:visited {
-  color: #ffb300;
+  color: #b71c1c;
   text-decoration: underline;
 }
 

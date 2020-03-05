@@ -3,10 +3,12 @@ $app-bar-height: 3.5rem;
 $default-font: "Lato", sans-serif;
 $margin-small: 0.3rem;
 
-$accent-color-dark: #ffb300;
-$accent-color: #fdd835;
+// $accent-color-dark: #ffb300;
+$accent-color: #b71c1c;
+// $accent-color: #ef5350;
 $text-color: #262626;
 $whitey: #fafafa;
+$text-accent-color: $whitey;
 $less-whitey: #f5f5f5;
 $grey: #e0e0e0;
 
@@ -22,7 +24,8 @@ body {
   background-color: $whitey;
 }
 
-p, h3 {
+p,
+h3 {
   margin-left: $margin-small;
   margin-right: $margin-small;
 }
