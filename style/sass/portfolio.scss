@@ -2,3 +2,20 @@
 @use 'header';
 @use 'nav';
 @use 'main-logo';
+
+.filter-selector {
+  padding: .5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    margin: base.$margin-small;
+    padding: .5em;
+    background-color: base.$grey;
+    border-radius: 3em;
+  }
+  .current {
+    background-color: base.$text-color;
+    color: base.$whitey;
+    font-weight: bold;
+  }
+}

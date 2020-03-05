@@ -1,6 +1,7 @@
 $app-bar-height: 3.5rem;
 
 $default-font: "Lato", sans-serif;
+$margin-small: 0.3rem;
 
 $accent-color-dark: #ffb300;
 $accent-color: #fdd835;
@@ -18,11 +19,11 @@ body {
   margin: 0;
   color: $text-color;
   font-family: $default-font;
-  background: $whitey;
+  background-color: $whitey;
 }
 
 p {
-  margin: 1rem 0.3rem;
+  margin: 1rem $margin-small;
 }
 
 .emph {
