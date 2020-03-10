@@ -172,80 +172,29 @@ nav .active:visited {
   letter-spacing: -0.03rem;
 }
 
-.filter-selector {
-  padding: 0.5rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.filter-selector div {
-  cursor: pointer;
-  margin: 0.3rem 0.2rem;
-  padding: 0.5em;
-  background-color: #e0e0e0;
-  border-radius: 3em;
-}
-.filter-selector .current {
-  background-color: #262626;
-  color: #fafafa;
-  font-weight: bold;
+main img {
+  width: 100%;
 }
 
-.card {
-  text-decoration: none;
-  color: #262626;
-  display: block;
-  margin: 0.6rem 0.3rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-.card img {
-  width: 100%;
-  height: 50vw;
+.copertina {
+  height: 25vh;
   object-fit: cover;
 }
-.card p,
-.card h3,
-.card .label {
-  margin: 0.6rem;
+
+.anteprime {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.card h3 {
-  margin-bottom: 0.3rem;
+.anteprime h4 {
+  grid-column: span 4;
 }
-.card p {
-  margin-top: 0.3rem;
+.anteprime a {
+  line-height: 0;
 }
-.card .label {
-  display: flex;
-  justify-content: flex-end;
-}
-.card .label span {
-  display: none;
-  background-color: #e0e0e0;
-  border-radius: 3em;
-  padding: 0.1em 0.3em;
-  margin: 0.1em;
+.anteprime img {
+  width: 100%;
 }
 
-.grafica-editoriale .label > .grafica-editoriale {
-  display: inline-block;
-}
-
-.brand-identity .label > .brand-identity {
-  display: inline-block;
-}
-
-.web-social .label > .web-social {
-  display: inline-block;
-}
-
-.advertising .label > .advertising {
-  display: inline-block;
-}
-
-.illustrazione .label > .illustrazione {
-  display: inline-block;
-}
-
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=pagina-prodotto.css.map */

@@ -1,0 +1,29 @@
+@use 'base';
+@use 'header';
+@use 'nav';
+@use 'main-logo';
+
+main img {
+  width: 100%;
+}
+.copertina {
+  height: 25vh;
+  object-fit: cover;
+}
+
+.anteprime {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    h4 {
+        grid-column: span 4;
+    }
+    a {
+      // a sarebbe più grande dell'immagine contenuta. Così la avvolge perfettamente
+      line-height: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }

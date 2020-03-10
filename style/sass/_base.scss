@@ -2,6 +2,7 @@ $app-bar-height: 3.5rem;
 
 $default-font: "Lato", sans-serif;
 $margin-small: 0.3rem;
+$margin-medium: 0.6rem;
 
 // $accent-color-dark: #ffb300;
 $accent-color: #b71c1c;
@@ -25,9 +26,22 @@ body {
 }
 
 p,
-h3 {
-  margin-left: $margin-small;
-  margin-right: $margin-small;
+h2,
+h3,
+h4,
+blockquote,
+section {
+  margin: 1em $margin-small;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+blockquote {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .emph {
