@@ -5,14 +5,30 @@
 $img-size: 8rem;
 
 .head {
-    // background-color: yellowgreen;
-    width: 100%;
-    // height: 25vh;
-    display: flex;
-    img {
-        margin: 1rem auto;
-        border-radius: 50%;
-        width: $img-size;
-        object-fit: cover;
-    }
+  // background-color: yellowgreen;
+  width: 100%;
+  // height: 25vh;
+  display: flex;
+  img {
+    margin: 1rem auto;
+    border-radius: 50%;
+    width: $img-size;
+    object-fit: cover;
+  }
+}
+
+.contatti {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  svg {
+    grid-column: 1/2;
+    grid-row: span 2;
+  }
+  a, h4 {
+    grid-column: 2/3;
+    margin: 0 base.$margin-small;
+  }
+  a {
+      margin-bottom: base.$margin-medium;
+  }
 }

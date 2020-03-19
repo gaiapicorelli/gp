@@ -137,4 +137,20 @@ nav .active:visited {
   object-fit: cover;
 }
 
+.contatti {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+}
+.contatti svg {
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+.contatti a, .contatti h4 {
+  grid-column: 2/3;
+  margin: 0 0.3rem;
+}
+.contatti a {
+  margin-bottom: 0.6rem;
+}
+
 /*# sourceMappingURL=contatti.css.map */
