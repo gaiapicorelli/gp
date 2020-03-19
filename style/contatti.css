@@ -126,4 +126,15 @@ nav .active:visited {
   text-decoration: underline;
 }
 
+.head {
+  width: 100%;
+  display: flex;
+}
+.head img {
+  margin: 1rem auto;
+  border-radius: 50%;
+  width: 8rem;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=contatti.css.map */
