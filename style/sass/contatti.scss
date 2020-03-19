@@ -18,17 +18,19 @@ $img-size: 8rem;
 }
 
 .contatti {
+  margin: base.$margin-small;
   display: grid;
   grid-template-columns: 1.5rem auto;
   svg {
     grid-column: 1/2;
     grid-row: span 2;
   }
-  a, h4 {
+  a,
+  h4 {
     grid-column: 2/3;
     margin: 0 base.$margin-small;
   }
   a {
-      margin-bottom: base.$margin-medium;
+    margin-bottom: base.$margin-medium;
   }
 }

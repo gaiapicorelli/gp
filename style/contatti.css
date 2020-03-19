@@ -138,6 +138,7 @@ nav .active:visited {
 }
 
 .contatti {
+  margin: 0.3rem;
   display: grid;
   grid-template-columns: 1.5rem auto;
 }
@@ -145,7 +146,8 @@ nav .active:visited {
   grid-column: 1/2;
   grid-row: span 2;
 }
-.contatti a, .contatti h4 {
+.contatti a,
+.contatti h4 {
   grid-column: 2/3;
   margin: 0 0.3rem;
 }
