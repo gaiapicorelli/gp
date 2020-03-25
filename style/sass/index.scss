@@ -1,7 +1,56 @@
 @use 'base';
 @use 'header';
 @use 'nav';
-@use 'main-logo';
+
+.main-img {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.background-main-img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+$size-logo: 7rem;
+
+.logo-main-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: $size-logo max-content;
+
+  img {
+    width: 95%;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    align-self: center;
+  }
+}
+
+$font-size-logo: 3/14 * $size-logo;
+
+.scritta1-main-img {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: end;
+  @include base.alternate-font;
+  font-weight: 500;
+  letter-spacing: 0.01 * $font-size-logo;
+  font-size: $font-size-logo;
+}
+.scritta2-main-img {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: start;
+  font-weight: 300;
+  font-size: $font-size-logo;
+  letter-spacing: -0.05 * $font-size-logo;
+}
+
 
 .intro-emozionale {
   font-size: 1.2rem;

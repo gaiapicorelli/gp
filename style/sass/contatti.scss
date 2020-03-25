@@ -20,7 +20,7 @@ $img-size: 7rem;
 
 h2 {
   margin: base.$margin-medium base.$margin-small;
-  letter-spacing: .07rem;
+  @include base.alternate-font;
 }
 
 p {
@@ -28,11 +28,11 @@ p {
 }
 
 .subtitle {
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .address {
-  letter-spacing: .17rem;
+  letter-spacing: 0.13rem;
 }
 
 .contatti {

@@ -29,7 +29,9 @@ header {
   }
 
   h1 {
-    @include base.font-title;
+    font-size: 1.25rem;
+    @include base.alternate-font;
+    font-weight: 500;
   }
 
   a:nth-of-type(2) {

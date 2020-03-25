@@ -45,9 +45,9 @@ nav {
     flex-grow: 2;
     // line-height allinea il testo verticalmente
     line-height: base.$app-bar-height;
+
     text-align: center;
-    font-family: base.$default-font;
-    font-weight: bold;
+    @include base.alternate-font;
   }
   a,
   a:visited {
@@ -62,6 +62,5 @@ nav {
   .active,
   .active:visited {
     color: base.$accent-color;
-    text-decoration: underline;
   }
 }

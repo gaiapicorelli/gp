@@ -60,8 +60,11 @@ header img {
   margin: 0 0.5rem;
 }
 header h1 {
-  font-family: "Lato", sans-serif;
   font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  font-weight: 500;
 }
 header a:nth-of-type(2) {
   margin-left: auto;
@@ -113,8 +116,9 @@ nav a {
   flex-grow: 2;
   line-height: 3.5rem;
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
 }
 nav a,
 nav a:visited {
@@ -127,7 +131,6 @@ nav .empty {
 nav .active,
 nav .active:visited {
   color: #b71c1c;
-  text-decoration: underline;
 }
 
 .main-img {
@@ -160,9 +163,11 @@ nav .active:visited {
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
-  font-family: "Assistant", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
   font-weight: 500;
-  letter-spacing: 0.045rem;
+  letter-spacing: 0.015rem;
   font-size: 1.5rem;
 }
 
@@ -170,10 +175,9 @@ nav .active:visited {
   grid-row: 2/3;
   grid-column: 2/3;
   align-self: start;
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5rem;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.075rem;
 }
 
 .intro-emozionale {
