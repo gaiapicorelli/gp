@@ -5,7 +5,7 @@
 $img-size: 8rem;
 
 .head {
-  // background-color: yellowgreen;
+  background-color: lightcyan;
   width: 100%;
   // height: 25vh;
   display: flex;
@@ -15,6 +15,23 @@ $img-size: 8rem;
     width: $img-size;
     object-fit: cover;
   }
+}
+
+h2 {
+  margin: base.$margin-medium base.$margin-small;
+  letter-spacing: .07rem;
+}
+
+p {
+  margin: base.$margin-small;
+}
+
+.subtitle {
+  letter-spacing: -.05rem;
+}
+
+.address {
+  letter-spacing: .17rem;
 }
 
 .contatti {

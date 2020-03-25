@@ -127,6 +127,7 @@ nav .active:visited {
 }
 
 .head {
+  background-color: lightcyan;
   width: 100%;
   display: flex;
 }
@@ -135,6 +136,23 @@ nav .active:visited {
   border-radius: 50%;
   width: 8rem;
   object-fit: cover;
+}
+
+h2 {
+  margin: 0.6rem 0.3rem;
+  letter-spacing: 0.07rem;
+}
+
+p {
+  margin: 0.3rem;
+}
+
+.subtitle {
+  letter-spacing: -0.05rem;
+}
+
+.address {
+  letter-spacing: 0.17rem;
 }
 
 .contatti {
