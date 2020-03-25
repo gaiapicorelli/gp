@@ -35,7 +35,7 @@ p {
 }
 
 .contatti {
-  margin: base.$margin-small;
+  margin: 1rem base.$margin-medium;
   display: grid;
   grid-template-columns: 1.5rem auto;
   svg {
@@ -45,9 +45,12 @@ p {
   a,
   h4 {
     grid-column: 2/3;
-    margin: 0 base.$margin-small;
+    margin: 0 base.$margin-medium;
   }
   a {
-    margin-bottom: base.$margin-medium;
+    margin-bottom: 1rem;
+  }
+  a:last-child {
+    margin-bottom: 0;
   }
 }

@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: #0073b1;
+}
+
 body {
   margin: 0;
   color: #262626;
@@ -156,7 +161,7 @@ p {
 }
 
 .contatti {
-  margin: 0.3rem;
+  margin: 1rem 0.6rem;
   display: grid;
   grid-template-columns: 1.5rem auto;
 }
@@ -167,10 +172,13 @@ p {
 .contatti a,
 .contatti h4 {
   grid-column: 2/3;
-  margin: 0 0.3rem;
+  margin: 0 0.6rem;
 }
 .contatti a {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+.contatti a:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=contatti.css.map */
