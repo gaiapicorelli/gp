@@ -229,4 +229,8 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  border-bottom: 2px dotted #e0e0e0;
+}
+
 /*# sourceMappingURL=contatti.css.map */
