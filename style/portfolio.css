@@ -130,9 +130,7 @@ nav .empty {
 }
 nav .active,
 nav .active:visited {
-  background-color: #616161;
-  border-bottom: 2px solid #ffc400;
-  color: #f5f5f5;
+  border-bottom: 0.5em solid #ffc400;
 }
 
 .filter-selector {

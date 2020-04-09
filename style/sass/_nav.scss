@@ -61,9 +61,9 @@ nav {
 
   .active,
   .active:visited {
-    background-color: #616161;
-    border-bottom: 2px solid base.$accent-color;
-    color: base.$less-whitey;
+    // background-color: #616161;
+    border-bottom: .5em solid base.$accent-color;
+    // color: base.$less-whitey;
     // color: base.$accent-color;
   }
 }
