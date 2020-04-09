@@ -90,7 +90,7 @@ main {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: #b71c1c;
+  background-color: #ffc400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,9 @@ nav .empty {
 }
 nav .active,
 nav .active:visited {
-  color: #b71c1c;
+  background-color: #616161;
+  border-bottom: 2px solid #ffc400;
+  color: #f5f5f5;
 }
 
 /* No normal bullets please */
@@ -150,7 +152,7 @@ li {
 
 /* The actual line being placed before each list item, tweak width and color as appropriate */
 li:before {
-  background-color: #b71c1c;
+  background-color: #ffc400;
   width: 2px;
   content: "";
   position: absolute;
