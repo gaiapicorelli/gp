@@ -1,0 +1,51 @@
+@use 'base';
+
+$logo-margin: 0.5rem;
+$social-icon-margin: 0.8rem;
+
+header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: base.$app-bar-height;
+  background-color: base.$less-whitey;
+
+  box-shadow: base.$shadow;
+
+  a {
+    height: base.$app-bar-height;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: base.$app-bar-height - 2 * $logo-margin;
+    margin: 0 $logo-margin;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    @include base.alternate-font;
+    font-weight: 500;
+  }
+
+  a:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .social {
+    height: base.$app-bar-height - 2 * $social-icon-margin;
+    margin: 0 $social-icon-margin/2;
+  }
+  padding-right: $social-icon-margin/2;
+}
+
+main {
+  position: relative;
+  top: base.$app-bar-height;
+}

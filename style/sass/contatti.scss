@@ -1,0 +1,64 @@
+@use 'base';
+@use 'header';
+@use 'nav';
+@use 'bullets';
+
+$img-size: 7rem;
+
+.head {
+  background-image: url("../../images/copertina-contatti.png");
+  background-size: cover;
+  background-position: center;
+  // background-color: #0073b1;
+  width: 100%;
+  // height: 25vh;
+  display: flex;
+  img {
+    margin: 1rem auto;
+    border-radius: 50%;
+    width: $img-size;
+    object-fit: cover;
+  }
+}
+
+h2 {
+  margin: base.$margin-medium base.$margin-small;
+  @include base.alternate-font;
+}
+
+p {
+  margin: base.$margin-small;
+}
+
+.subtitle {
+  letter-spacing: -0.05rem;
+}
+
+.address {
+  letter-spacing: 0.13rem;
+}
+
+.contatti {
+  margin: 1rem base.$margin-medium;
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  svg {
+    grid-column: 1/2;
+    grid-row: span 2;
+  }
+  a,
+  h4 {
+    grid-column: 2/3;
+    margin: 0 base.$margin-medium;
+  }
+  a {
+    margin-bottom: 1rem;
+  }
+  a:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  border-bottom: 2px dotted base.$grey;
+}

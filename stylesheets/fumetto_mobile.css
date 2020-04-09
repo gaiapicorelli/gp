@@ -1,9 +1,0 @@
-@media screen and (max-width: 975px) {
-    #container-servizi > .central {
-        margin: 0 1rem;
-    }
-
-    .container-immaginiclasse p {
-        display: none;
-    }
-}

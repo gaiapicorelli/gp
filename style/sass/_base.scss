@@ -1,0 +1,59 @@
+$app-bar-height: 3.5rem;
+
+$default-font: "Lato", sans-serif;
+
+@mixin alternate-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+}
+
+$margin-small: 0.3rem;
+$margin-medium: 0.6rem;
+
+$accent-color: #ffc400;
+$text-color: #262626;
+$whitey: #fafafa;
+$text-accent-color: $whitey;
+$less-whitey: #f5f5f5;
+$grey: #e0e0e0;
+
+a {
+  text-decoration: none;
+  color: #0073b1;
+}
+
+body {
+  margin: 0;
+  color: $text-color;
+  font-family: $default-font;
+  background-color: $whitey;
+}
+
+p,
+h2,
+h3,
+h4,
+blockquote,
+section {
+  margin: 1em $margin-small;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+blockquote {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.emph {
+  font-weight: bold;
+}
+.light {
+  font-weight: 300;
+}
+
+$shadow: 0px 0.1rem 0.1rem $grey;
