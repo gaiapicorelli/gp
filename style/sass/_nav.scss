@@ -45,9 +45,8 @@ nav {
     flex-grow: 2;
     // line-height allinea il testo verticalmente
     line-height: base.$app-bar-height;
-
+    font-weight: 600;
     text-align: center;
-    @include base.alternate-font;
   }
   a,
   a:visited {

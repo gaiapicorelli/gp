@@ -1,12 +1,6 @@
 $app-bar-height: 3.5rem;
 
-$default-font: "Lato", sans-serif;
-
-@mixin alternate-font {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
-}
+$default-font: "Montserrat", sans-serif;
 
 $margin-small: 0.3rem;
 $margin-medium: 0.6rem;

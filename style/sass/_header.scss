@@ -30,7 +30,6 @@ header {
 
   h1 {
     font-size: 1.25rem;
-    @include base.alternate-font;
     font-weight: 500;
   }
 

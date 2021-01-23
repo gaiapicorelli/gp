@@ -37,8 +37,6 @@ $font-size-logo: 3/14 * $size-logo;
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
-  @include base.alternate-font;
-  font-weight: 500;
   letter-spacing: 0.01 * $font-size-logo;
   font-size: $font-size-logo;
 }

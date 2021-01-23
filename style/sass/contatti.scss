@@ -23,7 +23,7 @@ $img-size: 7rem;
 
 h2 {
   margin: base.$margin-medium base.$margin-small;
-  @include base.alternate-font;
+  font-weight: 900;
 }
 
 p {
