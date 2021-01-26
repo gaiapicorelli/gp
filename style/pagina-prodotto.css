@@ -177,6 +177,10 @@ nav .active:visited {
 .active:visited {
     border-bottom: 0.5em solid #ffc400;
   }
+
+  .fab {
+    display: none;
+  }
 }
 main img {
   width: 100%;

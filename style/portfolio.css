@@ -177,6 +177,10 @@ nav .active:visited {
 .active:visited {
     border-bottom: 0.5em solid #ffc400;
   }
+
+  .fab {
+    display: none;
+  }
 }
 .filter-selector {
   padding: 0.5rem 0;

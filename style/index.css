@@ -177,6 +177,10 @@ nav .active:visited {
 .active:visited {
     border-bottom: 0.5em solid #ffc400;
   }
+
+  .fab {
+    display: none;
+  }
 }
 .main-img {
   width: 100%;
@@ -189,6 +193,9 @@ nav .active:visited {
   width: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
+  object-fit: cover;
+  object-position: center bottom;
+  max-height: 18rem;
 }
 
 .logo-main-img {
@@ -236,11 +243,14 @@ nav .active:visited {
 .anteprime {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .anteprime a {
   line-height: 0;
+  width: 25%;
+  min-width: 180px;
 }
 .anteprime img {
   width: 100%;
