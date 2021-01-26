@@ -1,3 +1,4 @@
+$desktop-breakpoint: 992px;
 $app-bar-height: 3.5rem;
 
 $default-font: "Montserrat", sans-serif;
@@ -6,7 +7,7 @@ $margin-small: 0.3rem;
 $margin-medium: 0.6rem;
 
 $accent-color: #ffc400;
-$text-color: #262626;
+$text-color: #243131;
 $whitey: #fafafa;
 $text-accent-color: $whitey;
 $less-whitey: #f5f5f5;
@@ -22,6 +23,11 @@ body {
   color: $text-color;
   font-family: $default-font;
   background-color: $whitey;
+}
+
+.content {
+  max-width: 1024px;
+  margin: auto;
 }
 
 p,
@@ -46,6 +52,7 @@ blockquote {
 .emph {
   font-weight: bold;
 }
+
 .light {
   font-weight: 300;
 }

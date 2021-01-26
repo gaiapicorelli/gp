@@ -6,12 +6,13 @@
   padding: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
+  //justify-content: space-between;
   // Disabilita il tap feedback colorato
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   div {
     cursor: pointer;
-    margin: base.$margin-small 0.1rem;
+    margin: base.$margin-small .5%;
     padding: 0.5em;
     background-color: base.$grey;
     border-radius: 3em;
