@@ -65,7 +65,8 @@ nav {
 
   a,
   a:visited {
-    color: base.$text-color;
+    //color: base.$text-color;
+    color: base.$darkgrey;
   }
 
   .empty {
@@ -77,6 +78,8 @@ nav {
   .active:visited {
     // background-color: #616161;
     border-bottom: .5em solid base.$accent-color;
+    color: base.$text-color;
+
     // color: base.$less-whitey;
     // color: base.$accent-color;
   }

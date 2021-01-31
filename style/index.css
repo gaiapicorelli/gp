@@ -147,7 +147,7 @@ nav a {
 }
 nav a,
 nav a:visited {
-  color: #243131;
+  color: #7d7d7d;
 }
 nav .empty {
   width: 5.5rem;
@@ -156,6 +156,7 @@ nav .empty {
 nav .active,
 nav .active:visited {
   border-bottom: 0.5em solid #ffc400;
+  color: #243131;
 }
 
 @media only screen and (min-width: 992px) {
@@ -260,9 +261,36 @@ nav .active:visited {
   line-height: 0;
   width: 25%;
   min-width: 180px;
+  position: relative;
 }
 .anteprime img {
   width: 100%;
+}
+.anteprime .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: #243131;
+}
+.anteprime .overlay .text {
+  color: #fafafa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.anteprime a:hover .overlay {
+  opacity: 0.7;
 }
 
 @media only screen and (min-width: 992px) {

@@ -147,7 +147,7 @@ nav a {
 }
 nav a,
 nav a:visited {
-  color: #243131;
+  color: #7d7d7d;
 }
 nav .empty {
   width: 5.5rem;
@@ -156,6 +156,7 @@ nav .empty {
 nav .active,
 nav .active:visited {
   border-bottom: 0.5em solid #ffc400;
+  color: #243131;
 }
 
 @media only screen and (min-width: 992px) {
