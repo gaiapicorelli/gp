@@ -41,7 +41,7 @@ $fab-size: 2 * (base.$app-bar-height - $fab-margin);
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1024px;
+    max-width: base.$max-content-width;
     margin: 0 auto;
   }
 }
@@ -91,9 +91,10 @@ nav {
     .empty {
       display: none;
     }
+
     position: absolute;
-    right: 7.5rem;
-    width: 35rem;
+    right: 6rem;
+    width: 42rem;
     border-bottom: 1px solid base.$text-color;
   }
   .active,
@@ -104,6 +105,9 @@ nav {
     // color: base.$accent-color;
   }
   .fab {
+    display: none;
+  }
+  .nav-filler {
     display: none;
   }
 }

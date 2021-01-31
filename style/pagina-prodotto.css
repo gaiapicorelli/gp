@@ -11,7 +11,8 @@ body {
 }
 
 .content {
-  max-width: 1024px;
+  position: relative;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -64,7 +65,7 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: auto;
   height: 3.5rem;
   padding-right: 0.4rem;
@@ -129,7 +130,7 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -165,8 +166,8 @@ nav .active:visited {
 
   nav {
     position: absolute;
-    right: 7.5rem;
-    width: 35rem;
+    right: 6rem;
+    width: 42rem;
     border-bottom: 1px solid #243131;
   }
   nav .empty {
@@ -179,6 +180,10 @@ nav .active:visited {
   }
 
   .fab {
+    display: none;
+  }
+
+  .nav-filler {
     display: none;
   }
 }

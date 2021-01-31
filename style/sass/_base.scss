@@ -1,4 +1,6 @@
 $desktop-breakpoint: 992px;
+$max-content-width: 1200px;
+
 $app-bar-height: 3.5rem;
 
 $default-font: "Montserrat", sans-serif;
@@ -26,7 +28,8 @@ body {
 }
 
 .content {
-  max-width: 1024px;
+  position: relative;
+  max-width: $max-content-width;
   margin: auto;
 }
 

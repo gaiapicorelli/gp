@@ -29,7 +29,7 @@ header {
 
   position: relative;
   width: 100%;
-  max-width: 1024px;
+  max-width: base.$max-content-width;
   margin:auto;
   height: base.$app-bar-height;
 

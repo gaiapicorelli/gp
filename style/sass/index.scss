@@ -2,6 +2,10 @@
 @use 'header';
 @use 'nav';
 
+.desktop-background-img, #desktop-main-img {
+  display: none;
+}
+
 .main-img {
   width: 100%;
   display: grid;
@@ -87,4 +91,78 @@ $font-size-logo: 3/14 * $size-logo;
   }
 }
 
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  .main-img {
+    display: none;
+  }
+  .desktop-background-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    $offset: 10vw;
+    object-position: 3*$offset -1*$offset;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas:
+            "intro logo"
+            "p1 logo"
+            "p2 logo"
+            "blockquote logo"
+            "anteprime anteprime";
+  }
+  #desktop-main-img {
+    $desktop-size-logo: 13rem;
+    grid-area: logo;
+    justify-self: right;
+    display: grid;
+    grid-template-columns: $desktop-size-logo max-content;
+
+    img {
+      width: 90%;
+      grid-row: 1/3;
+      grid-column: 1/2;
+      align-self: center;
+    }
+
+    $desktop-font-size-logo: 1/5 * $desktop-size-logo;
+
+    .scritta1-main-img {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      align-self: end;
+      letter-spacing: 0.01 * $desktop-font-size-logo;
+      font-size: $desktop-font-size-logo;
+    }
+
+    .scritta2-main-img {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: start;
+      font-weight: 300;
+      font-size: $desktop-font-size-logo;
+      letter-spacing: -0.05 * $desktop-font-size-logo;
+    }
+  }
+  .intro-emozionale {
+    grid-area: intro;
+    margin-top: 2.5vw;
+  }
+  .content > p:nth-of-type(1) {
+    grid-area: p1;
+  }
+  .content > p:nth-of-type(2) {
+    grid-area: p2;
+  }
+  .content > blockquote {
+    grid-area: blockquote;
+    margin-bottom: 2.5vw;
+  }
+  .anteprime {
+    grid-area: anteprime;
+  }
+}
 
