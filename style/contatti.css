@@ -238,7 +238,7 @@ li::after {
 }
 
 .head {
-  background-image: url("../images/copertina-contatti.png");
+  background-image: url("../images/contatti/copertina-contatti.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -251,27 +251,29 @@ li::after {
   object-fit: cover;
 }
 
+p {
+  margin: 0.3rem 1.5rem;
+}
+
 h2 {
-  margin: 0.6rem 0.3rem;
+  margin: 0.6rem 1rem;
   font-weight: 900;
 }
 
-p {
-  margin: 0.3rem;
-}
-
 .subtitle {
+  margin: 0.6rem 1rem;
   letter-spacing: -0.05rem;
 }
 
 .address {
+  margin: 0.6rem 1rem;
   letter-spacing: 0.13rem;
 }
 
 .contatti {
-  margin: 1rem 0.6rem;
+  margin: 2rem 3rem;
   display: grid;
-  grid-template-columns: 1.5rem auto;
+  grid-template-columns: 2rem auto;
 }
 .contatti svg {
   grid-column: 1/2;
@@ -280,7 +282,7 @@ p {
 .contatti a,
 .contatti h4 {
   grid-column: 2/3;
-  margin: 0 0.6rem;
+  margin: 0 1rem;
 }
 .contatti a {
   margin-bottom: 1rem;
