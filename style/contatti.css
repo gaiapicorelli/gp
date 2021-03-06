@@ -271,14 +271,17 @@ li::after {
   margin: 1rem auto;
   border-radius: 50%;
   width: 7rem;
-  object-fit: cover;
 }
 
 p {
   margin: 0.3rem 1.5rem;
 }
 
-p.light {
+.text {
+  text-align: center;
+}
+
+.text.light {
   font-style: italic;
 }
 
@@ -327,7 +330,7 @@ ul::before, ul::after {
   z-index: -1;
   background-image: url("../images/contatti/copertina-contatti.png");
   opacity: 50%;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   position: absolute;
   left: 0;
@@ -342,6 +345,60 @@ ul::before {
 
 ul::after {
   top: 25%;
+}
+
+@media only screen and (min-width: 992px) {
+  ul::before, ul::after {
+    display: none;
+  }
+
+  #name {
+    grid-area: name;
+  }
+
+  .subtitle {
+    grid-area: subtitle;
+  }
+
+  .address {
+    grid-area: address;
+  }
+
+  .contatti {
+    grid-area: contatti;
+  }
+
+  #main-text {
+    grid-area: testo;
+  }
+
+  #list-container {
+    grid-area: list-container;
+  }
+
+  #conclusione {
+    grid-area: conclusione;
+  }
+
+  .head {
+    grid-area: head;
+  }
+
+  .content {
+    display: grid;
+    grid-template-areas: ". name head ." ". subtitle head ." ". address head ." ". contatti head ." ". list-container head ." "testo testo testo testo" "conclusiuone conclusione conclusione conclusione";
+    grid-template-columns: 7.5rem auto 50% 7.5rem;
+  }
+
+  .head > img {
+    margin: auto;
+    width: 15rem;
+    background-color: #ffc400;
+  }
+
+  ul {
+    padding-right: 4rem;
+  }
 }
 
 /*# sourceMappingURL=contatti.css.map */

@@ -11,14 +11,12 @@ $img-size: 7rem;
   background-position: center;
   // background-color: #0073b1;
   width: 100%;
-  // height: 25vh;
   display: flex;
 
   img {
     margin: 1rem auto;
     border-radius: 50%;
     width: $img-size;
-    object-fit: cover;
   }
 }
 
@@ -26,7 +24,11 @@ p {
   margin: base.$margin-small base.$margin-xlarge;
 }
 
-p.light {
+.text {
+  text-align: center;
+}
+
+.text.light {
   font-style: italic;
 }
 
@@ -79,7 +81,7 @@ ul::before, ul::after {
   z-index: -1;
   background-image: url("../images/contatti/copertina-contatti.png");
   opacity: 50%;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   position: absolute;
   left: 0;
@@ -94,4 +96,57 @@ ul::before {
 
 ul::after {
   top: 25%;
+}
+
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  ul::before, ul::after {
+    display: none;
+  }
+  #name {
+    grid-area: name;
+  }
+  .subtitle {
+    grid-area: subtitle;
+  }
+  .address {
+    grid-area: address;
+  }
+  .contatti {
+    grid-area: contatti;
+  }
+  #main-text {
+    grid-area: testo;
+  }
+  #list-container {
+    grid-area: list-container;
+  }
+  #conclusione {
+    grid-area: conclusione;
+  }
+  .head {
+    grid-area: head;
+  }
+  .content {
+    display: grid;
+    grid-template-areas:
+            ". name head ."
+            ". subtitle head ."
+            ". address head ."
+            ". contatti head ."
+            ". list-container head ."
+            "testo testo testo testo"
+            "conclusiuone conclusione conclusione conclusione";
+    grid-template-columns: 7.5rem auto 50% 7.5rem;
+  }
+
+  .head > img {
+    margin: auto;
+    //height: 15rem;
+    width: 15rem;
+    background-color: base.$accent-color;
+  }
+
+  ul {
+    padding-right: 4rem;
+  }
 }
