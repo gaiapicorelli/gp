@@ -26,6 +26,10 @@ p {
   margin: base.$margin-small base.$margin-xlarge;
 }
 
+p.light {
+  font-style: italic;
+}
+
 h2 {
   margin: base.$margin-medium base.$margin-large;
   font-weight: 900;
@@ -66,6 +70,28 @@ h2 {
   }
 }
 
-ul {
-  border-bottom: 2px dotted base.$grey;
+#list-container {
+  position: relative;
+}
+
+ul::before, ul::after {
+  content: "";
+  z-index: -1;
+  background-image: url("../images/contatti/copertina-contatti.png");
+  opacity: 50%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+ul::before {
+  transform: scaleY(-1);
+  top: -75%;
+}
+
+ul::after {
+  top: 25%;
 }

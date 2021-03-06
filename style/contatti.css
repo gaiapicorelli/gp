@@ -205,7 +205,7 @@ li {
 
 /* The actual line being placed before each list item, tweak width and color as appropriate */
 li:before {
-  background-color: #ffc400;
+  background-color: #243131;
   width: 2px;
   content: "";
   position: absolute;
@@ -228,7 +228,7 @@ li:last-child:before {
 li::after {
   content: "";
   position: absolute;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23ffc400' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23243131' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   left: 0;
@@ -237,6 +237,29 @@ li::after {
   height: 12px;
 }
 
+/* Align right */
+ul {
+  text-align: right;
+  padding-left: initial;
+  padding-right: 10%;
+}
+
+li {
+  padding-left: initial;
+  padding-right: 20px;
+}
+
+li:before {
+  left: initial;
+  right: 5px;
+}
+
+li::after {
+  left: initial;
+  right: 0;
+}
+
+/* end aligh right */
 .head {
   background-image: url("../images/contatti/copertina-contatti.png");
   background-size: cover;
@@ -253,6 +276,10 @@ li::after {
 
 p {
   margin: 0.3rem 1.5rem;
+}
+
+p.light {
+  font-style: italic;
 }
 
 h2 {
@@ -291,8 +318,30 @@ h2 {
   margin-bottom: 0;
 }
 
-ul {
-  border-bottom: 2px dotted #e0e0e0;
+#list-container {
+  position: relative;
+}
+
+ul::before, ul::after {
+  content: "";
+  z-index: -1;
+  background-image: url("../images/contatti/copertina-contatti.png");
+  opacity: 50%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+ul::before {
+  transform: scaleY(-1);
+  top: -75%;
+}
+
+ul::after {
+  top: 25%;
 }
 
 /*# sourceMappingURL=contatti.css.map */
