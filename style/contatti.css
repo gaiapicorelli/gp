@@ -263,7 +263,7 @@ li::after {
 .head {
   background-image: url("../images/contatti/copertina-contatti.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   width: 100%;
   display: flex;
 }
@@ -274,7 +274,7 @@ li::after {
 }
 
 p {
-  margin: 0.3rem 1.5rem;
+  margin: 1rem 1.5rem;
 }
 
 .text {
@@ -287,17 +287,15 @@ p {
 
 h2 {
   margin: 0.6rem 1rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .subtitle {
   margin: 0.6rem 1rem;
-  letter-spacing: -0.05rem;
 }
 
 .address {
   margin: 0.6rem 1rem;
-  letter-spacing: 0.13rem;
 }
 
 .contatti {
@@ -387,7 +385,11 @@ ul::after {
   .content {
     display: grid;
     grid-template-areas: ". name head ." ". subtitle head ." ". address head ." ". contatti head ." ". list-container head ." "testo testo testo testo" "conclusiuone conclusione conclusione conclusione";
-    grid-template-columns: 7.5rem auto 50% 7.5rem;
+    grid-template-columns: 1fr 20.75rem 50% 1fr;
+  }
+
+  h2 {
+    margin-top: 7rem;
   }
 
   .head > img {
@@ -396,8 +398,58 @@ ul::after {
     background-color: #ffc400;
   }
 
+  .head {
+    background-repeat: no-repeat;
+    background-position: center -10rem;
+  }
+
+  .head,
+.head > img {
+    transform: scaleY(-1);
+  }
+
+  .contatti {
+    margin: 2rem 1rem;
+  }
+
   ul {
     padding-right: 4rem;
+  }
+
+  #main-text {
+    margin-top: 3rem;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .content::before, .content::after {
+    content: "";
+    z-index: -1;
+    background-image: url("../images/contatti/copertina-contatti.png");
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    height: 5.25rem;
+  }
+
+  .content::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .content::after {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(-1);
+    max-width: 1200px;
+    margin: auto;
   }
 }
 

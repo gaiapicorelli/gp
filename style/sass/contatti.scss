@@ -8,7 +8,7 @@ $img-size: 7rem;
 .head {
   background-image: url("../images/contatti/copertina-contatti.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   // background-color: #0073b1;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@ $img-size: 7rem;
 }
 
 p {
-  margin: base.$margin-small base.$margin-xlarge;
+  margin: base.$margin-large base.$margin-xlarge;
 }
 
 .text {
@@ -34,17 +34,17 @@ p {
 
 h2 {
   margin: base.$margin-medium base.$margin-large;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .subtitle {
   margin: base.$margin-medium base.$margin-large;
-  letter-spacing: -0.05rem;
+  //letter-spacing: -0.05rem;
 }
 
 .address {
   margin: base.$margin-medium base.$margin-large;
-  letter-spacing: 0.13rem;
+  //letter-spacing: 0.13rem;
 }
 
 .contatti {
@@ -136,7 +136,11 @@ ul::after {
             ". list-container head ."
             "testo testo testo testo"
             "conclusiuone conclusione conclusione conclusione";
-    grid-template-columns: 7.5rem auto 50% 7.5rem;
+    grid-template-columns: 1fr 20.75rem 50% 1fr;
+  }
+
+  h2 {
+    margin-top: 7rem;
   }
 
   .head > img {
@@ -146,7 +150,55 @@ ul::after {
     background-color: base.$accent-color;
   }
 
+  .head {
+    background-repeat: no-repeat;
+    background-position: center -10rem;
+  }
+
+  .head,
+  .head > img {
+    transform: scaleY(-1);
+  }
+
+  .contatti {
+    margin: 2rem base.$margin-large;
+  }
+
   ul {
     padding-right: 4rem;
+  }
+  #main-text {
+    margin-top: 2*base.$margin-xlarge;
+  }
+
+  .content {
+    position: relative;
+  }
+  .content::before, .content::after {
+    content: "";
+    z-index: -1;
+    background-image: url("../images/contatti/copertina-contatti.png");
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+
+    height: 1.5*base.$app-bar-height;
+  }
+  .content::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+  }
+  .content::after {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(-1);
+    max-width: base.$max-content-width;
+    margin: auto;
   }
 }
