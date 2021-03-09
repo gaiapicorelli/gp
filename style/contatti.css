@@ -451,6 +451,12 @@ ul::after {
     max-width: 1200px;
     margin: auto;
   }
+
+  h2,
+.subtitle,
+.address {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=contatti.css.map */

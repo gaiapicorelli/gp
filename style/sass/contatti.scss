@@ -201,4 +201,10 @@ ul::after {
     max-width: base.$max-content-width;
     margin: auto;
   }
+
+  h2,
+  .subtitle,
+  .address {
+    font-size: 1.3rem;
+  }
 }
