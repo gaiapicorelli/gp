@@ -2,27 +2,77 @@
 @use 'header';
 @use 'nav';
 
-main img {
-  width: 100%;
+
+.head {
+  position: relative;
+  height: 35vh;
 }
+
 .copertina {
-  height: 25vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  z-index: -1;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,1));
+}
+
+.head > div {
+  position: absolute;
+  bottom: 0;
+}
+
+h2 {
+  margin: base.$margin-medium base.$margin-large;
+  font-weight: 700;
+}
+
+.label {
+  margin: base.$margin-medium base.$margin-large;
+  display: flex;
+
+  span {
+    background-color: base.$grey;
+    border-radius: 3em;
+    padding: 0.1em 0.3em;
+    margin: 0.1em;
+  }
+}
+
+
+.content > img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: base.$margin-medium;
 }
 
 .anteprime {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    h4 {
-        grid-column: span 4;
-    }
-    a {
-      // a sarebbe più grande dell'immagine contenuta. Così la avvolge perfettamente
-      line-height: 0;
-    }
-    img {
-      width: 100%;
-    }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  h4 {
+    grid-column: span 4;
   }
+
+  a {
+    // a sarebbe più grande dell'immagine contenuta. Così la avvolge perfettamente
+    line-height: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
