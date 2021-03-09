@@ -44,7 +44,7 @@ $font-size-logo: 3/14 * $size-logo;
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
-  letter-spacing: 0.01 * $font-size-logo;
+  letter-spacing: 0.05 * $font-size-logo;
   font-size: $font-size-logo;
 }
 
@@ -54,7 +54,7 @@ $font-size-logo: 3/14 * $size-logo;
   align-self: start;
   font-weight: 300;
   font-size: $font-size-logo;
-  letter-spacing: -0.05 * $font-size-logo;
+  letter-spacing: -0.1 * $font-size-logo;
 }
 
 
@@ -138,7 +138,7 @@ $font-size-logo: 3/14 * $size-logo;
   }
   .content {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% auto;
     grid-template-areas:
             "intro logo"
             "p1 logo"
@@ -166,7 +166,7 @@ $font-size-logo: 3/14 * $size-logo;
       grid-row: 1/2;
       grid-column: 2/3;
       align-self: end;
-      letter-spacing: 0.01 * $desktop-font-size-logo;
+      letter-spacing: 0.05 * $desktop-font-size-logo;
       font-size: $desktop-font-size-logo;
     }
 
@@ -176,12 +176,12 @@ $font-size-logo: 3/14 * $size-logo;
       align-self: start;
       font-weight: 300;
       font-size: $desktop-font-size-logo;
-      letter-spacing: -0.05 * $desktop-font-size-logo;
+      letter-spacing: -0.1 * $desktop-font-size-logo;
     }
   }
   .intro-emozionale {
     grid-area: intro;
-    margin-top: 2.5vw;
+    margin-top: 5vw;
   }
   .content > p:nth-of-type(1) {
     grid-area: p1;

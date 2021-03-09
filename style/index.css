@@ -225,7 +225,7 @@ nav .active:visited {
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.075rem;
   font-size: 1.5rem;
 }
 
@@ -235,7 +235,7 @@ nav .active:visited {
   align-self: start;
   font-weight: 300;
   font-size: 1.5rem;
-  letter-spacing: -0.075rem;
+  letter-spacing: -0.15rem;
 }
 
 .intro-emozionale {
@@ -309,7 +309,7 @@ nav .active:visited {
 
   .content {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% auto;
     grid-template-areas: "intro logo" "p1 logo" "p2 logo" "blockquote logo" "anteprime anteprime";
   }
 
@@ -329,7 +329,7 @@ nav .active:visited {
     grid-row: 1/2;
     grid-column: 2/3;
     align-self: end;
-    letter-spacing: 0.026rem;
+    letter-spacing: 0.13rem;
     font-size: 2.6rem;
   }
   #desktop-main-img .scritta2-main-img {
@@ -338,12 +338,12 @@ nav .active:visited {
     align-self: start;
     font-weight: 300;
     font-size: 2.6rem;
-    letter-spacing: -0.13rem;
+    letter-spacing: -0.26rem;
   }
 
   .intro-emozionale {
     grid-area: intro;
-    margin-top: 2.5vw;
+    margin-top: 5vw;
   }
 
   .content > p:nth-of-type(1) {

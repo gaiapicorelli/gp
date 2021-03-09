@@ -204,7 +204,6 @@ nav .active:visited {
 .filter-selector .current {
   background-color: #243131;
   color: #fafafa;
-  font-weight: bold;
 }
 
 .card-container {
