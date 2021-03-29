@@ -234,10 +234,34 @@ h2 {
   margin: 0.1em;
 }
 
+.descrizione {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.content > p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.enfasi {
+  font-weight: bold;
+}
+
 .content > img {
   box-sizing: border-box;
   width: 100%;
-  padding: 0.6rem;
+  padding: 1rem;
+}
+
+.cta {
+  display: block;
+  width: max-content;
+  margin: 1.5rem auto;
+  border: 1px solid #2188C0;
+  border-radius: 25px;
+  padding: 0.5em 1em;
 }
 
 .anteprime {
