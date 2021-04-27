@@ -8,6 +8,10 @@
   height: 35vh;
 }
 
+.copertina-dsk {
+  display: none;
+}
+
 .copertina {
   position: absolute;
   top: 0;
@@ -97,5 +101,66 @@ h2 {
 
   img {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  .content {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    grid-template-areas:
+            "img1 title"
+            "img1 desc"
+            "img1 p1"
+            "img3 img2"
+            "img3 p2"
+            "img3 cta"
+            "img4 img4"
+            "anteprime anteprime";
+  }
+  .copertina {
+    display: none;
+  }
+  .copertina-dsk {
+    display: initial;
+    grid-area: img1;
+  }
+  .head::before, .head > div {
+    all: unset;
+  }
+  .head {
+    grid-area: title;
+    height: initial;
+  }
+  .descrizione {
+    grid-area: desc;
+  }
+  .p1 {
+    grid-area: p1;
+  }
+  .p2 {
+    grid-area: p2;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img4 {
+    grid-area: img4;
+  }
+  .cta {
+    grid-area: cta;
+  }
+  .anteprime {
+    grid-area: anteprime;
+  }
+
+}
+
+@media only screen and (min-width: base.$max-content-width + 48px) {
+  .content > img {
+    padding-left: 0;
   }
 }
