@@ -132,10 +132,8 @@ ul::after {
             ". name head ."
             ". subtitle head ."
             ". address head ."
-            ". contatti head ."
-            ". list-container head ."
-            "testo testo testo testo"
-            "conclusiuone conclusione conclusione conclusione";
+            ". contatti testo ."
+            ". list-container conclusione .";
     grid-template-columns: 1fr 20.75rem 50% 1fr;
   }
 
@@ -151,8 +149,7 @@ ul::after {
   }
 
   .head {
-    background-repeat: no-repeat;
-    background-position: center -10rem;
+    background-image: unset;
   }
 
   .head,
@@ -168,11 +165,12 @@ ul::after {
     padding-right: 4rem;
   }
   #main-text {
-    margin-top: 2*base.$margin-xlarge;
+    margin-top: 1.75*base.$margin-xlarge;
   }
 
   .content {
     position: relative;
+    padding-top: 7em;
   }
   .content::before, .content::after {
     content: "";
@@ -183,14 +181,13 @@ ul::after {
     background-repeat: no-repeat;
     background-position: center 80%;
 
-    height: 1.5*base.$app-bar-height;
+    height: 2*base.$app-bar-height;
   }
   .content::before {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-
   }
   .content::after {
     position: fixed;
