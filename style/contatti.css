@@ -328,7 +328,7 @@ ul::before, ul::after {
   z-index: -1;
   background-image: url("../images/contatti/copertina-contatti.png");
   opacity: 50%;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   position: absolute;
   left: 0;
