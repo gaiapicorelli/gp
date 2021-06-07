@@ -107,16 +107,17 @@ h2 {
 @media only screen and (min-width: base.$desktop-breakpoint) {
   .content {
     display: grid;
-    grid-template-columns: 20rem auto;
+    grid-template-columns: 1fr 25rem 50% 1fr;
     grid-template-areas:
-            "img1 title"
-            "img1 desc"
-            "img1 p1"
-            "img3 img2"
-            "img3 p2"
-            "img3 cta"
-            "img4 img4"
-            "anteprime anteprime";
+            ". img1 title ."
+            ". img1 desc ."
+            ". img1 p1 ."
+            ". img1 p2 ."
+            ". img3 cta ."
+            ". img3 img2 ."
+            ". img4 img4 ."
+            ". anteprime anteprime .";
+    //grid-template-rows: auto auto auto auto 3rem;
   }
   .copertina {
     display: none;
@@ -131,6 +132,7 @@ h2 {
   .head {
     grid-area: title;
     height: initial;
+    margin-top: 2*base.$margin-xlarge
   }
   .descrizione {
     grid-area: desc;
@@ -152,15 +154,14 @@ h2 {
   }
   .cta {
     grid-area: cta;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .anteprime {
     grid-area: anteprime;
   }
 
-}
-
-@media only screen and (min-width: base.$max-content-width + 48px) {
-  .content > img {
-    padding-left: 0;
+  .content p {
+    text-align: center;
   }
 }
