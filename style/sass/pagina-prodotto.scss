@@ -153,11 +153,14 @@ h2 {
   }
   .img4 {
     grid-area: img4;
+    height: 25rem;
+    object-fit: contain;
+    justify-self: center;
   }
   .cta {
     grid-area: cta;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .anteprime {
     grid-area: anteprime;
