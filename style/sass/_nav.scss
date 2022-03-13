@@ -29,29 +29,44 @@ $fab-size: 2 * (base.$app-bar-height - $fab-margin);
   text-decoration: none;
 }
 
-nav {
+.nav-container {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
+
   border-top: 1px solid base.$grey;
-  background-color: base.$less-whitey;
   height: base.$app-bar-height;
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: base.$max-content-width;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  //position: absolute;
+  height: 100%;
+  background-color: base.$less-whitey;
 
   // display: flex per visualizzare in orizzontale
   display: flex;
+
   a {
     // flex-grow serve a regolare la spaziatura con div vuoto che fa da segnaposto per il fab
     flex-grow: 2;
     // line-height allinea il testo verticalmente
     line-height: base.$app-bar-height;
-
+    font-weight: 600;
     text-align: center;
-    @include base.alternate-font;
   }
+
   a,
   a:visited {
-    color: base.$text-color;
+    //color: base.$text-color;
+    color: base.$darkgrey;
   }
 
   .empty {
@@ -63,7 +78,39 @@ nav {
   .active:visited {
     // background-color: #616161;
     border-bottom: .5em solid base.$accent-color;
+    color: base.$text-color;
+
     // color: base.$less-whitey;
     // color: base.$accent-color;
+  }
+}
+
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  .nav-container {
+    top: -1px; // Altrimenti il border viene spezzato, LMAO
+    z-index: 2;
+  }
+  nav {
+    .empty {
+      display: none;
+    }
+
+    position: absolute;
+    right: 6rem;
+    width: 42rem;
+    border-bottom: 1px solid base.$text-color;
+  }
+  .active,
+  .active:visited {
+    // background-color: #616161;
+    border-bottom: .5em solid base.$accent-color;
+    // color: base.$less-whitey;
+    // color: base.$accent-color;
+  }
+  .fab {
+    display: none;
+  }
+  .nav-filler {
+    display: none;
   }
 }

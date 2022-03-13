@@ -5,9 +5,15 @@ a {
 
 body {
   margin: 0;
-  color: #262626;
-  font-family: "Lato", sans-serif;
+  color: #243131;
+  font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
+}
+
+.content {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
 }
 
 p,
@@ -37,10 +43,8 @@ blockquote {
   font-weight: 300;
 }
 
-header {
+.header-container {
   z-index: 1;
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,6 +52,22 @@ header {
   height: 3.5rem;
   background-color: #f5f5f5;
   box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
+}
+
+@media only screen and (min-width: 992px) {
+  .header-container {
+    border-bottom: 1px solid #243131;
+    box-shadow: none;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 3.5rem;
   padding-right: 0.4rem;
 }
 header a {
@@ -61,9 +81,6 @@ header img {
 }
 header h1 {
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
   font-weight: 500;
 }
 header a:nth-of-type(2) {
@@ -102,27 +119,35 @@ main {
   text-decoration: none;
 }
 
-nav {
+.nav-container {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   border-top: 1px solid #e0e0e0;
-  background-color: #f5f5f5;
   height: 3.5rem;
+}
+.nav-container div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 100%;
+  background-color: #f5f5f5;
   display: flex;
 }
 nav a {
   flex-grow: 2;
   line-height: 3.5rem;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.05rem;
+  text-align: center;
 }
 nav a,
 nav a:visited {
-  color: #262626;
+  color: #7d7d7d;
 }
 nav .empty {
   width: 5.5rem;
@@ -131,6 +156,40 @@ nav .empty {
 nav .active,
 nav .active:visited {
   border-bottom: 0.5em solid #ffc400;
+  color: #243131;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-container {
+    top: -1px;
+    z-index: 2;
+  }
+
+  nav {
+    position: absolute;
+    right: 6rem;
+    width: 42rem;
+    border-bottom: 1px solid #243131;
+  }
+  nav .empty {
+    display: none;
+  }
+
+  .active,
+.active:visited {
+    border-bottom: 0.5em solid #ffc400;
+  }
+
+  .fab {
+    display: none;
+  }
+
+  .nav-filler {
+    display: none;
+  }
+}
+.desktop-background-img, #desktop-main-img {
+  display: none;
 }
 
 .main-img {
@@ -144,6 +203,9 @@ nav .active:visited {
   width: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
+  object-fit: cover;
+  object-position: center bottom;
+  max-height: 18rem;
 }
 
 .logo-main-img {
@@ -163,11 +225,7 @@ nav .active:visited {
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
-  font-weight: 500;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.075rem;
   font-size: 1.5rem;
 }
 
@@ -177,7 +235,7 @@ nav .active:visited {
   align-self: start;
   font-weight: 300;
   font-size: 1.5rem;
-  letter-spacing: -0.075rem;
+  letter-spacing: -0.15rem;
 }
 
 .intro-emozionale {
@@ -195,14 +253,115 @@ nav .active:visited {
 .anteprime {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .anteprime a {
   line-height: 0;
+  width: 25%;
+  min-width: 180px;
+  position: relative;
 }
 .anteprime img {
   width: 100%;
+}
+.anteprime .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: #243131;
+}
+.anteprime .overlay .text {
+  color: #fafafa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.anteprime a:hover .overlay {
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-img {
+    display: none;
+  }
+
+  .desktop-background-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30vw -10vw;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-template-areas: "intro logo" "p1 logo" "p2 logo" "blockquote logo" "anteprime anteprime";
+  }
+
+  #desktop-main-img {
+    grid-area: logo;
+    justify-self: right;
+    display: grid;
+    grid-template-columns: 13rem max-content;
+  }
+  #desktop-main-img img {
+    width: 90%;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    align-self: center;
+  }
+  #desktop-main-img .scritta1-main-img {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: end;
+    letter-spacing: 0.13rem;
+    font-size: 2.6rem;
+  }
+  #desktop-main-img .scritta2-main-img {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: start;
+    font-weight: 300;
+    font-size: 2.6rem;
+    letter-spacing: -0.26rem;
+  }
+
+  .intro-emozionale {
+    grid-area: intro;
+    margin-top: 5vw;
+  }
+
+  .content > p:nth-of-type(1) {
+    grid-area: p1;
+  }
+
+  .content > p:nth-of-type(2) {
+    grid-area: p2;
+  }
+
+  .content > blockquote {
+    grid-area: blockquote;
+    margin-bottom: 2.5vw;
+  }
+
+  .anteprime {
+    grid-area: anteprime;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

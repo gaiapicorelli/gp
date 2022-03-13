@@ -3,11 +3,8 @@
 $logo-margin: 0.5rem;
 $social-icon-margin: 0.8rem;
 
-header {
+.header-container {
   z-index: 1;
-  display: flex;
-  align-items: center;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +13,26 @@ header {
   background-color: base.$less-whitey;
 
   box-shadow: base.$shadow;
+}
+
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  .header-container {
+    border-bottom: 1px solid base.$text-color;
+    box-shadow: none;
+  }
+}
+
+header {
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+  max-width: base.$max-content-width;
+  margin:auto;
+  height: base.$app-bar-height;
+
 
   a {
     height: base.$app-bar-height;
@@ -30,7 +47,6 @@ header {
 
   h1 {
     font-size: 1.25rem;
-    @include base.alternate-font;
     font-weight: 500;
   }
 
@@ -42,6 +58,7 @@ header {
     height: base.$app-bar-height - 2 * $social-icon-margin;
     margin: 0 $social-icon-margin/2;
   }
+
   padding-right: $social-icon-margin/2;
 }
 

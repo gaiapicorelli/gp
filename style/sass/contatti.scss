@@ -6,59 +6,202 @@
 $img-size: 7rem;
 
 .head {
-  background-image: url("../images/copertina-contatti.png");
+  background-image: url("../images/contatti/copertina-contatti.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   // background-color: #0073b1;
   width: 100%;
-  // height: 25vh;
   display: flex;
+
   img {
     margin: 1rem auto;
     border-radius: 50%;
     width: $img-size;
-    object-fit: cover;
   }
 }
 
-h2 {
-  margin: base.$margin-medium base.$margin-small;
-  @include base.alternate-font;
+p {
+  margin: base.$margin-large base.$margin-xlarge;
 }
 
-p {
-  margin: base.$margin-small;
+.text {
+  text-align: center;
+}
+
+.text.light {
+  font-style: italic;
+}
+
+h2 {
+  margin: base.$margin-medium base.$margin-large;
+  font-weight: 700;
 }
 
 .subtitle {
-  letter-spacing: -0.05rem;
+  margin: base.$margin-medium base.$margin-large;
+  //letter-spacing: -0.05rem;
 }
 
 .address {
-  letter-spacing: 0.13rem;
+  margin: base.$margin-medium base.$margin-large;
+  //letter-spacing: 0.13rem;
 }
 
 .contatti {
-  margin: 1rem base.$margin-medium;
+  margin: 2rem base.$margin-xlarge*2;
   display: grid;
-  grid-template-columns: 1.5rem auto;
+  grid-template-columns: 2rem auto;
+
   svg {
     grid-column: 1/2;
     grid-row: span 2;
   }
+
   a,
   h4 {
     grid-column: 2/3;
-    margin: 0 base.$margin-medium;
+    margin: 0 base.$margin-large;
   }
+
   a {
     margin-bottom: 1rem;
   }
+
   a:last-child {
     margin-bottom: 0;
   }
 }
 
-ul {
-  border-bottom: 2px dotted base.$grey;
+#list-container {
+  position: relative;
+}
+
+ul::before, ul::after {
+  content: "";
+  z-index: -1;
+  background-image: url("../images/contatti/copertina-contatti.png");
+  opacity: 50%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+ul::before {
+  transform: scaleY(-1);
+  top: -75%;
+}
+
+ul::after {
+  top: 25%;
+}
+
+@media only screen and (min-width: base.$desktop-breakpoint) {
+  ul::before, ul::after {
+    display: none;
+  }
+  #name {
+    grid-area: name;
+  }
+  .subtitle {
+    grid-area: subtitle;
+  }
+  .address {
+    grid-area: address;
+  }
+  .contatti {
+    grid-area: contatti;
+  }
+  #main-text {
+    grid-area: testo;
+  }
+  #list-container {
+    grid-area: list-container;
+  }
+  #conclusione {
+    grid-area: conclusione;
+  }
+  .head {
+    grid-area: head;
+  }
+  .content {
+    display: grid;
+    grid-template-areas:
+            ". name head ."
+            ". subtitle head ."
+            ". address head ."
+            ". contatti testo ."
+            ". list-container conclusione .";
+    grid-template-columns: 1fr 20.75rem 50% 1fr;
+  }
+
+  h2 {
+    margin-top: 7rem;
+  }
+
+  .head > img {
+    margin: auto;
+    //height: 15rem;
+    width: 15rem;
+    background-color: base.$accent-color;
+  }
+
+  .head {
+    background-image: unset;
+  }
+
+  .head,
+  .head > img {
+    transform: scaleY(-1);
+  }
+
+  .contatti {
+    margin: 2rem base.$margin-large;
+  }
+
+  ul {
+    padding-right: 4rem;
+  }
+  #main-text {
+    margin-top: 1.75*base.$margin-xlarge;
+  }
+
+  .content {
+    position: relative;
+    padding-top: 7em;
+  }
+  .content::before, .content::after {
+    content: "";
+    z-index: -1;
+    background-image: url("../images/contatti/copertina-contatti.png");
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+
+    height: 2*base.$app-bar-height;
+  }
+  .content::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .content::after {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(-1);
+    max-width: base.$max-content-width;
+    margin: auto;
+  }
+
+  h2,
+  .subtitle,
+  .address {
+    font-size: 1.3rem;
+  }
 }

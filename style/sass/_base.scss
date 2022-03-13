@@ -1,22 +1,22 @@
+$desktop-breakpoint: 992px;
+$max-content-width: 1200px;
+
 $app-bar-height: 3.5rem;
 
-$default-font: "Lato", sans-serif;
-
-@mixin alternate-font {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
-}
+$default-font: "Montserrat", sans-serif;
 
 $margin-small: 0.3rem;
 $margin-medium: 0.6rem;
+$margin-large: 1rem;
+$margin-xlarge: 1.5rem;
 
 $accent-color: #ffc400;
-$text-color: #262626;
+$text-color: #243131;
 $whitey: #fafafa;
 $text-accent-color: $whitey;
 $less-whitey: #f5f5f5;
 $grey: #e0e0e0;
+$darkgrey: #7d7d7d;
 
 a {
   text-decoration: none;
@@ -28,6 +28,12 @@ body {
   color: $text-color;
   font-family: $default-font;
   background-color: $whitey;
+}
+
+.content {
+  position: relative;
+  max-width: $max-content-width;
+  margin: auto;
 }
 
 p,
@@ -52,6 +58,7 @@ blockquote {
 .emph {
   font-weight: bold;
 }
+
 .light {
   font-weight: 300;
 }

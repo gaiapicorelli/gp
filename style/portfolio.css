@@ -5,9 +5,15 @@ a {
 
 body {
   margin: 0;
-  color: #262626;
-  font-family: "Lato", sans-serif;
+  color: #243131;
+  font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
+}
+
+.content {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
 }
 
 p,
@@ -37,10 +43,8 @@ blockquote {
   font-weight: 300;
 }
 
-header {
+.header-container {
   z-index: 1;
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,6 +52,22 @@ header {
   height: 3.5rem;
   background-color: #f5f5f5;
   box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
+}
+
+@media only screen and (min-width: 992px) {
+  .header-container {
+    border-bottom: 1px solid #243131;
+    box-shadow: none;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 3.5rem;
   padding-right: 0.4rem;
 }
 header a {
@@ -61,9 +81,6 @@ header img {
 }
 header h1 {
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
   font-weight: 500;
 }
 header a:nth-of-type(2) {
@@ -102,27 +119,35 @@ main {
   text-decoration: none;
 }
 
-nav {
+.nav-container {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   border-top: 1px solid #e0e0e0;
-  background-color: #f5f5f5;
   height: 3.5rem;
+}
+.nav-container div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 100%;
+  background-color: #f5f5f5;
   display: flex;
 }
 nav a {
   flex-grow: 2;
   line-height: 3.5rem;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.05rem;
+  text-align: center;
 }
 nav a,
 nav a:visited {
-  color: #262626;
+  color: #7d7d7d;
 }
 nav .empty {
   width: 5.5rem;
@@ -131,8 +156,38 @@ nav .empty {
 nav .active,
 nav .active:visited {
   border-bottom: 0.5em solid #ffc400;
+  color: #243131;
 }
 
+@media only screen and (min-width: 992px) {
+  .nav-container {
+    top: -1px;
+    z-index: 2;
+  }
+
+  nav {
+    position: absolute;
+    right: 6rem;
+    width: 42rem;
+    border-bottom: 1px solid #243131;
+  }
+  nav .empty {
+    display: none;
+  }
+
+  .active,
+.active:visited {
+    border-bottom: 0.5em solid #ffc400;
+  }
+
+  .fab {
+    display: none;
+  }
+
+  .nav-filler {
+    display: none;
+  }
+}
 .filter-selector {
   padding: 0.5rem 0;
   display: flex;
@@ -141,30 +196,51 @@ nav .active:visited {
 }
 .filter-selector div {
   cursor: pointer;
-  margin: 0.3rem 0.2rem;
+  margin: 0.3rem 0.5%;
   padding: 0.5em;
   background-color: #e0e0e0;
   border-radius: 3em;
 }
 .filter-selector .current {
-  background-color: #262626;
+  background-color: #243131;
   color: #fafafa;
-  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
+  width: 100%;
+  max-width: 20rem;
   text-decoration: none;
-  color: #262626;
+  color: #243131;
   display: block;
   margin: 0.6rem 0.3rem;
   border: 1px solid #e0e0e0;
   border-radius: 1rem;
+  box-shadow: 0px 0.1rem 0.1rem #e0e0e0;
   overflow: hidden;
 }
 .card img {
   width: 100%;
-  height: 50vw;
+  height: 12rem;
   object-fit: cover;
+  border-radius: 1rem;
+}
+.card #greentogrow-card-img {
+  object-position: center 5%;
+}
+.card #aimove-card-img, .card #newfloor-card-img {
+  object-position: center 15%;
+}
+.card #onda-card-img {
+  object-position: center 30%;
+}
+.card #qb-card-image, .card #caigo-card-img {
+  object-position: center 75%;
 }
 .card p,
 .card h3,
