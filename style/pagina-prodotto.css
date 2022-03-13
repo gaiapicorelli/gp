@@ -339,12 +339,6 @@ h2 {
     justify-self: center;
   }
 
-  .cta {
-    grid-area: cta;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   .anteprime {
     grid-area: anteprime;
   }
