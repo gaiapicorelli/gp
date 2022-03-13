@@ -107,16 +107,14 @@ h2 {
 @media only screen and (min-width: base.$desktop-breakpoint) {
   .content {
     display: grid;
-    grid-template-columns: 1fr 25rem 50% 1fr;
+    grid-template-columns: 1fr 25rem 25rem 25rem 1fr;
     grid-template-areas:
-            ". img1 title ."
-            ". img1 desc ."
-            ". img1 p1 ."
-            ". img1 p2 ."
-            ". img3 cta ."
-            ". img3 img2 ."
-            ". img4 img4 ."
-            ". anteprime anteprime .";
+            ". img1 title title ."
+            ". img1 desc desc ."
+            ". img1 p1 p1 ."
+            ". img1 p2 p2 ."
+            ". img3 img2 img4."
+            ". anteprime anteprime anteprime .";
     //grid-template-rows: auto auto auto auto 3rem;
   }
   .copertina {
@@ -156,11 +154,6 @@ h2 {
     height: 25rem;
     object-fit: contain;
     justify-self: center;
-  }
-  .cta {
-    grid-area: cta;
-    margin-top: auto;
-    margin-bottom: auto;
   }
   .anteprime {
     grid-area: anteprime;

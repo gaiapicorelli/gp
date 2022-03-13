@@ -287,8 +287,8 @@ h2 {
 @media only screen and (min-width: 992px) {
   .content {
     display: grid;
-    grid-template-columns: 1fr 25rem 50% 1fr;
-    grid-template-areas: ". img1 title ." ". img1 desc ." ". img1 p1 ." ". img1 p2 ." ". img3 cta ." ". img3 img2 ." ". img4 img4 ." ". anteprime anteprime .";
+    grid-template-columns: 1fr 25rem 25rem 25rem 1fr;
+    grid-template-areas: ". img1 title title ." ". img1 desc desc ." ". img1 p1 p1 ." ". img1 p2 p2 ." ". img3 img2 img4." ". anteprime anteprime anteprime .";
   }
 
   .copertina {
