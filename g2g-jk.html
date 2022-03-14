@@ -1,10 +1,24 @@
 ---
 layout: pagina-prodotto
+project: "G2G"
 ---
+{% capture description %}
+Green to Grow è un progetto di cui <span class="enfasi">Etimos Foundation</span> è capofila, all'interno del programma
+"Switch Africa Green".
+{% endcapture %}
 
-{% include pp-content.html 
-    project="G2G"
-    img1="../images/greentogrow/greentogrow (1).jpg"
-    alt1="Prima immagine blocco terziario"
+{% capture p1 %}
+Il progetto è finanziato dall'<span class="enfasi">Unione europea</span> e sostenuto da svariati partner europei e
+africani. Promuove la diffusione delle <span class="enfasi">pratiche agricole sostenibili</span> nelle filiere del
+caffé, del mango e del latte in Kenya.
+{% endcapture %}
+
+{% capture p2 %}
+Ho realizzato in collaborazione con Sinfonia lab: il logo, la palette cromatica e il mood grafico generale.
+{% endcapture %}
+
+{% include pp-content.html
+description=description
+p1=p1
+p2=p2
 %}
-

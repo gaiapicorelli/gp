@@ -1,4 +1,4 @@
-{% assign project = site.data.projects | where: "name", include.project | first %}
+{% assign project = site.data.projects | where: "name", page.project | first %}
 <div class="content">
     <div class="head">
         <div>
@@ -13,22 +13,15 @@
     </div>
     <img class="copertina-dsk" src="{{ project.cover-img }}" alt="Immagine di copertina di {{ project.name }}" />
     <p class="descrizione">
-        Green to Grow è un progetto di cui <span class="enfasi">Etimos Foundation</span> è capofila, all'interno
-        del
-        programma "Switch Africa
-        Green".
+        {{ include.description }}
     </p>
-    <img class="img2" src="{{ include.img1 }}" alt={{ include.alt1 }}>
+    <img class="img2" src="{{ project.images[0].link }}" alt="{{ project.images[0].alt }}">
     <p class="p1">
-        Il progetto è finanziato dall'<span class="enfasi">Unione europea</span> e sostenuto da svariati partner
-        europei e africani. Promuove la
-        diffusione delle <span class="enfasi">pratiche agricole sostenibili</span> nelle filiere del caffé, del
-        mango e del latte in Kenya.
+        {{ include.p1 }}
     </p>
     <img class="img3" src="../images/greentogrow/greentogrow (3).jpg" alt="anteprimaEtimos">
     <p class="p2">
-        Ho realizzato in collaborazione con Sinfonia lab: il logo, la palette cromatica e il mood grafico
-        generale.
+        {{ include.p2 }}
     </p>
     <img class="img4" src="../images/greentogrow/greentogrow%20(4).jpg" alt="Foto di gruppo">
     <div class="anteprime">

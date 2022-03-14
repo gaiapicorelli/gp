@@ -1,4 +1,9 @@
 - name: G2G
   link: g2g-jk.html
   cover-img: "../images/greentogrow/greentogrow (2).jpg"
-  labels: ['uno', 'due']
+  labels: ["uno", "due"]
+  images:
+    - link: "../images/greentogrow/greentogrow (1).jpg"
+      alt: "Prima immagine blocco terziario"
+    - link: "secondolink.jpg"
+      alt: "secondoalt"
