@@ -1,0 +1,50 @@
+{% assign project = site.data.projects | where: "name", include.project | first %}
+<div class="content">
+    <div class="head">
+        <div>
+            <h2>{{ project.name }}</h2>
+            <div class="label">
+                {% for label in project.labels %}
+                <span>{{ label }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        <img class="copertina" src="{{ project.cover-img }}" alt="Immagine di copertina di {{ project.name }}" />
+    </div>
+    <img class="copertina-dsk" src="{{ project.cover-img }}" alt="Immagine di copertina di {{ project.name }}" />
+    <p class="descrizione">
+        Green to Grow è un progetto di cui <span class="enfasi">Etimos Foundation</span> è capofila, all'interno
+        del
+        programma "Switch Africa
+        Green".
+    </p>
+    <img class="img2" src="{{ include.img1 }}" alt={{ include.alt1 }}>
+    <p class="p1">
+        Il progetto è finanziato dall'<span class="enfasi">Unione europea</span> e sostenuto da svariati partner
+        europei e africani. Promuove la
+        diffusione delle <span class="enfasi">pratiche agricole sostenibili</span> nelle filiere del caffé, del
+        mango e del latte in Kenya.
+    </p>
+    <img class="img3" src="../images/greentogrow/greentogrow (3).jpg" alt="anteprimaEtimos">
+    <p class="p2">
+        Ho realizzato in collaborazione con Sinfonia lab: il logo, la palette cromatica e il mood grafico
+        generale.
+    </p>
+    <img class="img4" src="../images/greentogrow/greentogrow%20(4).jpg" alt="Foto di gruppo">
+    <div class="anteprime">
+        <h4>Guarda gli altri progetti:</h4>
+        <a href="../portfolio/aimove.html">
+            <img src="../images/aimove/aimove (4).jpg" alt="Aimove" />
+        </a>
+        <a href="../portfolio/esteticamente.html">
+            <img src="../images/esteticamente/esteticamente%20(4).jpg" alt="Esteticamente" />
+        </a>
+        <a href="../portfolio/fisiologo.html">
+            <img src="../images/fisiologo/fisiologo (2).jpg" alt="Fisiologo" />
+        </a>
+        <a href="../portfolio/newfloor.html">
+            <img src="../images/newfloor/newfloor%20(7).jpg" alt="New Floor" />
+        </a>
+    </div>
+    <div class="nav-filler"></div>
+</div>

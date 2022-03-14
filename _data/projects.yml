@@ -1,0 +1,4 @@
+- name: G2G
+  link: g2g-jk.html
+  cover-img: "../images/greentogrow/greentogrow (2).jpg"
+  labels: ['uno', 'due']
